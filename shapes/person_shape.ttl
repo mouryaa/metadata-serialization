@@ -1,0 +1,32 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix ex: <http://example.com/shapes/> .
+
+ex:CustomerShape
+    a sh:NodeShape ;
+    sh:targetClass schema:Person ;
+
+    # Identifier (required)
+    sh:property [
+        sh:path schema:identifier ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    # Name (required)
+    sh:property [
+        sh:path schema:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    # Email (required)
+    sh:property [
+        sh:path schema:email ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^[^@]+@[^@]+\\.[^@]+$" ;
+    ] .

@@ -1,0 +1,7 @@
+rdf-graph-gen>=0.1.0
+Faker>=20.0.0
+rdflib>=7.0.0
+
+# Optional dependencies for validation
+pyshacl>=0.25.0  # For SHACL validation (optional)
+

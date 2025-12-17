@@ -1,0 +1,207 @@
+@prefix ex: <http://example.org/person/> .
+@prefix schema1: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:person_1 a schema1:Person ;
+    schema1:additionalName "Cristina"^^xsd:string ;
+    schema1:affiliation "Riggs, Bowen and Simmons"^^xsd:string ;
+    schema1:alternateName "Allison"^^xsd:string ;
+    schema1:alumniOf "Yale University"^^xsd:string ;
+    schema1:award "Outstanding Achievement Award"^^xsd:string ;
+    schema1:birthDate "1959-12-22"^^xsd:date ;
+    schema1:birthPlace "East James, Cook Islands"^^xsd:string ;
+    schema1:email "hortonkatelyn@example.org"^^xsd:string ;
+    schema1:familyName "Adams"^^xsd:string ;
+    schema1:faxNumber "+1-289-533-8325x1045"^^xsd:string ;
+    schema1:gender "Non-binary"^^xsd:string ;
+    schema1:givenName "Nathan"^^xsd:string ;
+    schema1:height "162 cm"^^xsd:string ;
+    schema1:jobTitle "Armed forces training and education officer"^^xsd:string ;
+    schema1:knowsLanguage "English"^^xsd:string,
+        "Italian"^^xsd:string ;
+    schema1:name "Todd Hall"^^xsd:string ;
+    schema1:nationality "Tunisia"^^xsd:string ;
+    schema1:taxID "315-79-2968"^^xsd:string ;
+    schema1:telephone "789-290-0195x1254"^^xsd:string .
+
+ex:person_10 a schema1:Person ;
+    schema1:additionalName "K."^^xsd:string ;
+    schema1:address ex:person_10_address ;
+    schema1:alumniOf "Cambridge University"^^xsd:string ;
+    schema1:birthDate "1941-07-05"^^xsd:date ;
+    schema1:familyName "Neal"^^xsd:string ;
+    schema1:faxNumber "380-447-5330"^^xsd:string ;
+    schema1:gender "Non-binary"^^xsd:string ;
+    schema1:givenName "Gregg"^^xsd:string ;
+    schema1:jobTitle "Newspaper journalist"^^xsd:string ;
+    schema1:name "Nicholas Hodges"^^xsd:string ;
+    schema1:telephone "593.987.3976"^^xsd:string ;
+    schema1:weight "58 kg"^^xsd:string ;
+    schema1:worksFor "Roberts-James"^^xsd:string .
+
+ex:person_2 a schema1:Person ;
+    schema1:address ex:person_2_address ;
+    schema1:affiliation "Myers, Russell and Johnson"^^xsd:string ;
+    schema1:alumniOf "Harvard University"^^xsd:string ;
+    schema1:award "Excellence in Leadership"^^xsd:string ;
+    schema1:birthDate "1947-02-18"^^xsd:date ;
+    schema1:birthPlace "North Anthony, Malaysia"^^xsd:string ;
+    schema1:email "jgray@example.org"^^xsd:string ;
+    schema1:gender "Non-binary"^^xsd:string ;
+    schema1:givenName "Gloria"^^xsd:string ;
+    schema1:height "183 cm"^^xsd:string ;
+    schema1:jobTitle "Data scientist"^^xsd:string ;
+    schema1:name "Rebecca Crosby"^^xsd:string ;
+    schema1:nationality "Korea"^^xsd:string ;
+    schema1:taxID "207-49-6143"^^xsd:string ;
+    schema1:url "https://hughes.com/"^^xsd:anyURI ;
+    schema1:weight "61 kg"^^xsd:string ;
+    schema1:worksFor "King, Martinez and Osborne"^^xsd:string .
+
+ex:person_3 a schema1:Person ;
+    schema1:additionalName "Cynthia"^^xsd:string ;
+    schema1:address ex:person_3_address ;
+    schema1:award "Presidential Medal"^^xsd:string ;
+    schema1:birthDate "1975-08-04"^^xsd:date ;
+    schema1:email "stephaniewilcox@example.org"^^xsd:string ;
+    schema1:familyName "Wood"^^xsd:string ;
+    schema1:gender "Non-binary"^^xsd:string ;
+    schema1:givenName "Jennifer"^^xsd:string ;
+    schema1:jobTitle "Further education lecturer"^^xsd:string ;
+    schema1:name "Christopher Collins"^^xsd:string ;
+    schema1:taxID "385-17-4582"^^xsd:string ;
+    schema1:telephone "448-937-4996x1498"^^xsd:string ;
+    schema1:worksFor "Love, Stevens and Bailey"^^xsd:string .
+
+ex:person_4 a schema1:Person ;
+    schema1:alumniOf "Cambridge University"^^xsd:string ;
+    schema1:award "Presidential Medal"^^xsd:string ;
+    schema1:birthDate "1993-01-18"^^xsd:date ;
+    schema1:birthPlace "Debrashire, Indonesia"^^xsd:string ;
+    schema1:email "cynthiarodriguez@example.net"^^xsd:string ;
+    schema1:familyName "Thompson"^^xsd:string ;
+    schema1:gender "Prefer not to say"^^xsd:string ;
+    schema1:givenName "Joseph"^^xsd:string ;
+    schema1:honorificPrefix "Dr."^^xsd:string ;
+    schema1:honorificSuffix "III"^^xsd:string ;
+    schema1:knowsLanguage "English"^^xsd:string ;
+    schema1:name "Molly Lewis"^^xsd:string ;
+    schema1:nationality "Ethiopia"^^xsd:string .
+
+ex:person_5 a schema1:Person ;
+    schema1:additionalName "Heather"^^xsd:string ;
+    schema1:address ex:person_5_address ;
+    schema1:alternateName "Megy"^^xsd:string ;
+    schema1:birthDate "1967-07-30"^^xsd:date ;
+    schema1:email "smatthews@example.com"^^xsd:string ;
+    schema1:familyName "George"^^xsd:string ;
+    schema1:faxNumber "986.430.6929"^^xsd:string ;
+    schema1:gender "Non-binary"^^xsd:string ;
+    schema1:givenName "Taylor"^^xsd:string ;
+    schema1:height "200 cm"^^xsd:string ;
+    schema1:honorificPrefix "Mrs."^^xsd:string ;
+    schema1:jobTitle "Community development worker"^^xsd:string ;
+    schema1:knowsLanguage "German"^^xsd:string,
+        "Korean"^^xsd:string,
+        "Spanish"^^xsd:string ;
+    schema1:name "Christina Fitzpatrick"^^xsd:string ;
+    schema1:nationality "Saint Barthelemy"^^xsd:string ;
+    schema1:telephone "784-913-6337"^^xsd:string ;
+    schema1:url "http://lane.com/"^^xsd:anyURI ;
+    schema1:worksFor "Tate, Kim and Fernandez"^^xsd:string .
+
+ex:person_6 a schema1:Person ;
+    schema1:birthDate "1974-06-16"^^xsd:date ;
+    schema1:birthPlace "Chavezberg, Albania"^^xsd:string ;
+    schema1:email "dawnsantos@example.com"^^xsd:string ;
+    schema1:familyName "Aguilar"^^xsd:string ;
+    schema1:faxNumber "291-490-5217"^^xsd:string ;
+    schema1:gender "Prefer not to say"^^xsd:string ;
+    schema1:givenName "Samantha"^^xsd:string ;
+    schema1:height "152 cm"^^xsd:string ;
+    schema1:honorificPrefix "Dr."^^xsd:string ;
+    schema1:jobTitle "Nurse, adult"^^xsd:string ;
+    schema1:name "Jennifer Cooper"^^xsd:string ;
+    schema1:nationality "Cyprus"^^xsd:string ;
+    schema1:taxID "927-59-2627"^^xsd:string ;
+    schema1:telephone "(786)280-1287"^^xsd:string ;
+    schema1:worksFor "Bennett-Grant"^^xsd:string .
+
+ex:person_7 a schema1:Person ;
+    schema1:alternateName "Briy"^^xsd:string ;
+    schema1:alumniOf "Stanford University"^^xsd:string ;
+    schema1:birthDate "1946-08-11"^^xsd:date ;
+    schema1:email "crich@example.net"^^xsd:string ;
+    schema1:familyName "Sanchez"^^xsd:string ;
+    schema1:gender "Female"^^xsd:string ;
+    schema1:givenName "Christopher"^^xsd:string ;
+    schema1:honorificPrefix "Prof."^^xsd:string ;
+    schema1:jobTitle "Race relations officer"^^xsd:string ;
+    schema1:knowsLanguage "Arabic"^^xsd:string,
+        "French"^^xsd:string,
+        "Japanese"^^xsd:string ;
+    schema1:name "David Kirby"^^xsd:string ;
+    schema1:nationality "Samoa"^^xsd:string ;
+    schema1:telephone "542-609-4385x557"^^xsd:string ;
+    schema1:url "https://www.walsh-edwards.biz/"^^xsd:anyURI .
+
+ex:person_8 a schema1:Person ;
+    schema1:additionalName "B."^^xsd:string ;
+    schema1:alumniOf "Columbia University"^^xsd:string ;
+    schema1:award "Distinguished Service Award"^^xsd:string ;
+    schema1:birthDate "2002-03-19"^^xsd:date ;
+    schema1:email "teresa14@example.com"^^xsd:string ;
+    schema1:familyName "Barnett"^^xsd:string ;
+    schema1:gender "Male"^^xsd:string ;
+    schema1:givenName "Betty"^^xsd:string ;
+    schema1:height "157 cm"^^xsd:string ;
+    schema1:jobTitle "Transport planner"^^xsd:string ;
+    schema1:name "Mario Saunders"^^xsd:string ;
+    schema1:vatID "TD356842132"^^xsd:string ;
+    schema1:worksFor "Roberts Group"^^xsd:string .
+
+ex:person_9 a schema1:Person ;
+    schema1:additionalName "Michael"^^xsd:string ;
+    schema1:affiliation "Melendez Inc"^^xsd:string ;
+    schema1:award "Lifetime Achievement Award"^^xsd:string ;
+    schema1:birthDate "1986-07-19"^^xsd:date ;
+    schema1:email "oandrade@example.net"^^xsd:string ;
+    schema1:faxNumber "6828051301"^^xsd:string ;
+    schema1:gender "Male"^^xsd:string ;
+    schema1:givenName "Darlene"^^xsd:string ;
+    schema1:jobTitle "Magazine features editor"^^xsd:string ;
+    schema1:knowsLanguage "Arabic"^^xsd:string,
+        "Chinese"^^xsd:string,
+        "Spanish"^^xsd:string ;
+    schema1:name "Allison Glover"^^xsd:string ;
+    schema1:taxID "818-42-8956"^^xsd:string ;
+    schema1:worksFor "Soto, Burch and Gonzales"^^xsd:string .
+
+ex:person_10_address a schema1:PostalAddress ;
+    schema1:addressCountry "GR"^^xsd:string ;
+    schema1:addressLocality "Georgebury"^^xsd:string ;
+    schema1:addressRegion "Iowa"^^xsd:string ;
+    schema1:postalCode "47273"^^xsd:string ;
+    schema1:streetAddress "436 Sarah Mills"^^xsd:string .
+
+ex:person_2_address a schema1:PostalAddress ;
+    schema1:addressCountry "SN"^^xsd:string ;
+    schema1:addressLocality "Samuelberg"^^xsd:string ;
+    schema1:addressRegion "Montana"^^xsd:string ;
+    schema1:postalCode "93173"^^xsd:string ;
+    schema1:streetAddress "49262 Bryant Isle Suite 404"^^xsd:string .
+
+ex:person_3_address a schema1:PostalAddress ;
+    schema1:addressCountry "SV"^^xsd:string ;
+    schema1:addressLocality "Daviston"^^xsd:string ;
+    schema1:addressRegion "Massachusetts"^^xsd:string ;
+    schema1:postalCode "86148"^^xsd:string ;
+    schema1:streetAddress "587 Clark Mountains Suite 205"^^xsd:string .
+
+ex:person_5_address a schema1:PostalAddress ;
+    schema1:addressCountry "ET"^^xsd:string ;
+    schema1:addressLocality "Lake Patriciaville"^^xsd:string ;
+    schema1:addressRegion "Alabama"^^xsd:string ;
+    schema1:postalCode "16829"^^xsd:string ;
+    schema1:streetAddress "48288 Christopher Orchard"^^xsd:string .
+
