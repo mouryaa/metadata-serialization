@@ -1,0 +1,486 @@
+<http://example.org/person_8_account_1_order_3> <http://schema.org/totalPaymentDue> "1827.92"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_4_account_2_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_2> <http://schema.org/familyName> "Gomez"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/org_4> <http://schema.org/email> "monicaclark@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10> <http://schema.org/name> "Connie Richards"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/customer> <http://example.org/person_3> .
+<http://example.org/person_1_account_2_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/seller> <http://example.org/org_2> .
+<http://example.org/person_7_account_2_order_1> <http://schema.org/totalPaymentDue> "1927.79"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_5_account_1_order_1> <http://schema.org/customer> <http://example.org/person_5> .
+<http://example.org/person_1> <http://schema.org/name> "Anna Scott"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1> <http://schema.org/name> "Secondary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10> <http://schema.org/givenName> "Connie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/orderNumber> "ORD-448330"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/customer> <http://example.org/person_4> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/customer> <http://example.org/person_6> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/seller> <http://example.org/org_4> .
+<http://example.org/person_1_account_1> <http://schema.org/identifier> "544a5e23-6df6-4ad3-bba9-2a64a8fd3eb8"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10> <http://schema.org/email> "kimberlyberry@example.org"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/orderStatus> "OrderCancelled"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1> <http://schema.org/identifier> "1fb12c9d-2466-4212-b8bf-ee84a222baf0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_10_account_1> .
+<http://example.org/person_7_account_1_order_2> <http://schema.org/paymentMethod> <http://example.org/person_7_account_1> .
+<http://example.org/person_3> <http://schema.org/name> "Dana Wilson"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://schema.org/industry> "Telecommunications"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7> <http://schema.org/identifier> "633-66-8129"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/seller> <http://example.org/org_4> .
+<http://example.org/person_6> <http://schema.org/familyName> "Graham"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/orderedItem> "Hold Bag Automotiv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/totalPaymentDue> "299.91"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7_account_1_order_1> <http://schema.org/customer> <http://example.org/person_7> .
+<http://example.org/org_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/seller> <http://example.org/org_2> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/paymentMethod> <http://example.org/person_10_account_1> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/orderDate> "2025-01-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/orderedItem> "Evening Third Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/orderedItem> "Theory Chair Healt"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/customer> <http://example.org/person_1> .
+<http://example.org/person_6> <http://schema.org/givenName> "Timothy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_4> <http://schema.org/industry> "Consulting"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/orderedItem> "Job Loss Book"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/orderStatus> "OrderInTransit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/customer> <http://example.org/person_6> .
+<http://example.org/person_6_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_9> <http://schema.org/familyName> "Black"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_3> <http://schema.org/orderDate> "2025-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_7_account_2_order_3> <http://schema.org/orderDate> "2025-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1> <http://schema.org/givenName> "Anna"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/orderDate> "2025-09-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_9_account_1> <http://schema.org/name> "Savings Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/seller> <http://example.org/org_4> .
+<http://example.org/person_8> <http://schema.org/name> "Tammy Brandt"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2> <http://schema.org/orderNumber> "ORD-102106"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://schema.org/seller> <http://example.org/org_2> .
+<http://example.org/person_3_account_1> <http://schema.org/bankAccountType> "Money Market Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1> <http://schema.org/identifier> "27eb7d0b-6cb1-47ce-ad81-05d32bc86ffd"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/totalPaymentDue> "1021.52"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/orderedItem> "Team Sell Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_2_account_1> .
+<http://example.org/person_9> <http://schema.org/identifier> "506-39-1117"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/orderNumber> "INV-735393"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1> <http://schema.org/accountId> "480796224128"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/orderedItem> "Hope Role Beauty Product"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_2> <http://schema.org/totalPaymentDue> "499.48"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/seller> <http://example.org/org_2> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/orderDate> "2025-07-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_4_account_1> <http://schema.org/name> "Business Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/confirmationNumber> "CONF-6117122"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1> <http://schema.org/name> "Emergency Fund Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2> <http://schema.org/accountMinimumInflow> "482840.34"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_4> <http://schema.org/identifier> "329-25-1053"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1> <http://schema.org/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://schema.org/orderDate> "2025-11-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/orderedItem> "Reflect International Book"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3> <http://schema.org/identifier> "582-46-6737"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/paymentMethod> <http://example.org/person_10_account_1> .
+<http://example.org/person_3> <http://schema.org/familyName> "Wilson"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_1_account_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/org_3> <http://schema.org/description> "Live despite even season. Particularly great move ahead summer. Somebody indicate strategy close eat...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://schema.org/telephone> "593-416-7442"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8> <http://schema.org/familyName> "Brandt"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2> <http://schema.org/accountMinimumInflow> "51393.25"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/confirmationNumber> "CONF-4426234"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4> <http://schema.org/givenName> "Marilyn"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/orderDate> "2025-04-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_7_account_2_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_10_account_1> <http://schema.org/servicer> "BB&T"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/customer> <http://example.org/person_9> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/orderedItem> "Analysis Body Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/orderedItem> "Both Tell Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_3> <http://schema.org/customer> <http://example.org/person_6> .
+<http://example.org/person_7_account_2> <http://schema.org/accountHolder> <http://example.org/person_7> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/confirmationNumber> "CONF-5215660"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2> <http://schema.org/bankAccountType> "Business Savings"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_1> <http://schema.org/orderedItem> "Return Thought Automotiv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1> <http://schema.org/bankAccountType> "Individual Retirement Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1> <http://schema.org/accountId> "840906225355"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_7_account_2_order_3> <http://schema.org/seller> <http://example.org/org_5> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/customer> <http://example.org/person_2> .
+<http://example.org/person_4_account_2> <http://schema.org/bankAccountType> "Business Checking"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1> <http://schema.org/bankAccountType> "Joint Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/totalPaymentDue> "2160.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/paymentMethod> <http://example.org/person_7_account_2> .
+<http://example.org/person_5> <http://schema.org/familyName> "Wilson"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/orderDate> "2025-06-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_6_account_1> <http://schema.org/servicer> "Bank of America"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/orderNumber> "INV-246775"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_5> <http://schema.org/description> "Federal in anyone require. Successful wonder believe speak party feeling look. Serve civil job character stuff health feeling...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/seller> <http://example.org/org_4> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/totalPaymentDue> "182.89"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7> <http://schema.org/givenName> "Latoya"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_2> <http://schema.org/description> "Move television fill break. Western factor election provide light weight.\nKnowledge director prove final build. Training speak town member paper. Partner serve particular candidate...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/orderedItem> "Ok Rate Food & Beverage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_4_account_2> <http://schema.org/name> "Secondary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_5> <http://schema.org/name> "Long-Carter"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_3> <http://schema.org/totalPaymentDue> "539.04"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_4> <http://schema.org/familyName> "Rodriguez"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1> <http://schema.org/identifier> "f02707f0-d9eb-4d06-beea-f587f735077d"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/org_4> <http://schema.org/legalName> "Hughes, Reynolds and Matthews Ltd."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/seller> <http://example.org/org_4> .
+<http://example.org/org_4> <http://schema.org/url> "https://velasquez.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_10_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_4_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_7_account_2> <http://schema.org/name> "Secondary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_3> <http://schema.org/totalPaymentDue> "560.76"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/orderedItem> "Big Rule Food & Beverage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/orderedItem> "Again Who Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/totalPaymentDue> "426.19"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/paymentMethod> <http://example.org/person_6_account_1> .
+<http://example.org/org_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<http://example.org/person_3_account_1> <http://schema.org/accountId> "60349438825"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/orderStatus> "OrderCancelled"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/orderedItem> "Situation Degree Book"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_2> <http://schema.org/name> "Johnson and Sons"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_7> <http://schema.org/familyName> "Williams"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1> <http://schema.org/name> "Secondary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1> <http://schema.org/orderDate> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/org_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<http://example.org/person_5_account_1> <http://schema.org/accountId> "214924690473"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1> <http://schema.org/accountMinimumInflow> "319.61"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/customer> <http://example.org/person_10> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/orderedItem> "Dream Do Automotiv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1> <http://schema.org/accountMinimumInflow> "8624.39"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/org_3> <http://schema.org/name> "Smith, Pierce and Gonzalez"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1> <http://schema.org/accountId> "522512948425"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_3_account_1> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/orderNumber> "INV-533875"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/orderNumber> "ORD-278043"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/customer> <http://example.org/person_10> .
+<http://example.org/person_2> <http://schema.org/givenName> "Nicole"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/confirmationNumber> "CONF-6486071"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_5_account_1_order_1> <http://schema.org/seller> <http://example.org/org_5> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/confirmationNumber> "CONF-3862760"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5> <http://schema.org/identifier> "871-51-9014"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_6_account_1> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/seller> <http://example.org/org_4> .
+<http://example.org/person_7_account_2_order_1> <http://schema.org/customer> <http://example.org/person_7> .
+<http://example.org/org_4> <http://schema.org/name> "Green-Hayes"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_3> <http://schema.org/legalName> "Williams Ltd Corp."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5> <http://schema.org/givenName> "Michael"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2> <http://schema.org/accountId> "995651161103"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_3> <http://schema.org/orderedItem> "Suffer Community Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2> <http://schema.org/seller> <http://example.org/org_4> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2> <http://schema.org/name> "Nicole Gomez"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_4> <http://schema.org/taxID> "99-3225277"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://example.org/person_5_account_1_order_1> <http://schema.org/totalPaymentDue> "1377.31"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_4_account_1> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/customer> <http://example.org/person_7> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/orderedItem> "Herself Play Beauty Product"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/paymentMethod> <http://example.org/person_1_account_2> .
+<http://example.org/person_1_account_1_order_3> <http://schema.org/orderedItem> "Upon Stand Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_3> <http://schema.org/customer> <http://example.org/person_7> .
+<http://example.org/person_7_account_1_order_1> <http://schema.org/orderedItem> "Garden Turn Office Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2> <http://schema.org/servicer> "Fifth Third Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/orderDate> "2025-06-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_3_account_1_order_2> <http://schema.org/orderedItem> "Trade Practice Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://schema.org/orderNumber> "INV-937249"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_4> <http://schema.org/telephone> "+1-769-686-8672x286"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/orderedItem> "Inside Sign Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/orderNumber> "PO-183314"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_1> <http://schema.org/seller> <http://example.org/org_2> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/seller> <http://example.org/org_2> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/confirmationNumber> "CONF-4031948"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/confirmationNumber> "CONF-7456812"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2> <http://schema.org/identifier> "0cb98007-5170-4e7f-9e25-b8c5282d6ebd"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/paymentMethod> <http://example.org/person_4_account_2> .
+<http://example.org/person_8_account_1> <http://schema.org/accountMinimumInflow> "31113.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://example.org/person_9_account_1> <http://schema.org/bankAccountType> "Checking Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1> <http://schema.org/accountHolder> <http://example.org/person_9> .
+<http://example.org/person_2_account_1> <http://schema.org/identifier> "69353edf-e304-461b-b9d1-173e2b464f9b"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/seller> <http://example.org/org_3> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/orderDate> "2025-01-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1_order_3> <http://schema.org/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_1_account_1> <http://schema.org/bankAccountType> "Savings Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_1_account_1_order_2> <http://schema.org/orderDate> "2025-04-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1_order_3> <http://schema.org/orderedItem> "Identify Health Beauty Product"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7> <http://schema.org/email> "andrewmiles@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/paymentMethod> <http://example.org/person_8_account_1> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/orderStatus> "OrderInTransit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1> <http://schema.org/bankAccountType> "Checking Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/totalPaymentDue> "756.73"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_3_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_1_account_1_order_3> <http://schema.org/customer> <http://example.org/person_1> .
+<http://example.org/person_7_account_1> <http://schema.org/accountId> "7761718956"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_1> <http://schema.org/paymentMethod> <http://example.org/person_7_account_2> .
+<http://example.org/person_5> <http://schema.org/email> "justindixon@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3> <http://schema.org/paymentMethod> <http://example.org/person_1_account_1> .
+<http://example.org/person_4_account_1> <http://schema.org/identifier> "55404850-df45-4abc-8c05-d22f4be3ac2b"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/orderedItem> "End Chair Food & Beverage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<http://example.org/person_7_account_1_order_2> <http://schema.org/orderStatus> "OrderInTransit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1> <http://schema.org/bankAccountType> "Certificate of Deposit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10> <http://schema.org/identifier> "270-44-9132"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/confirmationNumber> "CONF-2933901"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1> <http://schema.org/servicer> "Santander Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://schema.org/orderDate> "2025-08-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_7_account_2_order_3> <http://schema.org/paymentMethod> <http://example.org/person_7_account_2> .
+<http://example.org/person_7_account_1> <http://schema.org/servicer> "Capital One"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_3> <http://schema.org/paymentMethod> <http://example.org/person_6_account_1> .
+<http://example.org/person_3> <http://schema.org/givenName> "Dana"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1> <http://schema.org/confirmationNumber> "CONF-3897743"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://schema.org/customer> <http://example.org/person_3> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/orderedItem> "Win Wrong Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1> <http://schema.org/servicer> "BB&T"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/customer> <http://example.org/person_4> .
+<http://example.org/person_6_account_1_order_3> <http://schema.org/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/totalPaymentDue> "989.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_7_account_1_order_1> <http://schema.org/totalPaymentDue> "2305.25"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_8_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/confirmationNumber> "CONF-6927744"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_3> <http://schema.org/orderStatus> "OrderProblem"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_5> <http://schema.org/telephone> "206.391.9215"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/orderedItem> "Tend Of Home & Garde"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_5> <http://schema.org/legalName> "Santos-Espinoza Corp."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_3> <http://schema.org/telephone> "6093208909"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1> <http://schema.org/identifier> "881-67-1540"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3> <http://schema.org/seller> <http://example.org/org_3> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/orderedItem> "Exist Practice Clothin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1> <http://schema.org/seller> <http://example.org/org_4> .
+<http://example.org/person_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/orderedItem> "Police Season Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://schema.org/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_2> <http://schema.org/industry> "Technology"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1> <http://schema.org/accountHolder> <http://example.org/person_1> .
+<http://example.org/person_8_account_1_order_1> <http://schema.org/totalPaymentDue> "68.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_6_account_1> <http://schema.org/accountHolder> <http://example.org/person_6> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/totalPaymentDue> "1014.38"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/org_2> <http://schema.org/email> "travischristopher@example.org"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1> <http://schema.org/name> "Business Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://schema.org/email> "ashley58@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_2> <http://schema.org/telephone> "+1-523-293-0666"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/orderDate> "2025-03-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_3_account_1> <http://schema.org/servicer> "HSBC Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2> <http://schema.org/name> "Savings Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/orderedItem> "Him Pick Toy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1> <http://schema.org/name> "Emergency Fund Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/totalPaymentDue> "983.01"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_8_account_1_order_3> <http://schema.org/orderedItem> "Development Rest Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6> <http://schema.org/email> "jbaker@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_3> <http://schema.org/confirmationNumber> "CONF-3850677"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1> <http://schema.org/identifier> "b3c592ea-8fbe-450b-9539-92550ab87c03"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2> <http://schema.org/identifier> "a3a88771-cc0a-4a7a-ba80-1620b604666b"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_3> <http://schema.org/orderNumber> "INV-310370"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_2> <http://schema.org/orderDate> "2025-02-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_8_account_1_order_3> <http://schema.org/paymentMethod> <http://example.org/person_8_account_1> .
+<http://example.org/person_4_account_1> <http://schema.org/accountHolder> <http://example.org/person_4> .
+<http://example.org/person_8> <http://schema.org/email> "laura01@example.org"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_5> <http://schema.org/url> "https://hudson-beard.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_7_account_1> <http://schema.org/accountHolder> <http://example.org/person_7> .
+<http://example.org/person_8_account_1> <http://schema.org/accountHolder> <http://example.org/person_8> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/orderNumber> "INV-392991"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1> <http://schema.org/accountHolder> <http://example.org/person_5> .
+<http://example.org/person_8_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_8_account_1> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/paymentMethod> <http://example.org/person_4_account_2> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_9_account_1> .
+<http://example.org/person_8_account_1_order_3> <http://schema.org/orderedItem> "International Push Home & Garde"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/orderStatus> "OrderPickupAvailable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1> <http://schema.org/bankAccountType> "Business Checking"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/customer> <http://example.org/person_8> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/orderDate> "2025-08-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_3_account_1> <http://schema.org/accountMinimumInflow> "823.84"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/orderDate> "2025-11-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/totalPaymentDue> "344.43"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_2> <http://schema.org/identifier> "961-48-9599"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/orderDate> "2025-11-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/totalPaymentDue> "1298.97"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_1_account_1_order_2> <http://schema.org/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/orderedItem> "Policy Only Food & Beverage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/seller> <http://example.org/org_5> .
+<http://example.org/person_1_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_4_account_2> <http://schema.org/accountMinimumInflow> "42611.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/orderNumber> "ORD-774833"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/orderNumber> "INV-371893"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/orderDate> "2025-03-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1_order_2> <http://schema.org/customer> <http://example.org/person_1> .
+<http://example.org/person_7_account_1_order_2> <http://schema.org/customer> <http://example.org/person_7> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/orderedItem> "Keep Occur Office Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1> <http://schema.org/bankAccountType> "Joint Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_1> <http://schema.org/orderStatus> "OrderProblem"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_3> <http://schema.org/customer> <http://example.org/person_8> .
+<http://example.org/person_7_account_2> <http://schema.org/identifier> "1b7924f8-ba4a-470d-9abb-95261f247a00"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/orderDate> "2025-12-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1_order_2> <http://schema.org/paymentMethod> <http://example.org/person_1_account_1> .
+<http://example.org/person_2_account_1> <http://schema.org/accountId> "939750082240"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/orderedItem> "Tend Detail Office Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/orderStatus> "OrderCancelled"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_1_account_1> <http://schema.org/servicer> "KeyBank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/orderedItem> "Moment Market Toy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/org_1> <http://schema.org/description> "Pull into ten view institution goal affect house. Together side smile clearly. Pay social act whatever determine significant project.\nBook effort garden share...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2> <http://schema.org/accountId> "967817162797"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_3> <http://schema.org/url> "http://www.taylor.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/orderedItem> "How Finish Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://example.org/person_7_account_2> <http://schema.org/bankAccountType> "Business Savings"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1> <http://schema.org/servicer> "PNC Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1> <http://schema.org/orderedItem> "Push Blood Office Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2_order_1> <http://schema.org/customer> <http://example.org/person_1> .
+<http://example.org/person_6_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_6_account_1_order_3> <http://schema.org/confirmationNumber> "CONF-1574337"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1> <http://schema.org/servicer> "US Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://schema.org/orderedItem> "Not Kitchen Home & Garde"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2> <http://schema.org/accountHolder> <http://example.org/person_4> .
+<http://example.org/person_10_account_1> <http://schema.org/identifier> "b581928a-ec31-4c9e-b211-dace95b8c536"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/orderedItem> "Program Peace Home & Garde"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1> <http://schema.org/name> "Emergency Fund Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/orderedItem> "Crime Hand Automotiv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_7_account_1_order_2> <http://schema.org/orderedItem> "Candidate Draw Automotiv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/orderedItem> "Season Writer Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10> <http://schema.org/familyName> "Richards"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/seller> <http://example.org/org_1> .
+<http://example.org/person_2> <http://schema.org/email> "ronald07@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4> <http://schema.org/email> "toddroman@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/customer> <http://example.org/person_10> .
+<http://example.org/org_3> <http://schema.org/taxID> "46-6244198"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1> <http://schema.org/orderNumber> "ORD-874124"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://schema.org/orderNumber> "PO-461585"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<http://example.org/person_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/customer> <http://example.org/person_4> .
+<http://example.org/person_9_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/orderedItem> "Join Offer Book"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://example.org/person_4_account_2_order_1> <http://schema.org/seller> <http://example.org/org_1> .
+<http://example.org/person_6_account_1> <http://schema.org/bankAccountType> "Checking Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_2> <http://schema.org/url> "https://www.andrade.biz/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/orderStatus> "OrderInTransit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_3> <http://schema.org/seller> <http://example.org/org_2> .
+<http://example.org/person_1_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_10_account_1> <http://schema.org/name> "Savings Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/confirmationNumber> "CONF-2378379"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1> <http://schema.org/identifier> "6002c212-4194-4270-96fb-9dfdf6098bcd"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8> <http://schema.org/identifier> "565-20-1790"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3> <http://schema.org/totalPaymentDue> "261.13"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://example.org/person_8_account_1_order_1> <http://schema.org/customer> <http://example.org/person_8> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/totalPaymentDue> "1774.17"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_3_account_1_order_2> <http://schema.org/paymentMethod> <http://example.org/person_3_account_1> .
+<http://example.org/person_1_account_2> <http://schema.org/accountId> "492104520648"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_1> <http://schema.org/confirmationNumber> "CONF-9505659"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_3> <http://schema.org/orderNumber> "INV-470859"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://schema.org/seller> <http://example.org/org_1> .
+<http://example.org/person_8_account_1_order_1> <http://schema.org/confirmationNumber> "CONF-8498308"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9> <http://schema.org/name> "Victor Black"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_2> <http://schema.org/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1> <http://schema.org/servicer> "KeyBank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/orderedItem> "Middle Seek Beauty Product"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_3> <http://schema.org/industry> "Transportation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1> <http://schema.org/familyName> "Scott"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1> <http://schema.org/accountMinimumInflow> "948.86"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_6> <http://schema.org/name> "Timothy Graham"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_3_account_1_order_2> <http://schema.org/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_3> <http://schema.org/orderNumber> "ORD-169379"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1> <http://schema.org/accountHolder> <http://example.org/person_2> .
+<http://example.org/person_8_account_1_order_1> <http://schema.org/orderNumber> "PO-805015"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://schema.org/legalName> "Mcdaniel-Decker Pty Ltd"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1> <http://schema.org/accountMinimumInflow> "6794.36"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7_account_1_order_2> <http://schema.org/confirmationNumber> "CONF-8718148"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_2> <http://schema.org/legalName> "Daniels LLC Corp."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/confirmationNumber> "CONF-8126511"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://example.org/person_1_account_1_order_3> <http://schema.org/orderDate> "2025-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_7_account_2_order_1> <http://schema.org/orderNumber> "PO-812602"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/totalPaymentDue> "604.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_5_account_1> <http://schema.org/identifier> "0fc2a4d4-6b38-4f60-b63c-471ee68fb603"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_1> <http://schema.org/email> "elliottraymond@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_3> <http://schema.org/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1> <http://schema.org/accountMinimumInflow> "363471.84"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_6_account_1_order_3> <http://schema.org/seller> <http://example.org/org_5> .
+<http://example.org/person_3_account_1_order_2> <http://schema.org/totalPaymentDue> "2276.77"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/org_5> <http://schema.org/email> "stevencarter@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6> <http://schema.org/identifier> "514-14-3250"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7> <http://schema.org/name> "Latoya Williams"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1> <http://schema.org/accountId> "912437963304"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_8_account_1_order_1> <http://schema.org/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1> <http://schema.org/orderedItem> "Hotel No Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9> <http://schema.org/givenName> "Victor"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_7_account_2> <http://schema.org/servicer> "PNC Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BankAccount> .
+<http://example.org/person_10_account_1_order_2> <http://schema.org/orderedItem> "Trouble Bed Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1> <http://schema.org/accountMinimumInflow> "66568.33"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/orderNumber> "INV-325125"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_5> <http://schema.org/taxID> "11-1891490"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2> <http://schema.org/servicer> "Wells Fargo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/totalPaymentDue> "1151.16"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/orderDate> "2025-04-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_8_account_1> <http://schema.org/accountId> "575848567313"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/orderNumber> "PO-520917"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1> <http://schema.org/accountHolder> <http://example.org/person_3> .
+<http://example.org/person_8_account_1_order_3> <http://schema.org/orderDate> "2025-03-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_10_account_1> <http://schema.org/accountMinimumInflow> "8014.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_5> <http://schema.org/name> "Michael Wilson"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/orderedItem> "Wait Quickly Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2> <http://schema.org/totalPaymentDue> "1331.72"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_5_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_5_account_1> .
+<http://example.org/person_3_account_1_order_1> <http://schema.org/orderedItem> "Trip Believe Healt"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1> <http://schema.org/accountHolder> <http://example.org/person_10> .
+<http://example.org/person_6_account_1_order_2> <http://schema.org/orderedItem> "Day Nation Toy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_2_order_2> <http://schema.org/orderDate> "2025-03-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_6_account_1_order_3> <http://schema.org/orderNumber> "PO-252120"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://schema.org/url> "http://www.williams-curry.biz/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_9_account_1> <http://schema.org/accountId> "613729092316"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_3> <http://schema.org/email> "carla79@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://schema.org/orderedItem> "Easy Project Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://schema.org/orderNumber> "INV-633234"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Order> .
+<http://example.org/person_2_account_1> <http://schema.org/name> "Secondary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://schema.org/name> "Lawrence-Diaz"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9> <http://schema.org/email> "michael59@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://schema.org/seller> <http://example.org/org_2> .
+<http://example.org/person_4> <http://schema.org/name> "Marilyn Rodriguez"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://schema.org/orderNumber> "ORD-927781"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_4> <http://schema.org/description> "Property cultural now stock together war join. Leg away four hard collection experience entire. Apply room teach also the speech...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2> <http://schema.org/orderedItem> "Management These Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3> <http://schema.org/email> "sherringuyen@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://schema.org/confirmationNumber> "CONF-5848281"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_3> <http://schema.org/orderedItem> "Water Western Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_7_account_1> .
+<http://example.org/person_1_account_1_order_3> <http://schema.org/orderNumber> "ORD-475768"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/totalPaymentDue> "582.05"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_8> <http://schema.org/givenName> "Tammy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_2> <http://schema.org/orderNumber> "PO-319744"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_2> <http://schema.org/seller> <http://example.org/org_4> .
+<http://example.org/org_5> <http://schema.org/industry> "Media"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_2> <http://schema.org/accountHolder> <http://example.org/person_1> .
+<http://example.org/person_5_account_1_order_1> <http://schema.org/orderDate> "2025-11-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/confirmationNumber> "CONF-9599620"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://schema.org/paymentMethod> <http://example.org/person_1_account_1> .
+<http://example.org/person_6_account_1> <http://schema.org/accountMinimumInflow> "275.74"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_8_account_1_order_3> <http://schema.org/orderedItem> "Ready Get Clothin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://schema.org/orderNumber> "ORD-400552"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_2_order_1> <http://schema.org/orderDate> "2025-05-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .

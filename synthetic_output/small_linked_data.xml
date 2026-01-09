@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:schema1="http://schema.org/"
+>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1_order_3">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:customer rdf:resource="http://example.org/person_8"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-26</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-310370</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProblem</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Development Rest Jewelr</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International Push Home &amp; Garde</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ready Get Clothin</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_8_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_2"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1827.92</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_2_order_2">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-4426234</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_4"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-27</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-735393</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderCancelled</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crime Hand Automotiv</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">End Chair Food &amp; Beverage</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reflect International Book</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_4_account_2"/>
+    <schema1:seller rdf:resource="http://example.org/org_4"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">983.01</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_2">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ronald07@example.net</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gomez</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicole</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">961-48-9599</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicole Gomez</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_4">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <schema1:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property cultural now stock together war join. Leg away four hard collection experience entire. Apply room teach also the speech....</schema1:description>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monicaclark@example.net</schema1:email>
+    <schema1:industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consulting</schema1:industry>
+    <schema1:legalName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hughes, Reynolds and Matthews Ltd.</schema1:legalName>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green-Hayes</schema1:name>
+    <schema1:taxID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">99-3225277</schema1:taxID>
+    <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+1-769-686-8672x286</schema1:telephone>
+    <schema1:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://velasquez.com/</schema1:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kimberlyberry@example.org</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richards</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connie</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">270-44-9132</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connie Richards</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-2933901</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_3"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-17</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-392991</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderInTransit</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Again Who Electronic</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Policy Only Food &amp; Beverage</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trip Believe Healt</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_3_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_4"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">989.2</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_2_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:customer rdf:resource="http://example.org/person_1"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-02</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-246775</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exist Practice Clothin</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inside Sign Sports Equipmen</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Police Season Sports Equipmen</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_1_account_2"/>
+    <schema1:seller rdf:resource="http://example.org/org_2"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">299.91</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_1_order_3">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-5215660</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_10"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-07-16</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-470859</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderPickupAvailable</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evening Third Electronic</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Him Pick Toy</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hope Role Beauty Product</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_10_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_2"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1014.38</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_2_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-9505659</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_7"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-17</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-812602</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProblem</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Return Thought Automotiv</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_7_account_2"/>
+    <schema1:seller rdf:resource="http://example.org/org_2"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1927.79</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-3897743</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_5"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-05</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-874124</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotel No Sports Equipmen</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_5_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_5"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1377.31</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elliottraymond@example.net</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scott</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anna</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">881-67-1540</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anna Scott</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_7"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7761718956</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6794.36</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual Retirement Account</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1fb12c9d-2466-4212-b8bf-ee84a222baf0</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondary Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capital One</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_2_order_2">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-7456812</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_7"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-17</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-448330</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herself Play Beauty Product</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Situation Degree Book</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_7_account_2"/>
+    <schema1:seller rdf:resource="http://example.org/org_4"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1774.17</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_2_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-6117122</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_4"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-27</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-278043</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keep Occur Office Supplie</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ok Rate Food &amp; Beverage</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_4_account_2"/>
+    <schema1:seller rdf:resource="http://example.org/org_1"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">426.19</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_1_order_2">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:customer rdf:resource="http://example.org/person_6"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-21</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-520917</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderInTransit</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Day Nation Toy</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hold Bag Automotiv</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theory Chair Healt</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_6_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_4"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">756.73</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_1"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">912437963304</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">319.61</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savings Account</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">544a5e23-6df6-4ad3-bba9-2a64a8fd3eb8</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emergency Fund Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KeyBank</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-5848281</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_10"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-11</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-533875</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Join Offer Book</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Middle Seek Beauty Product</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team Sell Pet Supplie</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_10_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_1"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1021.52</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1_order_2">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-8718148</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_7"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-14</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-319744</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderInTransit</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candidate Draw Automotiv</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_7_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_4"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">499.48</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sherringuyen@example.net</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wilson</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dana</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">582-46-6737</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dana Wilson</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_1">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <schema1:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pull into ten view institution goal affect house. Together side smile clearly. Pay social act whatever determine significant project.
+Book effort garden share....</schema1:description>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ashley58@example.net</schema1:email>
+    <schema1:industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telecommunications</schema1:industry>
+    <schema1:legalName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mcdaniel-Decker Pty Ltd</schema1:legalName>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lawrence-Diaz</schema1:name>
+    <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">593-416-7442</schema1:telephone>
+    <schema1:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.williams-curry.biz/</schema1:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">andrewmiles@example.net</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Williams</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latoya</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">633-66-8129</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latoya Williams</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jbaker@example.com</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graham</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Timothy</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">514-14-3250</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Timothy Graham</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:customer rdf:resource="http://example.org/person_7"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-04</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-461585</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garden Turn Office Supplie</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_7_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_1"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2305.25</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_3">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <schema1:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Live despite even season. Particularly great move ahead summer. Somebody indicate strategy close eat....</schema1:description>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carla79@example.net</schema1:email>
+    <schema1:industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transportation</schema1:industry>
+    <schema1:legalName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Williams Ltd Corp.</schema1:legalName>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smith, Pierce and Gonzalez</schema1:name>
+    <schema1:taxID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46-6244198</schema1:taxID>
+    <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6093208909</schema1:telephone>
+    <schema1:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.taylor.com/</schema1:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_1_order_2">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-4031948</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_10"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-25</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-774833</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How Finish Electronic</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tend Detail Office Supplie</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trouble Bed Electronic</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_10_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_2"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2160.2</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_2_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-3862760</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_2"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-13</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-371893</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderInTransit</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Job Loss Book</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moment Market Toy</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_2_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_2"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1151.16</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-6486071</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_1"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-17</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-325125</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderCancelled</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Season Writer Sports Equipmen</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tend Of Home &amp; Garde</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_1_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_3"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">344.43</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-2378379</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_6"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-11</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-183314</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dream Do Automotiv</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Easy Project Pet Supplie</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_6_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_4"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1298.97</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_6"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">522512948425</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">275.74</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Checking Account</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6002c212-4194-4270-96fb-9dfdf6098bcd</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondary Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bank of America</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">michael59@example.net</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Victor</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">506-39-1117</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Victor Black</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_1_order_3">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-1574337</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_6"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-252120</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water Western Pet Supplie</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_6_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_5"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">539.04</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_2_order_3">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-3850677</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_7"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-169379</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suffer Community Jewelr</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_7_account_2"/>
+    <schema1:seller rdf:resource="http://example.org/org_5"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">560.76</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_9"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">613729092316</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66568.33</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Checking Account</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27eb7d0b-6cb1-47ce-ad81-05d32bc86ffd</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savings Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">US Bank</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laura01@example.org</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brandt</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tammy</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">565-20-1790</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tammy Brandt</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_2">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:customer rdf:resource="http://example.org/person_1"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-10</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-102106</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Management These Pet Supplie</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_1_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_4"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1331.72</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_2">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:customer rdf:resource="http://example.org/person_3"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-07</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-937249</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not Kitchen Home &amp; Garde</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trade Practice Electronic</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_3_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_2"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2276.77</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_3"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60349438825</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">823.84</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Money Market Account</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b3c592ea-8fbe-450b-9539-92550ab87c03</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emergency Fund Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HSBC Bank</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_3">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:customer rdf:resource="http://example.org/person_1"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-14</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-475768</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identify Health Beauty Product</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upon Stand Sports Equipmen</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_1_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_3"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">261.13</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_4"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">480796224128</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8624.39</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Checking Account</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55404850-df45-4abc-8c05-d22f4be3ac2b</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santander Bank</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_2">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_1"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">492104520648</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">482840.34</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Savings</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a3a88771-cc0a-4a7a-ba80-1620b604666b</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savings Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wells Fargo</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toddroman@example.com</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rodriguez</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marilyn</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">329-25-1053</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marilyn Rodriguez</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_2">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_7"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">967817162797</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51393.25</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Savings</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1b7924f8-ba4a-470d-9abb-95261f247a00</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondary Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNC Bank</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-6927744</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_9"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-04</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-633234</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big Rule Food &amp; Beverage</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wait Quickly Jewelr</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_9_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_5"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">182.89</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_10"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">840906225355</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8014.3</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joint Account</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b581928a-ec31-4c9e-b211-dace95b8c536</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savings Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BB&amp;T</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1_order_2">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-9599620</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_8"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-14</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-400552</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis Body Pet Supplie</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Both Tell Sports Equipmen</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_8_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_4"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">582.05</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_2">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_4"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">995651161103</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42611.0</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Checking</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0cb98007-5170-4e7f-9e25-b8c5282d6ebd</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondary Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fifth Third Bank</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">justindixon@example.net</schema1:email>
+    <schema1:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wilson</schema1:familyName>
+    <schema1:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael</schema1:givenName>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">871-51-9014</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Wilson</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_5">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <schema1:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Federal in anyone require. Successful wonder believe speak party feeling look. Serve civil job character stuff health feeling....</schema1:description>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stevencarter@example.com</schema1:email>
+    <schema1:industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Media</schema1:industry>
+    <schema1:legalName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santos-Espinoza Corp.</schema1:legalName>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long-Carter</schema1:name>
+    <schema1:taxID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11-1891490</schema1:taxID>
+    <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">206.391.9215</schema1:telephone>
+    <schema1:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://hudson-beard.com/</schema1:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_2">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <schema1:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Move television fill break. Western factor election provide light weight.
+Knowledge director prove final build. Training speak town member paper. Partner serve particular candidate....</schema1:description>
+    <schema1:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">travischristopher@example.org</schema1:email>
+    <schema1:industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technology</schema1:industry>
+    <schema1:legalName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniels LLC Corp.</schema1:legalName>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnson and Sons</schema1:name>
+    <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+1-523-293-0666</schema1:telephone>
+    <schema1:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.andrade.biz/</schema1:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_8"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">575848567313</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31113.6</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joint Account</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f02707f0-d9eb-4d06-beea-f587f735077d</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emergency Fund Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNC Bank</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_5"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">214924690473</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">948.86</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Checking</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0fc2a4d4-6b38-4f60-b63c-471ee68fb603</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KeyBank</schema1:servicer>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-8126511</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_4"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-19</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-927781</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderCancelled</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program Peace Home &amp; Garde</schema1:orderedItem>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Win Wrong Jewelr</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_4_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_2"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">604.9</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1_order_1">
+    <rdf:type rdf:resource="http://schema.org/Order"/>
+    <schema1:confirmationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONF-8498308</schema1:confirmationNumber>
+    <schema1:customer rdf:resource="http://example.org/person_8"/>
+    <schema1:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</schema1:orderDate>
+    <schema1:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-805015</schema1:orderNumber>
+    <schema1:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</schema1:orderStatus>
+    <schema1:orderedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Push Blood Office Supplie</schema1:orderedItem>
+    <schema1:paymentMethod rdf:resource="http://example.org/person_8_account_1"/>
+    <schema1:seller rdf:resource="http://example.org/org_4"/>
+    <schema1:totalPaymentDue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68.1</schema1:totalPaymentDue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_2_account_1">
+    <rdf:type rdf:resource="http://schema.org/BankAccount"/>
+    <schema1:accountHolder rdf:resource="http://example.org/person_2"/>
+    <schema1:accountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">939750082240</schema1:accountId>
+    <schema1:accountMinimumInflow rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">363471.84</schema1:accountMinimumInflow>
+    <schema1:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certificate of Deposit</schema1:bankAccountType>
+    <schema1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">69353edf-e304-461b-b9d1-173e2b464f9b</schema1:identifier>
+    <schema1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondary Account</schema1:name>
+    <schema1:servicer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BB&amp;T</schema1:servicer>
+  </rdf:Description>
+</rdf:RDF>

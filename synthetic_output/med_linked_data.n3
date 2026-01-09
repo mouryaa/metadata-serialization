@@ -1,0 +1,1438 @@
+@prefix ex: <http://example.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:person_10_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-5223175"^^xsd:string ;
+    schema1:customer ex:person_10 ;
+    schema1:orderDate "2025-03-26"^^xsd:date ;
+    schema1:orderNumber "INV-842477"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "Line Bed Beauty Product"^^xsd:string,
+        "Move Thought Book"^^xsd:string,
+        "Our Through Sports Equipmen"^^xsd:string ;
+    schema1:paymentMethod ex:person_10_account_1 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 561.91 .
+
+ex:person_10_account_1_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-3968017"^^xsd:string ;
+    schema1:customer ex:person_10 ;
+    schema1:orderDate "2025-09-30"^^xsd:date ;
+    schema1:orderNumber "INV-323085"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Apply Half Automotiv"^^xsd:string,
+        "Play Fund Book"^^xsd:string ;
+    schema1:paymentMethod ex:person_10_account_1 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 584.59 .
+
+ex:person_10_account_1_order_3 a schema1:Order ;
+    schema1:confirmationNumber "CONF-4423098"^^xsd:string ;
+    schema1:customer ex:person_10 ;
+    schema1:orderDate "2025-08-30"^^xsd:date ;
+    schema1:orderNumber "ORD-124830"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Add Result Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_10_account_1 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 2015.6 .
+
+ex:person_10_account_2_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-9875439"^^xsd:string ;
+    schema1:customer ex:person_10 ;
+    schema1:orderDate "2025-05-19"^^xsd:date ;
+    schema1:orderNumber "INV-212390"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Decision High Beauty Product"^^xsd:string ;
+    schema1:paymentMethod ex:person_10_account_2 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 1765.45 .
+
+ex:person_10_account_2_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-5479915"^^xsd:string ;
+    schema1:customer ex:person_10 ;
+    schema1:orderDate "2025-08-20"^^xsd:date ;
+    schema1:orderNumber "INV-994728"^^xsd:string ;
+    schema1:orderStatus "OrderProcessing"^^xsd:string ;
+    schema1:orderedItem "Claim Skill Home & Garde"^^xsd:string,
+        "Daughter Industry Sports Equipmen"^^xsd:string,
+        "Whatever Person Food & Beverage"^^xsd:string ;
+    schema1:paymentMethod ex:person_10_account_2 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 1079.12 .
+
+ex:person_11_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_11 ;
+    schema1:orderDate "2025-12-02"^^xsd:date ;
+    schema1:orderNumber "PO-169651"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Style Information Toy"^^xsd:string ;
+    schema1:paymentMethod ex:person_11_account_1 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 1147.17 .
+
+ex:person_11_account_1_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-3790272"^^xsd:string ;
+    schema1:customer ex:person_11 ;
+    schema1:orderDate "2025-11-26"^^xsd:date ;
+    schema1:orderNumber "INV-353442"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Behavior Loss Clothin"^^xsd:string,
+        "Increase Add Jewelr"^^xsd:string,
+        "Property Event Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_11_account_1 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 1785.27 .
+
+ex:person_12_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-1709008"^^xsd:string ;
+    schema1:customer ex:person_12 ;
+    schema1:orderDate "2025-08-26"^^xsd:date ;
+    schema1:orderNumber "INV-156540"^^xsd:string ;
+    schema1:orderStatus "OrderPickupAvailable"^^xsd:string ;
+    schema1:orderedItem "Foot Whole Healt"^^xsd:string,
+        "Style Especially Home & Garde"^^xsd:string ;
+    schema1:paymentMethod ex:person_12_account_1 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 1669.73 .
+
+ex:person_12_account_2_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-8645401"^^xsd:string ;
+    schema1:customer ex:person_12 ;
+    schema1:orderDate "2025-12-08"^^xsd:date ;
+    schema1:orderNumber "PO-652994"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Prove Various Jewelr"^^xsd:string ;
+    schema1:paymentMethod ex:person_12_account_2 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 1379.8 .
+
+ex:person_12_account_2_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-2618489"^^xsd:string ;
+    schema1:customer ex:person_12 ;
+    schema1:orderDate "2025-08-20"^^xsd:date ;
+    schema1:orderNumber "INV-956531"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Also Agreement Home & Garde"^^xsd:string,
+        "Inside Pressure Beauty Product"^^xsd:string,
+        "Store Form Toy"^^xsd:string ;
+    schema1:paymentMethod ex:person_12_account_2 ;
+    schema1:seller ex:org_7 ;
+    schema1:totalPaymentDue 1147.1 .
+
+ex:person_12_account_2_order_3 a schema1:Order ;
+    schema1:confirmationNumber "CONF-9118627"^^xsd:string ;
+    schema1:customer ex:person_12 ;
+    schema1:orderDate "2025-05-14"^^xsd:date ;
+    schema1:orderNumber "ORD-994359"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Table Air Healt"^^xsd:string,
+        "West Pattern Home & Garde"^^xsd:string ;
+    schema1:paymentMethod ex:person_12_account_2 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 241.46 .
+
+ex:person_13_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_13 ;
+    schema1:orderDate "2025-07-19"^^xsd:date ;
+    schema1:orderNumber "PO-138731"^^xsd:string ;
+    schema1:orderStatus "OrderProcessing"^^xsd:string ;
+    schema1:orderedItem "Local When Jewelr"^^xsd:string ;
+    schema1:paymentMethod ex:person_13_account_1 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 908.77 .
+
+ex:person_13_account_1_order_2 a schema1:Order ;
+    schema1:customer ex:person_13 ;
+    schema1:orderDate "2025-01-25"^^xsd:date ;
+    schema1:orderNumber "PO-249045"^^xsd:string ;
+    schema1:orderStatus "OrderProcessing"^^xsd:string ;
+    schema1:orderedItem "Carry Gas Food & Beverage"^^xsd:string,
+        "Quite Paper Beauty Product"^^xsd:string,
+        "Traditional Detail Beauty Product"^^xsd:string ;
+    schema1:paymentMethod ex:person_13_account_1 ;
+    schema1:seller ex:org_7 ;
+    schema1:totalPaymentDue 304.89 .
+
+ex:person_13_account_1_order_3 a schema1:Order ;
+    schema1:confirmationNumber "CONF-5490837"^^xsd:string ;
+    schema1:customer ex:person_13 ;
+    schema1:orderDate "2025-08-26"^^xsd:date ;
+    schema1:orderNumber "ORD-637496"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "East Summer Jewelr"^^xsd:string,
+        "Hard Kind Toy"^^xsd:string ;
+    schema1:paymentMethod ex:person_13_account_1 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 2311.24 .
+
+ex:person_13_account_2_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-2216816"^^xsd:string ;
+    schema1:customer ex:person_13 ;
+    schema1:orderDate "2025-11-19"^^xsd:date ;
+    schema1:orderNumber "ORD-628714"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Service Still Healt"^^xsd:string,
+        "War Near Healt"^^xsd:string ;
+    schema1:paymentMethod ex:person_13_account_2 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 847.85 .
+
+ex:person_13_account_2_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-2732455"^^xsd:string ;
+    schema1:customer ex:person_13 ;
+    schema1:orderDate "2025-03-17"^^xsd:date ;
+    schema1:orderNumber "INV-895431"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Officer Television Office Supplie"^^xsd:string,
+        "Theory Along Food & Beverage"^^xsd:string ;
+    schema1:paymentMethod ex:person_13_account_2 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 1324.52 .
+
+ex:person_13_account_2_order_3 a schema1:Order ;
+    schema1:confirmationNumber "CONF-6926169"^^xsd:string ;
+    schema1:customer ex:person_13 ;
+    schema1:orderDate "2025-05-12"^^xsd:date ;
+    schema1:orderNumber "ORD-632880"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Another Firm Automotiv"^^xsd:string,
+        "Ask Expert Toy"^^xsd:string,
+        "Bring Air Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_13_account_2 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 1745.17 .
+
+ex:person_14_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-8201052"^^xsd:string ;
+    schema1:customer ex:person_14 ;
+    schema1:orderDate "2025-06-19"^^xsd:date ;
+    schema1:orderNumber "ORD-747615"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Continue Allow Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_14_account_1 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 1869.25 .
+
+ex:person_15_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_15 ;
+    schema1:orderDate "2025-03-31"^^xsd:date ;
+    schema1:orderNumber "PO-112714"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "Entire Expect Pet Supplie"^^xsd:string,
+        "Identify Expert Office Supplie"^^xsd:string ;
+    schema1:paymentMethod ex:person_15_account_1 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 1413.87 .
+
+ex:person_15_account_2_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-9738643"^^xsd:string ;
+    schema1:customer ex:person_15 ;
+    schema1:orderDate "2025-12-03"^^xsd:date ;
+    schema1:orderNumber "PO-615071"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "National Young Jewelr"^^xsd:string,
+        "Production Factor Toy"^^xsd:string,
+        "Sort Explain Beauty Product"^^xsd:string ;
+    schema1:paymentMethod ex:person_15_account_2 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 2092.66 .
+
+ex:person_15_account_2_order_2 a schema1:Order ;
+    schema1:customer ex:person_15 ;
+    schema1:orderDate "2025-11-20"^^xsd:date ;
+    schema1:orderNumber "ORD-586301"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Among Rather Pet Supplie"^^xsd:string,
+        "House Leave Automotiv"^^xsd:string ;
+    schema1:paymentMethod ex:person_15_account_2 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 1014.9 .
+
+ex:person_16_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-3653647"^^xsd:string ;
+    schema1:customer ex:person_16 ;
+    schema1:orderDate "2025-07-25"^^xsd:date ;
+    schema1:orderNumber "INV-803533"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Board Pay Toy"^^xsd:string,
+        "Environment Series Jewelr"^^xsd:string,
+        "Pretty Fly Healt"^^xsd:string ;
+    schema1:paymentMethod ex:person_16_account_1 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 1252.44 .
+
+ex:person_16_account_1_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-4165784"^^xsd:string ;
+    schema1:customer ex:person_16 ;
+    schema1:orderDate "2025-03-02"^^xsd:date ;
+    schema1:orderNumber "INV-201714"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Expert Improve Food & Beverage"^^xsd:string,
+        "Wide Lawyer Jewelr"^^xsd:string ;
+    schema1:paymentMethod ex:person_16_account_1 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 460.95 .
+
+ex:person_16_account_2_order_1 a schema1:Order ;
+    schema1:customer ex:person_16 ;
+    schema1:orderDate "2025-04-15"^^xsd:date ;
+    schema1:orderNumber "ORD-482408"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "Per Game Toy"^^xsd:string ;
+    schema1:paymentMethod ex:person_16_account_2 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 1234.12 .
+
+ex:person_17_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-4217661"^^xsd:string ;
+    schema1:customer ex:person_17 ;
+    schema1:orderDate "2025-09-10"^^xsd:date ;
+    schema1:orderNumber "INV-499693"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "Car Charge Healt"^^xsd:string ;
+    schema1:paymentMethod ex:person_17_account_1 ;
+    schema1:seller ex:org_7 ;
+    schema1:totalPaymentDue 432.1 .
+
+ex:person_17_account_2_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-3114919"^^xsd:string ;
+    schema1:customer ex:person_17 ;
+    schema1:orderDate "2025-06-03"^^xsd:date ;
+    schema1:orderNumber "PO-431148"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Medical Discuss Office Supplie"^^xsd:string,
+        "West Size Book"^^xsd:string ;
+    schema1:paymentMethod ex:person_17_account_2 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 1368.89 .
+
+ex:person_18_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_18 ;
+    schema1:orderDate "2025-07-03"^^xsd:date ;
+    schema1:orderNumber "INV-971593"^^xsd:string ;
+    schema1:orderStatus "OrderPickupAvailable"^^xsd:string ;
+    schema1:orderedItem "Safe Conference Office Supplie"^^xsd:string ;
+    schema1:paymentMethod ex:person_18_account_1 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 2275.07 .
+
+ex:person_19_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_19 ;
+    schema1:orderDate "2025-03-06"^^xsd:date ;
+    schema1:orderNumber "ORD-778586"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Final Son Office Supplie"^^xsd:string,
+        "Until Particularly Automotiv"^^xsd:string ;
+    schema1:paymentMethod ex:person_19_account_1 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 799.87 .
+
+ex:person_19_account_1_order_2 a schema1:Order ;
+    schema1:customer ex:person_19 ;
+    schema1:orderDate "2025-07-08"^^xsd:date ;
+    schema1:orderNumber "PO-530861"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Hope Weight Book"^^xsd:string,
+        "Process Must Book"^^xsd:string,
+        "Success Language Sports Equipmen"^^xsd:string ;
+    schema1:paymentMethod ex:person_19_account_1 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 130.13 .
+
+ex:person_19_account_1_order_3 a schema1:Order ;
+    schema1:confirmationNumber "CONF-5525090"^^xsd:string ;
+    schema1:customer ex:person_19 ;
+    schema1:orderDate "2025-01-15"^^xsd:date ;
+    schema1:orderNumber "PO-734203"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Toward Health Home & Garde"^^xsd:string ;
+    schema1:paymentMethod ex:person_19_account_1 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 928.85 .
+
+ex:person_19_account_2_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-5103845"^^xsd:string ;
+    schema1:customer ex:person_19 ;
+    schema1:orderDate "2025-08-08"^^xsd:date ;
+    schema1:orderNumber "INV-528296"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Fall Realize Toy"^^xsd:string,
+        "Shake Must Clothin"^^xsd:string,
+        "Then East Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_19_account_2 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 993.05 .
+
+ex:person_19_account_2_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-4375254"^^xsd:string ;
+    schema1:customer ex:person_19 ;
+    schema1:orderDate "2025-11-13"^^xsd:date ;
+    schema1:orderNumber "ORD-965625"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Family Mind Electronic"^^xsd:string,
+        "Now Democrat Pet Supplie"^^xsd:string,
+        "Whose Player Jewelr"^^xsd:string ;
+    schema1:paymentMethod ex:person_19_account_2 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 2085.75 .
+
+ex:person_1_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-1816748"^^xsd:string ;
+    schema1:customer ex:person_1 ;
+    schema1:orderDate "2025-06-22"^^xsd:date ;
+    schema1:orderNumber "ORD-289751"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Machine College Pet Supplie"^^xsd:string ;
+    schema1:paymentMethod ex:person_1_account_1 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 680.21 .
+
+ex:person_1_account_1_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-5490258"^^xsd:string ;
+    schema1:customer ex:person_1 ;
+    schema1:orderDate "2025-10-31"^^xsd:date ;
+    schema1:orderNumber "PO-763052"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Product Check Food & Beverage"^^xsd:string ;
+    schema1:paymentMethod ex:person_1_account_1 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 1446.48 .
+
+ex:person_1_account_1_order_3 a schema1:Order ;
+    schema1:confirmationNumber "CONF-8809012"^^xsd:string ;
+    schema1:customer ex:person_1 ;
+    schema1:orderDate "2025-02-24"^^xsd:date ;
+    schema1:orderNumber "ORD-495654"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Consider Already Book"^^xsd:string,
+        "Democratic Mother Pet Supplie"^^xsd:string,
+        "Pressure Fire Office Supplie"^^xsd:string ;
+    schema1:paymentMethod ex:person_1_account_1 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 1035.92 .
+
+ex:person_20_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-1932949"^^xsd:string ;
+    schema1:customer ex:person_20 ;
+    schema1:orderDate "2025-03-07"^^xsd:date ;
+    schema1:orderNumber "ORD-293615"^^xsd:string ;
+    schema1:orderStatus "OrderPickupAvailable"^^xsd:string ;
+    schema1:orderedItem "Attack Front Book"^^xsd:string,
+        "End Finally Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_20_account_1 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 769.92 .
+
+ex:person_20_account_2_order_1 a schema1:Order ;
+    schema1:customer ex:person_20 ;
+    schema1:orderDate "2025-11-21"^^xsd:date ;
+    schema1:orderNumber "PO-764598"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Family Later Beauty Product"^^xsd:string,
+        "Generation Become Book"^^xsd:string,
+        "Reach Enjoy Home & Garde"^^xsd:string ;
+    schema1:paymentMethod ex:person_20_account_2 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 2256.21 .
+
+ex:person_20_account_2_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-5501290"^^xsd:string ;
+    schema1:customer ex:person_20 ;
+    schema1:orderDate "2025-07-11"^^xsd:date ;
+    schema1:orderNumber "PO-629011"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Finish Fall Toy"^^xsd:string,
+        "Late Free Automotiv"^^xsd:string ;
+    schema1:paymentMethod ex:person_20_account_2 ;
+    schema1:seller ex:org_7 ;
+    schema1:totalPaymentDue 1481.67 .
+
+ex:person_21_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_21 ;
+    schema1:orderDate "2025-04-09"^^xsd:date ;
+    schema1:orderNumber "PO-923586"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "New Time Automotiv"^^xsd:string,
+        "Run Recognize Clothin"^^xsd:string,
+        "Score Her Food & Beverage"^^xsd:string ;
+    schema1:paymentMethod ex:person_21_account_1 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 1563.98 .
+
+ex:person_22_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_22 ;
+    schema1:orderDate "2025-03-17"^^xsd:date ;
+    schema1:orderNumber "ORD-553680"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Leader After Food & Beverage"^^xsd:string ;
+    schema1:paymentMethod ex:person_22_account_1 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 1528.41 .
+
+ex:person_22_account_1_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-8101901"^^xsd:string ;
+    schema1:customer ex:person_22 ;
+    schema1:orderDate "2025-12-03"^^xsd:date ;
+    schema1:orderNumber "PO-324089"^^xsd:string ;
+    schema1:orderStatus "OrderPickupAvailable"^^xsd:string ;
+    schema1:orderedItem "Full Lead Electronic"^^xsd:string,
+        "Song Answer Pet Supplie"^^xsd:string ;
+    schema1:paymentMethod ex:person_22_account_1 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 111.22 .
+
+ex:person_22_account_1_order_3 a schema1:Order ;
+    schema1:customer ex:person_22 ;
+    schema1:orderDate "2025-11-13"^^xsd:date ;
+    schema1:orderNumber "INV-382426"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Or Federal Electronic"^^xsd:string,
+        "Our Discussion Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_22_account_1 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 2173.11 .
+
+ex:person_23_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-9994409"^^xsd:string ;
+    schema1:customer ex:person_23 ;
+    schema1:orderDate "2025-07-04"^^xsd:date ;
+    schema1:orderNumber "INV-203145"^^xsd:string ;
+    schema1:orderStatus "OrderPickupAvailable"^^xsd:string ;
+    schema1:orderedItem "Dog Oil Food & Beverage"^^xsd:string,
+        "Newspaper Job Clothin"^^xsd:string,
+        "Trouble At Home & Garde"^^xsd:string ;
+    schema1:paymentMethod ex:person_23_account_1 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 1289.71 .
+
+ex:person_23_account_1_order_2 a schema1:Order ;
+    schema1:customer ex:person_23 ;
+    schema1:orderDate "2025-03-11"^^xsd:date ;
+    schema1:orderNumber "PO-664027"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Today Pattern Office Supplie"^^xsd:string ;
+    schema1:paymentMethod ex:person_23_account_1 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 577.3 .
+
+ex:person_23_account_1_order_3 a schema1:Order ;
+    schema1:customer ex:person_23 ;
+    schema1:orderDate "2025-07-04"^^xsd:date ;
+    schema1:orderNumber "ORD-888781"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Bed Then Food & Beverage"^^xsd:string,
+        "Small Green Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_23_account_1 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 1996.44 .
+
+ex:person_24_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-3569089"^^xsd:string ;
+    schema1:customer ex:person_24 ;
+    schema1:orderDate "2025-12-28"^^xsd:date ;
+    schema1:orderNumber "INV-785579"^^xsd:string ;
+    schema1:orderStatus "OrderPickupAvailable"^^xsd:string ;
+    schema1:orderedItem "Forget Week Beauty Product"^^xsd:string,
+        "Range Ball Jewelr"^^xsd:string ;
+    schema1:paymentMethod ex:person_24_account_1 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 288.22 .
+
+ex:person_24_account_1_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-6222136"^^xsd:string ;
+    schema1:customer ex:person_24 ;
+    schema1:orderDate "2025-11-20"^^xsd:date ;
+    schema1:orderNumber "INV-429863"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Economic Would Home & Garde"^^xsd:string,
+        "Suffer These Home & Garde"^^xsd:string,
+        "Understand Former Jewelr"^^xsd:string ;
+    schema1:paymentMethod ex:person_24_account_1 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 2433.62 .
+
+ex:person_24_account_2_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-6475698"^^xsd:string ;
+    schema1:customer ex:person_24 ;
+    schema1:orderDate "2025-09-28"^^xsd:date ;
+    schema1:orderNumber "INV-194883"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "His Child Electronic"^^xsd:string ;
+    schema1:paymentMethod ex:person_24_account_2 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 1492.26 .
+
+ex:person_24_account_2_order_2 a schema1:Order ;
+    schema1:customer ex:person_24 ;
+    schema1:orderDate "2025-09-14"^^xsd:date ;
+    schema1:orderNumber "PO-757657"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Road Never Toy"^^xsd:string,
+        "Why Including Toy"^^xsd:string ;
+    schema1:paymentMethod ex:person_24_account_2 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 795.93 .
+
+ex:person_24_account_2_order_3 a schema1:Order ;
+    schema1:confirmationNumber "CONF-9327980"^^xsd:string ;
+    schema1:customer ex:person_24 ;
+    schema1:orderDate "2025-09-02"^^xsd:date ;
+    schema1:orderNumber "PO-817205"^^xsd:string ;
+    schema1:orderStatus "OrderProcessing"^^xsd:string ;
+    schema1:orderedItem "Place Really Book"^^xsd:string ;
+    schema1:paymentMethod ex:person_24_account_2 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 1852.24 .
+
+ex:person_25_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_25 ;
+    schema1:orderDate "2025-10-31"^^xsd:date ;
+    schema1:orderNumber "INV-539862"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Mention Color Food & Beverage"^^xsd:string,
+        "Three Late Automotiv"^^xsd:string ;
+    schema1:paymentMethod ex:person_25_account_1 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 1655.09 .
+
+ex:person_2_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_2 ;
+    schema1:orderDate "2025-07-23"^^xsd:date ;
+    schema1:orderNumber "PO-325878"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Body Energy Pet Supplie"^^xsd:string,
+        "Either Agree Food & Beverage"^^xsd:string ;
+    schema1:paymentMethod ex:person_2_account_1 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 1749.27 .
+
+ex:person_3_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-9277443"^^xsd:string ;
+    schema1:customer ex:person_3 ;
+    schema1:orderDate "2025-05-08"^^xsd:date ;
+    schema1:orderNumber "ORD-607022"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Base Agreement Beauty Product"^^xsd:string,
+        "Budget Myself Healt"^^xsd:string,
+        "Stop According Beauty Product"^^xsd:string ;
+    schema1:paymentMethod ex:person_3_account_1 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 654.29 .
+
+ex:person_4_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-1945976"^^xsd:string ;
+    schema1:customer ex:person_4 ;
+    schema1:orderDate "2025-01-31"^^xsd:date ;
+    schema1:orderNumber "PO-723905"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Election Range Pet Supplie"^^xsd:string,
+        "Station Example Electronic"^^xsd:string,
+        "Year Knowledge Food & Beverage"^^xsd:string ;
+    schema1:paymentMethod ex:person_4_account_1 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 915.63 .
+
+ex:person_4_account_2_order_1 a schema1:Order ;
+    schema1:customer ex:person_4 ;
+    schema1:orderDate "2025-03-29"^^xsd:date ;
+    schema1:orderNumber "PO-544171"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "Respond Fish Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_4_account_2 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 2392.5 .
+
+ex:person_4_account_2_order_2 a schema1:Order ;
+    schema1:customer ex:person_4 ;
+    schema1:orderDate "2025-03-30"^^xsd:date ;
+    schema1:orderNumber "INV-132964"^^xsd:string ;
+    schema1:orderStatus "OrderProblem"^^xsd:string ;
+    schema1:orderedItem "Action Land Jewelr"^^xsd:string,
+        "Himself Realize Automotiv"^^xsd:string ;
+    schema1:paymentMethod ex:person_4_account_2 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 1648.01 .
+
+ex:person_4_account_2_order_3 a schema1:Order ;
+    schema1:confirmationNumber "CONF-1905692"^^xsd:string ;
+    schema1:customer ex:person_4 ;
+    schema1:orderDate "2025-10-19"^^xsd:date ;
+    schema1:orderNumber "INV-788096"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Doctor Congress Automotiv"^^xsd:string ;
+    schema1:paymentMethod ex:person_4_account_2 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 1743.24 .
+
+ex:person_5_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-3400972"^^xsd:string ;
+    schema1:customer ex:person_5 ;
+    schema1:orderDate "2025-04-29"^^xsd:date ;
+    schema1:orderNumber "INV-213283"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "I Everything Toy"^^xsd:string,
+        "Until Bit Beauty Product"^^xsd:string,
+        "Yourself Special Automotiv"^^xsd:string ;
+    schema1:paymentMethod ex:person_5_account_1 ;
+    schema1:seller ex:org_3 ;
+    schema1:totalPaymentDue 1249.66 .
+
+ex:person_5_account_2_order_1 a schema1:Order ;
+    schema1:customer ex:person_5 ;
+    schema1:orderDate "2025-09-12"^^xsd:date ;
+    schema1:orderNumber "INV-552977"^^xsd:string ;
+    schema1:orderStatus "OrderProcessing"^^xsd:string ;
+    schema1:orderedItem "Individual Member Healt"^^xsd:string ;
+    schema1:paymentMethod ex:person_5_account_2 ;
+    schema1:seller ex:org_4 ;
+    schema1:totalPaymentDue 585.48 .
+
+ex:person_6_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-1611726"^^xsd:string ;
+    schema1:customer ex:person_6 ;
+    schema1:orderDate "2025-04-30"^^xsd:date ;
+    schema1:orderNumber "ORD-751946"^^xsd:string ;
+    schema1:orderStatus "OrderInTransit"^^xsd:string ;
+    schema1:orderedItem "Someone Until Pet Supplie"^^xsd:string,
+        "Suddenly Power Automotiv"^^xsd:string,
+        "View Shake Home & Garde"^^xsd:string ;
+    schema1:paymentMethod ex:person_6_account_1 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 962.45 .
+
+ex:person_6_account_1_order_2 a schema1:Order ;
+    schema1:customer ex:person_6 ;
+    schema1:orderDate "2025-07-15"^^xsd:date ;
+    schema1:orderNumber "PO-837006"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Trade Exactly Food & Beverage"^^xsd:string ;
+    schema1:paymentMethod ex:person_6_account_1 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 1887.68 .
+
+ex:person_7_account_1_order_1 a schema1:Order ;
+    schema1:customer ex:person_7 ;
+    schema1:orderDate "2025-07-21"^^xsd:date ;
+    schema1:orderNumber "ORD-159804"^^xsd:string ;
+    schema1:orderStatus "OrderPickupAvailable"^^xsd:string ;
+    schema1:orderedItem "Fly Become Healt"^^xsd:string,
+        "If Two Jewelr"^^xsd:string,
+        "They Player Book"^^xsd:string ;
+    schema1:paymentMethod ex:person_7_account_1 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 581.53 .
+
+ex:person_7_account_1_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-8657915"^^xsd:string ;
+    schema1:customer ex:person_7 ;
+    schema1:orderDate "2025-12-17"^^xsd:date ;
+    schema1:orderNumber "ORD-677966"^^xsd:string ;
+    schema1:orderStatus "OrderReturned"^^xsd:string ;
+    schema1:orderedItem "Any Approach Food & Beverage"^^xsd:string,
+        "Human Fight Electronic"^^xsd:string,
+        "Run Truth Office Supplie"^^xsd:string ;
+    schema1:paymentMethod ex:person_7_account_1 ;
+    schema1:seller ex:org_7 ;
+    schema1:totalPaymentDue 1583.04 .
+
+ex:person_7_account_1_order_3 a schema1:Order ;
+    schema1:confirmationNumber "CONF-3178375"^^xsd:string ;
+    schema1:customer ex:person_7 ;
+    schema1:orderDate "2025-11-15"^^xsd:date ;
+    schema1:orderNumber "INV-275129"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Food North Jewelr"^^xsd:string,
+        "Mrs Herself Toy"^^xsd:string ;
+    schema1:paymentMethod ex:person_7_account_1 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 496.72 .
+
+ex:person_7_account_2_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-3776178"^^xsd:string ;
+    schema1:customer ex:person_7 ;
+    schema1:orderDate "2025-01-15"^^xsd:date ;
+    schema1:orderNumber "PO-546569"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "Everything Even Clothin"^^xsd:string,
+        "Treat Financial Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_7_account_2 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 872.93 .
+
+ex:person_7_account_2_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-4071573"^^xsd:string ;
+    schema1:customer ex:person_7 ;
+    schema1:orderDate "2025-11-29"^^xsd:date ;
+    schema1:orderNumber "PO-863271"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Everything Coach Sports Equipmen"^^xsd:string ;
+    schema1:paymentMethod ex:person_7_account_2 ;
+    schema1:seller ex:org_2 ;
+    schema1:totalPaymentDue 838.86 .
+
+ex:person_8_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-9835833"^^xsd:string ;
+    schema1:customer ex:person_8 ;
+    schema1:orderDate "2025-03-19"^^xsd:date ;
+    schema1:orderNumber "PO-207556"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "Beat Movement Office Supplie"^^xsd:string ;
+    schema1:paymentMethod ex:person_8_account_1 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 2422.88 .
+
+ex:person_8_account_1_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-4745013"^^xsd:string ;
+    schema1:customer ex:person_8 ;
+    schema1:orderDate "2025-11-17"^^xsd:date ;
+    schema1:orderNumber "ORD-354224"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Official Level Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_8_account_1 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 2423.3 .
+
+ex:person_8_account_2_order_1 a schema1:Order ;
+    schema1:customer ex:person_8 ;
+    schema1:orderDate "2025-07-02"^^xsd:date ;
+    schema1:orderNumber "INV-733449"^^xsd:string ;
+    schema1:orderStatus "OrderProcessing"^^xsd:string ;
+    schema1:orderedItem "Image Southern Beauty Product"^^xsd:string,
+        "Land Director Automotiv"^^xsd:string,
+        "Later Us Automotiv"^^xsd:string ;
+    schema1:paymentMethod ex:person_8_account_2 ;
+    schema1:seller ex:org_6 ;
+    schema1:totalPaymentDue 618.54 .
+
+ex:person_8_account_2_order_2 a schema1:Order ;
+    schema1:confirmationNumber "CONF-5130975"^^xsd:string ;
+    schema1:customer ex:person_8 ;
+    schema1:orderDate "2025-06-28"^^xsd:date ;
+    schema1:orderNumber "INV-316986"^^xsd:string ;
+    schema1:orderStatus "OrderPickupAvailable"^^xsd:string ;
+    schema1:orderedItem "Wind Office Clothin"^^xsd:string ;
+    schema1:paymentMethod ex:person_8_account_2 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 359.58 .
+
+ex:person_9_account_1_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-8771421"^^xsd:string ;
+    schema1:customer ex:person_9 ;
+    schema1:orderDate "2025-01-22"^^xsd:date ;
+    schema1:orderNumber "INV-958175"^^xsd:string ;
+    schema1:orderStatus "OrderDelivered"^^xsd:string ;
+    schema1:orderedItem "Identify Radio Toy"^^xsd:string,
+        "Talk Reason Automotiv"^^xsd:string,
+        "Tax Open Office Supplie"^^xsd:string ;
+    schema1:paymentMethod ex:person_9_account_1 ;
+    schema1:seller ex:org_1 ;
+    schema1:totalPaymentDue 148.31 .
+
+ex:person_9_account_2_order_1 a schema1:Order ;
+    schema1:confirmationNumber "CONF-4816236"^^xsd:string ;
+    schema1:customer ex:person_9 ;
+    schema1:orderDate "2025-11-17"^^xsd:date ;
+    schema1:orderNumber "INV-406655"^^xsd:string ;
+    schema1:orderStatus "OrderCancelled"^^xsd:string ;
+    schema1:orderedItem "Interest Seek Book"^^xsd:string ;
+    schema1:paymentMethod ex:person_9_account_2 ;
+    schema1:seller ex:org_5 ;
+    schema1:totalPaymentDue 1310.4 .
+
+ex:person_12_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_12 ;
+    schema1:accountId "137615845879"^^xsd:string ;
+    schema1:accountMinimumInflow 30095.84 ;
+    schema1:bankAccountType "Savings Account"^^xsd:string ;
+    schema1:identifier "6ccf8167-234f-45a6-a020-49ddda07e75d"^^xsd:string ;
+    schema1:name "Emergency Fund Account"^^xsd:string ;
+    schema1:servicer "KeyBank"^^xsd:string .
+
+ex:person_14_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_14 ;
+    schema1:accountId "908853659930"^^xsd:string ;
+    schema1:accountMinimumInflow 203522.07 ;
+    schema1:bankAccountType "Savings Account"^^xsd:string ;
+    schema1:identifier "cab04216-193f-42ed-b64c-0ad3ef6162af"^^xsd:string ;
+    schema1:name "Savings Account"^^xsd:string ;
+    schema1:servicer "KeyBank"^^xsd:string .
+
+ex:person_15_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_15 ;
+    schema1:accountId "293652635518"^^xsd:string ;
+    schema1:accountMinimumInflow 54322.13 ;
+    schema1:bankAccountType "Joint Account"^^xsd:string ;
+    schema1:identifier "2d35049f-4779-4657-82de-4b658a2603ac"^^xsd:string ;
+    schema1:name "Primary Account"^^xsd:string ;
+    schema1:servicer "Wells Fargo"^^xsd:string .
+
+ex:person_16_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_16 ;
+    schema1:accountId "906903829907"^^xsd:string ;
+    schema1:accountMinimumInflow 65.47 ;
+    schema1:bankAccountType "Individual Retirement Account"^^xsd:string ;
+    schema1:identifier "9097859d-b416-4aa9-b6b0-23865dac74e0"^^xsd:string ;
+    schema1:name "Emergency Fund Account"^^xsd:string ;
+    schema1:servicer "SunTrust Bank"^^xsd:string .
+
+ex:person_17_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_17 ;
+    schema1:accountId "553543214665"^^xsd:string ;
+    schema1:accountMinimumInflow 41720.11 ;
+    schema1:bankAccountType "Business Savings"^^xsd:string ;
+    schema1:identifier "40b7d855-fe28-4497-b231-1945e76dc562"^^xsd:string ;
+    schema1:name "Emergency Fund Account"^^xsd:string ;
+    schema1:servicer "Chase Bank"^^xsd:string .
+
+ex:person_17_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_17 ;
+    schema1:accountId "759792215434"^^xsd:string ;
+    schema1:accountMinimumInflow 467283.33 ;
+    schema1:bankAccountType "Joint Account"^^xsd:string ;
+    schema1:identifier "6727aa76-aec0-4954-a7fc-a3a277b6b069"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "Regions Bank"^^xsd:string .
+
+ex:person_18_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_18 ;
+    schema1:accountId "918779347947"^^xsd:string ;
+    schema1:accountMinimumInflow 52538.11 ;
+    schema1:bankAccountType "Money Market Account"^^xsd:string ;
+    schema1:identifier "f2dd39db-0fe6-46cd-84a1-55fbaa60d693"^^xsd:string ;
+    schema1:name "Secondary Account"^^xsd:string ;
+    schema1:servicer "Capital One"^^xsd:string .
+
+ex:person_20_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_20 ;
+    schema1:accountId "917773469678"^^xsd:string ;
+    schema1:accountMinimumInflow 80304.95 ;
+    schema1:bankAccountType "Certificate of Deposit"^^xsd:string ;
+    schema1:identifier "ff38c109-9006-43af-94eb-a0a23378073d"^^xsd:string ;
+    schema1:name "Secondary Account"^^xsd:string ;
+    schema1:servicer "Regions Bank"^^xsd:string .
+
+ex:person_21_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_21 ;
+    schema1:accountId "518680390146"^^xsd:string ;
+    schema1:accountMinimumInflow 7896.34 ;
+    schema1:bankAccountType "Business Savings"^^xsd:string ;
+    schema1:identifier "92790e56-8e31-4eeb-895d-92716a066660"^^xsd:string ;
+    schema1:name "Secondary Account"^^xsd:string ;
+    schema1:servicer "Citibank"^^xsd:string .
+
+ex:person_25_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_25 ;
+    schema1:accountId "695938709451"^^xsd:string ;
+    schema1:accountMinimumInflow 879.8 ;
+    schema1:bankAccountType "Joint Account"^^xsd:string ;
+    schema1:identifier "d7f7c46f-20e9-4415-91d6-0be5f56def40"^^xsd:string ;
+    schema1:name "Secondary Account"^^xsd:string ;
+    schema1:servicer "Capital One"^^xsd:string .
+
+ex:person_2_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_2 ;
+    schema1:accountId "920284246581"^^xsd:string ;
+    schema1:accountMinimumInflow 136541.41 ;
+    schema1:bankAccountType "Certificate of Deposit"^^xsd:string ;
+    schema1:identifier "b6191dba-5686-44f6-a5e6-f137639b93ab"^^xsd:string ;
+    schema1:name "Savings Account"^^xsd:string ;
+    schema1:servicer "Bank of America"^^xsd:string .
+
+ex:person_3_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_3 ;
+    schema1:accountId "513161139593"^^xsd:string ;
+    schema1:accountMinimumInflow 99553.0 ;
+    schema1:bankAccountType "Joint Account"^^xsd:string ;
+    schema1:identifier "dca5478b-41a6-4b97-8523-8c01c1f5e028"^^xsd:string ;
+    schema1:name "Secondary Account"^^xsd:string ;
+    schema1:servicer "PNC Bank"^^xsd:string .
+
+ex:person_4_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_4 ;
+    schema1:accountId "492454739180"^^xsd:string ;
+    schema1:accountMinimumInflow 33065.29 ;
+    schema1:bankAccountType "Savings Account"^^xsd:string ;
+    schema1:identifier "eff59bbe-ca50-4cf7-929c-67870cfcb277"^^xsd:string ;
+    schema1:name "Emergency Fund Account"^^xsd:string ;
+    schema1:servicer "TD Bank"^^xsd:string .
+
+ex:person_5_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_5 ;
+    schema1:accountId "669631910028"^^xsd:string ;
+    schema1:accountMinimumInflow 9267.37 ;
+    schema1:bankAccountType "Business Checking"^^xsd:string ;
+    schema1:identifier "16f6d771-2ae0-4f4f-af06-84a2c75e5444"^^xsd:string ;
+    schema1:name "Savings Account"^^xsd:string ;
+    schema1:servicer "Wells Fargo"^^xsd:string .
+
+ex:person_5_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_5 ;
+    schema1:accountId "588388894678"^^xsd:string ;
+    schema1:accountMinimumInflow 6747.58 ;
+    schema1:bankAccountType "Savings Account"^^xsd:string ;
+    schema1:identifier "3ccbbf09-ffbf-45be-9463-e232d23c06ec"^^xsd:string ;
+    schema1:name "Secondary Account"^^xsd:string ;
+    schema1:servicer "Regions Bank"^^xsd:string .
+
+ex:person_9_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_9 ;
+    schema1:accountId "513063652385"^^xsd:string ;
+    schema1:accountMinimumInflow 7481.79 ;
+    schema1:bankAccountType "Certificate of Deposit"^^xsd:string ;
+    schema1:identifier "17f1ebb6-5d31-453e-85c3-9f392068f526"^^xsd:string ;
+    schema1:name "Savings Account"^^xsd:string ;
+    schema1:servicer "HSBC Bank"^^xsd:string .
+
+ex:person_9_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_9 ;
+    schema1:accountId "68187437506"^^xsd:string ;
+    schema1:accountMinimumInflow 823.56 ;
+    schema1:bankAccountType "Joint Account"^^xsd:string ;
+    schema1:identifier "c39373a4-b501-4d54-a37b-abd5aaf31703"^^xsd:string ;
+    schema1:name "Emergency Fund Account"^^xsd:string ;
+    schema1:servicer "Citibank"^^xsd:string .
+
+ex:person_10_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_10 ;
+    schema1:accountId "841173737589"^^xsd:string ;
+    schema1:accountMinimumInflow 4260.5 ;
+    schema1:bankAccountType "Savings Account"^^xsd:string ;
+    schema1:identifier "addf748b-eb04-4a4a-8d95-cb077c119b24"^^xsd:string ;
+    schema1:name "Savings Account"^^xsd:string ;
+    schema1:servicer "US Bank"^^xsd:string .
+
+ex:person_11_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_11 ;
+    schema1:accountId "56209910212"^^xsd:string ;
+    schema1:accountMinimumInflow 91326.37 ;
+    schema1:bankAccountType "Individual Retirement Account"^^xsd:string ;
+    schema1:identifier "26c8eb04-b0d1-415f-86c1-bd01b172b8a8"^^xsd:string ;
+    schema1:name "Savings Account"^^xsd:string ;
+    schema1:servicer "TD Bank"^^xsd:string .
+
+ex:person_14 a schema1:Person ;
+    schema1:email "perryfrank@example.net"^^xsd:string ;
+    schema1:familyName "Harris"^^xsd:string ;
+    schema1:givenName "Jose"^^xsd:string ;
+    schema1:identifier "742-17-4495"^^xsd:string ;
+    schema1:name "Jose Harris"^^xsd:string .
+
+ex:person_15_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_15 ;
+    schema1:accountId "672246365451"^^xsd:string ;
+    schema1:accountMinimumInflow 44.93 ;
+    schema1:bankAccountType "Savings Account"^^xsd:string ;
+    schema1:identifier "250c98fa-5b99-4ec1-8265-59b9aad71a8c"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "Bank of America"^^xsd:string .
+
+ex:person_16_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_16 ;
+    schema1:accountId "580416726278"^^xsd:string ;
+    schema1:accountMinimumInflow 142386.37 ;
+    schema1:bankAccountType "Certificate of Deposit"^^xsd:string ;
+    schema1:identifier "962c6808-267f-4685-8d87-64e14d14e928"^^xsd:string ;
+    schema1:name "Primary Account"^^xsd:string ;
+    schema1:servicer "Santander Bank"^^xsd:string .
+
+ex:person_18 a schema1:Person ;
+    schema1:email "isaac22@example.org"^^xsd:string ;
+    schema1:familyName "Watts"^^xsd:string ;
+    schema1:givenName "Mallory"^^xsd:string ;
+    schema1:identifier "664-71-9248"^^xsd:string ;
+    schema1:name "Mallory Watts"^^xsd:string .
+
+ex:person_19_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_19 ;
+    schema1:accountId "832683919747"^^xsd:string ;
+    schema1:accountMinimumInflow 49700.84 ;
+    schema1:bankAccountType "Business Savings"^^xsd:string ;
+    schema1:identifier "b9b6455d-5e4b-45cb-8efe-c1269ecd3ebc"^^xsd:string ;
+    schema1:name "Secondary Account"^^xsd:string ;
+    schema1:servicer "HSBC Bank"^^xsd:string .
+
+ex:person_2 a schema1:Person ;
+    schema1:email "cpeters@example.net"^^xsd:string ;
+    schema1:familyName "Gutierrez"^^xsd:string ;
+    schema1:givenName "John"^^xsd:string ;
+    schema1:identifier "373-39-1591"^^xsd:string ;
+    schema1:name "John Gutierrez"^^xsd:string .
+
+ex:person_20_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_20 ;
+    schema1:accountId "558557447473"^^xsd:string ;
+    schema1:accountMinimumInflow 55933.94 ;
+    schema1:bankAccountType "Joint Account"^^xsd:string ;
+    schema1:identifier "60466fd2-8c5b-4dd8-940b-53077b1ce2ed"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "US Bank"^^xsd:string .
+
+ex:person_21 a schema1:Person ;
+    schema1:email "fitzpatricklori@example.org"^^xsd:string ;
+    schema1:familyName "Newman"^^xsd:string ;
+    schema1:givenName "William"^^xsd:string ;
+    schema1:identifier "578-58-7911"^^xsd:string ;
+    schema1:name "William Newman"^^xsd:string .
+
+ex:person_24_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_24 ;
+    schema1:accountId "105171212477"^^xsd:string ;
+    schema1:accountMinimumInflow 20896.68 ;
+    schema1:bankAccountType "Joint Account"^^xsd:string ;
+    schema1:identifier "e89df37b-df55-4ecd-b3d7-4138763d0a7a"^^xsd:string ;
+    schema1:name "Primary Account"^^xsd:string ;
+    schema1:servicer "SunTrust Bank"^^xsd:string .
+
+ex:person_25 a schema1:Person ;
+    schema1:email "eirwin@example.org"^^xsd:string ;
+    schema1:familyName "Vincent"^^xsd:string ;
+    schema1:givenName "Tonya"^^xsd:string ;
+    schema1:identifier "913-87-3534"^^xsd:string ;
+    schema1:name "Tonya Vincent"^^xsd:string .
+
+ex:person_3 a schema1:Person ;
+    schema1:email "katherine64@example.org"^^xsd:string ;
+    schema1:familyName "Bishop"^^xsd:string ;
+    schema1:givenName "Brenda"^^xsd:string ;
+    schema1:identifier "227-44-2327"^^xsd:string ;
+    schema1:name "Brenda Bishop"^^xsd:string .
+
+ex:person_6_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_6 ;
+    schema1:accountId "326464642465"^^xsd:string ;
+    schema1:accountMinimumInflow 47632.87 ;
+    schema1:bankAccountType "Savings Account"^^xsd:string ;
+    schema1:identifier "9925898e-521d-4db7-8ad9-e4d3606c1c04"^^xsd:string ;
+    schema1:name "Emergency Fund Account"^^xsd:string ;
+    schema1:servicer "Chase Bank"^^xsd:string .
+
+ex:person_7_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_7 ;
+    schema1:accountId "925353997547"^^xsd:string ;
+    schema1:accountMinimumInflow 14060.06 ;
+    schema1:bankAccountType "Joint Account"^^xsd:string ;
+    schema1:identifier "48b6fb24-b36b-4b34-b4a8-b18d6416d75e"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "TD Bank"^^xsd:string .
+
+ex:person_8_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_8 ;
+    schema1:accountId "613625122216"^^xsd:string ;
+    schema1:accountMinimumInflow 685.98 ;
+    schema1:bankAccountType "Business Checking"^^xsd:string ;
+    schema1:identifier "7b51f741-45e4-40cc-9d73-66d9a3762c6a"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "Bank of America"^^xsd:string .
+
+ex:person_8_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_8 ;
+    schema1:accountId "93126722338"^^xsd:string ;
+    schema1:accountMinimumInflow 4075.75 ;
+    schema1:bankAccountType "Business Checking"^^xsd:string ;
+    schema1:identifier "76c60fdd-300e-4cfa-935a-005c10bbc670"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "TD Bank"^^xsd:string .
+
+ex:person_10_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_10 ;
+    schema1:accountId "195563250292"^^xsd:string ;
+    schema1:accountMinimumInflow 751941.54 ;
+    schema1:bankAccountType "Money Market Account"^^xsd:string ;
+    schema1:identifier "98fb484f-8958-40d3-a564-827e4aa8eed5"^^xsd:string ;
+    schema1:name "Emergency Fund Account"^^xsd:string ;
+    schema1:servicer "US Bank"^^xsd:string .
+
+ex:person_11 a schema1:Person ;
+    schema1:email "colekim@example.net"^^xsd:string ;
+    schema1:familyName "Cook"^^xsd:string ;
+    schema1:givenName "Nathaniel"^^xsd:string ;
+    schema1:identifier "249-83-1951"^^xsd:string ;
+    schema1:name "Nathaniel Cook"^^xsd:string .
+
+ex:person_12_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_12 ;
+    schema1:accountId "469105130606"^^xsd:string ;
+    schema1:accountMinimumInflow 63.21 ;
+    schema1:bankAccountType "Business Checking"^^xsd:string ;
+    schema1:identifier "1429c569-ce28-432c-8ca0-8f10b18de157"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "Regions Bank"^^xsd:string .
+
+ex:person_13_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_13 ;
+    schema1:accountId "281430418033"^^xsd:string ;
+    schema1:accountMinimumInflow 6619.46 ;
+    schema1:bankAccountType "Business Checking"^^xsd:string ;
+    schema1:identifier "93a55115-5889-4140-9030-cef0f9934cb1"^^xsd:string ;
+    schema1:name "Primary Account"^^xsd:string ;
+    schema1:servicer "Regions Bank"^^xsd:string .
+
+ex:person_13_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_13 ;
+    schema1:accountId "20687751377"^^xsd:string ;
+    schema1:accountMinimumInflow 237.9 ;
+    schema1:bankAccountType "Certificate of Deposit"^^xsd:string ;
+    schema1:identifier "a2b3e0e1-778b-4205-91e7-e649d619e169"^^xsd:string ;
+    schema1:name "Secondary Account"^^xsd:string ;
+    schema1:servicer "SunTrust Bank"^^xsd:string .
+
+ex:person_19_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_19 ;
+    schema1:accountId "750207125953"^^xsd:string ;
+    schema1:accountMinimumInflow 55945.29 ;
+    schema1:bankAccountType "Certificate of Deposit"^^xsd:string ;
+    schema1:identifier "ef229579-dbec-4cb3-95bd-ff4614578290"^^xsd:string ;
+    schema1:name "Primary Account"^^xsd:string ;
+    schema1:servicer "US Bank"^^xsd:string .
+
+ex:person_1_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_1 ;
+    schema1:accountId "947079650243"^^xsd:string ;
+    schema1:accountMinimumInflow 4303.35 ;
+    schema1:bankAccountType "Savings Account"^^xsd:string ;
+    schema1:identifier "27daf649-bfa5-4204-b367-744db4081daf"^^xsd:string ;
+    schema1:name "Savings Account"^^xsd:string ;
+    schema1:servicer "Capital One"^^xsd:string .
+
+ex:person_22_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_22 ;
+    schema1:accountId "835613545382"^^xsd:string ;
+    schema1:accountMinimumInflow 17289.59 ;
+    schema1:bankAccountType "Individual Retirement Account"^^xsd:string ;
+    schema1:identifier "a1e9a11d-26df-4517-9c04-b2099049e5c8"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "Citibank"^^xsd:string .
+
+ex:person_23_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_23 ;
+    schema1:accountId "727554787457"^^xsd:string ;
+    schema1:accountMinimumInflow 677.82 ;
+    schema1:bankAccountType "Joint Account"^^xsd:string ;
+    schema1:identifier "cfeac087-790f-404e-b6f0-64194a2c817d"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "Capital One"^^xsd:string .
+
+ex:person_24_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_24 ;
+    schema1:accountId "978519815946"^^xsd:string ;
+    schema1:accountMinimumInflow 5192.57 ;
+    schema1:bankAccountType "Individual Retirement Account"^^xsd:string ;
+    schema1:identifier "45fcc892-b39c-414a-8314-df97162c6405"^^xsd:string ;
+    schema1:name "Business Account"^^xsd:string ;
+    schema1:servicer "Regions Bank"^^xsd:string .
+
+ex:person_4_account_2 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_4 ;
+    schema1:accountId "426516178703"^^xsd:string ;
+    schema1:accountMinimumInflow 4055.24 ;
+    schema1:bankAccountType "Checking Account"^^xsd:string ;
+    schema1:identifier "ed0833f5-882c-4c4e-a70d-0a75e72c2355"^^xsd:string ;
+    schema1:name "Emergency Fund Account"^^xsd:string ;
+    schema1:servicer "Wells Fargo"^^xsd:string .
+
+ex:person_6 a schema1:Person ;
+    schema1:email "marynelson@example.com"^^xsd:string ;
+    schema1:familyName "Colon"^^xsd:string ;
+    schema1:givenName "Brent"^^xsd:string ;
+    schema1:identifier "854-10-4487"^^xsd:string ;
+    schema1:name "Brent Colon"^^xsd:string .
+
+ex:person_7_account_1 a schema1:BankAccount ;
+    schema1:accountHolder ex:person_7 ;
+    schema1:accountId "486238071998"^^xsd:string ;
+    schema1:accountMinimumInflow 4754.95 ;
+    schema1:bankAccountType "Money Market Account"^^xsd:string ;
+    schema1:identifier "7c72ea3b-d6aa-40d8-8a07-be6f0e003342"^^xsd:string ;
+    schema1:name "Savings Account"^^xsd:string ;
+    schema1:servicer "TD Bank"^^xsd:string .
+
+ex:person_1 a schema1:Person ;
+    schema1:email "dchen@example.com"^^xsd:string ;
+    schema1:familyName "Stewart"^^xsd:string ;
+    schema1:givenName "Kevin"^^xsd:string ;
+    schema1:identifier "404-35-8335"^^xsd:string ;
+    schema1:name "Kevin Stewart"^^xsd:string .
+
+ex:person_17 a schema1:Person ;
+    schema1:email "qwright@example.org"^^xsd:string ;
+    schema1:familyName "King"^^xsd:string ;
+    schema1:givenName "Andrew"^^xsd:string ;
+    schema1:identifier "894-87-1706"^^xsd:string ;
+    schema1:name "Andrew King"^^xsd:string .
+
+ex:person_22 a schema1:Person ;
+    schema1:email "daguilar@example.org"^^xsd:string ;
+    schema1:familyName "Anderson"^^xsd:string ;
+    schema1:givenName "Megan"^^xsd:string ;
+    schema1:identifier "795-23-4376"^^xsd:string ;
+    schema1:name "Megan Anderson"^^xsd:string .
+
+ex:person_23 a schema1:Person ;
+    schema1:email "cohenjasmine@example.com"^^xsd:string ;
+    schema1:familyName "Martinez"^^xsd:string ;
+    schema1:givenName "Sydney"^^xsd:string ;
+    schema1:identifier "976-36-5449"^^xsd:string ;
+    schema1:name "Sydney Martinez"^^xsd:string .
+
+ex:person_5 a schema1:Person ;
+    schema1:email "pandersen@example.com"^^xsd:string ;
+    schema1:familyName "Mora"^^xsd:string ;
+    schema1:givenName "David"^^xsd:string ;
+    schema1:identifier "201-19-4700"^^xsd:string ;
+    schema1:name "David Mora"^^xsd:string .
+
+ex:person_9 a schema1:Person ;
+    schema1:email "suttonjennifer@example.com"^^xsd:string ;
+    schema1:familyName "Malone"^^xsd:string ;
+    schema1:givenName "Emily"^^xsd:string ;
+    schema1:identifier "329-58-6336"^^xsd:string ;
+    schema1:name "Emily Malone"^^xsd:string .
+
+ex:org_7 a schema1:Organization ;
+    schema1:description """Game these husband bill population. Indicate read detail approach their world. Clear no against election ready military.
+Wife season style. Agreement administration concern recognize less of...."""^^xsd:string ;
+    schema1:email "browngwendolyn@example.net"^^xsd:string ;
+    schema1:industry "Education"^^xsd:string ;
+    schema1:legalName "Caldwell-Davis Co."^^xsd:string ;
+    schema1:name "Wilkins-Powers"^^xsd:string ;
+    schema1:taxID "74-2842948"^^xsd:string ;
+    schema1:telephone "845.357.1609x038"^^xsd:string ;
+    schema1:url "https://michael.com/"^^xsd:anyURI .
+
+ex:person_15 a schema1:Person ;
+    schema1:email "ynash@example.org"^^xsd:string ;
+    schema1:familyName "Robertson"^^xsd:string ;
+    schema1:givenName "Sarah"^^xsd:string ;
+    schema1:identifier "325-62-7833"^^xsd:string ;
+    schema1:name "Sarah Robertson"^^xsd:string .
+
+ex:person_16 a schema1:Person ;
+    schema1:email "bcastillo@example.org"^^xsd:string ;
+    schema1:familyName "Becker"^^xsd:string ;
+    schema1:givenName "Brian"^^xsd:string ;
+    schema1:identifier "241-75-4063"^^xsd:string ;
+    schema1:name "Brian Becker"^^xsd:string .
+
+ex:person_20 a schema1:Person ;
+    schema1:email "kellyberg@example.com"^^xsd:string ;
+    schema1:familyName "Martinez"^^xsd:string ;
+    schema1:givenName "Michael"^^xsd:string ;
+    schema1:identifier "592-32-5435"^^xsd:string ;
+    schema1:name "Michael Martinez"^^xsd:string .
+
+ex:person_12 a schema1:Person ;
+    schema1:email "allenadam@example.net"^^xsd:string ;
+    schema1:familyName "Cherry"^^xsd:string ;
+    schema1:givenName "Heather"^^xsd:string ;
+    schema1:identifier "616-15-4200"^^xsd:string ;
+    schema1:name "Heather Cherry"^^xsd:string .
+
+ex:person_4 a schema1:Person ;
+    schema1:email "rosechristopher@example.org"^^xsd:string ;
+    schema1:familyName "Duncan"^^xsd:string ;
+    schema1:givenName "Jackson"^^xsd:string ;
+    schema1:identifier "575-22-3743"^^xsd:string ;
+    schema1:name "Jackson Duncan"^^xsd:string .
+
+ex:person_8 a schema1:Person ;
+    schema1:email "edwardstammy@example.net"^^xsd:string ;
+    schema1:familyName "Young"^^xsd:string ;
+    schema1:givenName "Jeffrey"^^xsd:string ;
+    schema1:identifier "781-76-6436"^^xsd:string ;
+    schema1:name "Jeffrey Young"^^xsd:string .
+
+ex:person_10 a schema1:Person ;
+    schema1:email "katherine36@example.net"^^xsd:string ;
+    schema1:familyName "Meyers"^^xsd:string ;
+    schema1:givenName "Kevin"^^xsd:string ;
+    schema1:identifier "892-62-3667"^^xsd:string ;
+    schema1:name "Kevin Meyers"^^xsd:string .
+
+ex:person_19 a schema1:Person ;
+    schema1:email "jeremy17@example.com"^^xsd:string ;
+    schema1:familyName "Burke"^^xsd:string ;
+    schema1:givenName "Kimberly"^^xsd:string ;
+    schema1:identifier "555-79-4276"^^xsd:string ;
+    schema1:name "Kimberly Burke"^^xsd:string .
+
+ex:person_24 a schema1:Person ;
+    schema1:email "justin86@example.com"^^xsd:string ;
+    schema1:familyName "Hodge"^^xsd:string ;
+    schema1:givenName "Jeremy"^^xsd:string ;
+    schema1:identifier "999-40-7674"^^xsd:string ;
+    schema1:name "Jeremy Hodge"^^xsd:string .
+
+ex:person_7 a schema1:Person ;
+    schema1:email "zavery@example.org"^^xsd:string ;
+    schema1:familyName "Young"^^xsd:string ;
+    schema1:givenName "Jennifer"^^xsd:string ;
+    schema1:identifier "145-79-2698"^^xsd:string ;
+    schema1:name "Jennifer Young"^^xsd:string .
+
+ex:person_13 a schema1:Person ;
+    schema1:email "darlenemorrow@example.com"^^xsd:string ;
+    schema1:familyName "Perry"^^xsd:string ;
+    schema1:givenName "Michael"^^xsd:string ;
+    schema1:identifier "778-79-6667"^^xsd:string ;
+    schema1:name "Michael Perry"^^xsd:string .
+
+ex:org_3 a schema1:Organization ;
+    schema1:description """Thing win piece prepare course memory. Argue nature chair current.
+Product early local newspaper decision technology. Mean recent chair evidence. Kid agreement community consumer stop here clearly...."""^^xsd:string ;
+    schema1:email "nchandler@example.com"^^xsd:string ;
+    schema1:industry "Aerospace"^^xsd:string ;
+    schema1:legalName "Pena and Sons Pty Ltd"^^xsd:string ;
+    schema1:name "Parker-Hayes"^^xsd:string ;
+    schema1:telephone "(917)951-6897x05674"^^xsd:string ;
+    schema1:url "https://www.garza.com/"^^xsd:anyURI .
+
+ex:org_6 a schema1:Organization ;
+    schema1:description "Its politics Democrat movie clear learn civil. Rich two possible site action...."^^xsd:string ;
+    schema1:email "smithjudy@example.com"^^xsd:string ;
+    schema1:industry "Telecommunications"^^xsd:string ;
+    schema1:legalName "Thomas Group S.A."^^xsd:string ;
+    schema1:name "Moore, Mason and Johnson"^^xsd:string ;
+    schema1:taxID "97-1515189"^^xsd:string ;
+    schema1:telephone "488.789.8046x8087"^^xsd:string ;
+    schema1:url "https://jones.info/"^^xsd:anyURI .
+
+ex:org_2 a schema1:Organization ;
+    schema1:description "Opportunity maintain later serious our represent would least. Fly why what middle my suggest police. Example already including rather high...."^^xsd:string ;
+    schema1:email "iramirez@example.org"^^xsd:string ;
+    schema1:industry "Aerospace"^^xsd:string ;
+    schema1:legalName "Gonzalez PLC Corp."^^xsd:string ;
+    schema1:name "Moore Group"^^xsd:string ;
+    schema1:telephone "001-349-451-1676x732"^^xsd:string ;
+    schema1:url "http://www.williams.com/"^^xsd:anyURI .
+
+ex:org_4 a schema1:Organization ;
+    schema1:description "Expert baby whether half. Term card this cell company smile couple...."^^xsd:string ;
+    schema1:email "tiffanywashington@example.com"^^xsd:string ;
+    schema1:industry "Technology"^^xsd:string ;
+    schema1:legalName "Hernandez-Rodriguez LLC"^^xsd:string ;
+    schema1:name "Burke LLC"^^xsd:string ;
+    schema1:taxID "32-5812472"^^xsd:string ;
+    schema1:telephone "001-855-235-1880x19030"^^xsd:string ;
+    schema1:url "http://moore.com/"^^xsd:anyURI .
+
+ex:org_5 a schema1:Organization ;
+    schema1:description """Product girl majority yard north bank PM. Develop make sort choose consider else way. Subject arm maybe country course sing.
+Upon reduce shake red suffer...."""^^xsd:string ;
+    schema1:email "amanda13@example.net"^^xsd:string ;
+    schema1:industry "Media"^^xsd:string ;
+    schema1:legalName "Woodward Inc Co."^^xsd:string ;
+    schema1:name "Walsh, Hernandez and Phillips"^^xsd:string ;
+    schema1:telephone "757-673-9435x83921"^^xsd:string ;
+    schema1:url "http://www.lopez.com/"^^xsd:anyURI .
+
+ex:org_1 a schema1:Organization ;
+    schema1:description "Whom positive age serve she. Action eat wall yet try event green. Then threat lay politics great hair country energy. Imagine skin allow lawyer mission get value small...."^^xsd:string ;
+    schema1:email "gonzalezashley@example.net"^^xsd:string ;
+    schema1:industry "Pharmaceuticals"^^xsd:string ;
+    schema1:legalName "Haynes, King and Acosta Ltd."^^xsd:string ;
+    schema1:name "Fleming, Harrison and Williams"^^xsd:string ;
+    schema1:telephone "538-552-7662"^^xsd:string ;
+    schema1:url "http://boone.org/"^^xsd:anyURI .
+
