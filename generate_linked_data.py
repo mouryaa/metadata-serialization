@@ -57,7 +57,7 @@ def generate_organizations(fake, num_orgs, graph, seed=None):
         
         # Basic properties
         graph.add((org_uri, SCHEMA.name, Literal(fake.organization_name(), datatype=XSD.string)))
-        graph.add((org_uri, SCHEMA.legalName, Literal(fake.organization_legal_name(), datatype=XSD.string)))
+        #graph.add((org_uri, SCHEMA.legalName, Literal(fake.organization_legal_name(), datatype=XSD.string)))
         graph.add((org_uri, SCHEMA.description, Literal(fake.organization_description(), datatype=XSD.string)))
         
         # Contact
@@ -118,7 +118,7 @@ def generate_person_with_accounts_and_orders(fake, person_id, max_accounts, max_
     graph.add((person_uri, SCHEMA.familyName, Literal(last_name, datatype=XSD.string)))
     graph.add((person_uri, SCHEMA.email, Literal(fake.person_email(), datatype=XSD.string)))
     graph.add((person_uri, SCHEMA.identifier, Literal(fake.person_tax_id(), datatype=XSD.string)))
-    #graph.add((person_uri, SCHEMA.telephone, Literal(fake.person_telephone(), datatype=XSD.string)))
+    graph.add((person_uri, SCHEMA.telephone, Literal(fake.person_telephone(), datatype=XSD.string)))
     #graph.add((person_uri, SCHEMA.birthDate, Literal(fake.person_birth_date(), datatype=XSD.date)))
     #graph.add((person_uri, SCHEMA.gender, Literal(fake.person_gender(), datatype=XSD.string)))
     
@@ -177,8 +177,8 @@ def generate_person_with_accounts_and_orders(fake, person_id, max_accounts, max_
             graph.add((order_uri, SCHEMA.orderStatus, Literal(fake.order_status(), datatype=XSD.string)))
             graph.add((order_uri, SCHEMA.orderDate, Literal(fake.order_date(), datatype=XSD.date)))
             
-            if random.random() < 0.7:
-                graph.add((order_uri, SCHEMA.confirmationNumber, Literal(fake.order_confirmation_number(), datatype=XSD.string)))
+            #if random.random() < 0.7:
+            #    graph.add((order_uri, SCHEMA.confirmationNumber, Literal(fake.order_confirmation_number(), datatype=XSD.string)))
             
             # Link order to customer (person)
             graph.add((order_uri, SCHEMA.customer, person_uri))
