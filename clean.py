@@ -2,108 +2,86 @@ import re
 
 def clean_output(text):
     """
-    Clean up the formatted output and extract just the question numbers and answers.
+    Extract question number, question, and answer from the formatted text.
+    Pattern: \n followed by number is the question, **Answer:** is the answer
     """
-    # Split by the separator lines
-    sections = text.split('---')
-    
     results = []
     
-    for section in sections:
-        section = section.strip()
-        if not section:
-            continue
-            
-        # Extract question number and description
-        question_match = re.search(r'\*\*(\d+)\.\s+(.+?)\*\*', section)
-        if not question_match:
-            continue
-            
-        question_num = question_match.group(1)
-        question_desc = question_match.group(2)
+    # Split by line breaks and process
+    lines = text.split('\\n')
+    
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
         
-        # Extract answer
-        answer_match = re.search(r'\*\*Answer:\*\*\s+(.+?)(?:\n|$)', section)
-        if answer_match:
-            answer = answer_match.group(1).strip()
-        else:
-            # For "shortest path" questions, extract the path description
-            path_match = re.search(r'\*\*Shortest path:\*\*\s+(.+?)(?:\n|$)', section)
-            if path_match:
-                answer = path_match.group(1).strip()
-            else:
-                answer = "N/A"
+        # Look for pattern: number followed by **question**
+        question_match = re.match(r'^\*\*(\d+)\.\s+(.+?)\*\*\s*$', line)
         
-        results.append({
-            'number': question_num,
-            'question': question_desc,
-            'answer': answer
-        })
+        if question_match:
+            question_num = question_match.group(1)
+            question_text = question_match.group(2)
+            
+            # Look ahead for the answer
+            answer = "N/A"
+            for j in range(i+1, min(i+10, len(lines))):  # Look in next few lines
+                answer_match = re.search(r'\*\*Answer:\*\*\s+(.+)', lines[j])
+                if answer_match:
+                    answer = answer_match.group(1).strip()
+                    break
+                # Also check for "Shortest path:" pattern
+                path_match = re.search(r'\*\*Shortest path:\*\*\s+(.+)', lines[j])
+                if path_match:
+                    answer = path_match.group(1).strip()
+                    break
+            
+            results.append({
+                'number': question_num,
+                'question': question_text,
+                'answer': answer
+            })
+        
+        i += 1
     
     return results
 
-def format_results(results, output_format='simple'):
+def format_as_table(results):
     """
-    Format the results in different styles.
-    
-    Args:
-        results: List of dicts with 'number', 'question', 'answer'
-        output_format: 'simple', 'table', or 'json'
+    Format results as a clean table.
     """
-    if output_format == 'simple':
-        output = []
-        for r in results:
-            output.append(f"{r['number']}. {r['answer']}")
-        return '\n'.join(output)
+    if not results:
+        return "No results found"
     
-    elif output_format == 'table':
-        output = []
-        output.append(f"{'#':<4} {'Question':<60} {'Answer':<40}")
-        output.append('-' * 105)
-        for r in results:
-            question = r['question'][:57] + '...' if len(r['question']) > 60 else r['question']
-            answer = r['answer'][:37] + '...' if len(r['answer']) > 40 else r['answer']
-            output.append(f"{r['number']:<4} {question:<60} {answer:<40}")
-        return '\n'.join(output)
+    # Calculate column widths
+    num_width = max(len(r['number']) for r in results) + 2
+    num_width = max(num_width, 4)
     
-    elif output_format == 'json':
-        import json
-        return json.dumps(results, indent=2)
+    question_width = max(len(r['question']) for r in results) + 2
+    question_width = min(question_width, 10)
+    question_width = max(question_width, 80)  # Max width
     
-    else:
-        raise ValueError(f"Unknown format: {output_format}")
-
-# Example usage
-raw_output = '''Here are the answers to your operations, using only the provided data:
-
----
-
-**1. For person_3_account_1_order_3, return the companyName** 
-- `person_3_account_1_order_3` → `custom:orderCompany ex:org_1` 
-- `ex:org_1` → `custom:companyName "Gonzalez Group"` 
-**Answer:** Gonzalez Group
-
----
-
-**2. For person_9_account_2_order_3, return the firstName** 
-- `person_9_account_2_order_3` → `custom:orderCustomer ex:person_9` 
-- `ex:person_9` → `custom:firstName "Sandra"` 
-**Answer:** Sandra
-
----'''
-
-if __name__ == "__main__":
-    # Clean the output
-    cleaned = clean_output(raw_output)
+    answer_width = max(len(r['answer']) for r in results) + 2
+    answer_width = min(answer_width, 10)
+    answer_width = max(answer_width, 60)  # Max width
     
-    # Display in different formats
-    print("SIMPLE FORMAT:")
-    print(format_results(cleaned, 'simple'))
-    print("\n" + "="*80 + "\n")
+    # Create header
+    output = []
+    header = f"{'#':<{num_width}} {'Question':<{question_width}} {'Answer':<{answer_width}}"
+    output.append(header)
+    output.append('-' * len(header))
     
-    print("TABLE FORMAT:")
-    print(format_results(cleaned, 'table'))
-    print("\n" + "="*80 + "\n")
+    # Add rows
+    for r in results:
+        num = r['number']
+        question = r['question'][:question_width-2] + '..' if len(r['question']) > question_width else r['question']
+        answer = r['answer'][:answer_width-2] + '..' if len(r['answer']) > answer_width else r['answer']
+        
+        output.append(f"{num:<{num_width}} {question:<{question_width}} {answer:<{answer_width}}")
     
-    print("JSON FORMAT:")
-    print(format_results(cleaned, 'json'))
+    return '\n'.join(output)
+
+# Your input text
+raw_text = 'Here are the answers to your operations, using only the provided data:\\n\\n---\\n\\n**1. For person_3_account_1_order_3, return the companyName** \\n- `person_3_account_1_order_3` → `custom:orderCompany ex:org_1` \\n- `ex:org_1` → `custom:companyName "Gonzalez Group"` \\n**Answer:** Gonzalez Group\\n\\n---\\n\\n**2. For person_9_account_2_order_3, return the firstName** \\n- `person_9_account_2_order_3` → `custom:orderCustomer ex:person_9` \\n- `ex:person_9` → `custom:firstName "Sandra"` \\n**Answer:** Sandra\\n\\n---\\n\\n**3. For person_8_account_1_order_2, return the companyName** \\n- `person_8_account_1_order_2` → `custom:orderCompany ex:org_4` \\n- `ex:org_4` → `custom:companyName "Blair, Webster and Ferrell"` \\n**Answer:** Blair, Webster and Ferrell\\n\\n---\\n\\n**4. For person_1_account_1_order_2, return the lastName** \\n- `person_1_account_1_order_2` → `custom:orderCustomer ex:person_1` \\n- `ex:person_1` → `custom:lastName "Simpson"` \\n**Answer:** Simpson'
+
+# Process and display
+results = clean_output(raw_text)
+print(format_as_table(results))
