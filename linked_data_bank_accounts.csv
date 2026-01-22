@@ -1,0 +1,14 @@
+account_id,account_uri,person_id,bankAccountName,bankAccountId,bankAccountType,bankName,balance
+person_1_account_1,http://example.org/person_1_account_1,person_1,Savings Account,f9c58fdd-a68a-4b81-9880-5f335136b64d,Certificate of Deposit,SunTrust Bank,144.67
+person_2_account_1,http://example.org/person_2_account_1,person_2,Primary Account,5c9ad296-f20c-4915-9e4d-e65e15760676,Certificate of Deposit,Citibank,6181.14
+person_3_account_1,http://example.org/person_3_account_1,person_3,Emergency Fund Account,74a6493c-512c-4d34-9afc-ab5de733a758,Certificate of Deposit,SunTrust Bank,8813.23
+person_4_account_1,http://example.org/person_4_account_1,person_4,Primary Account,3499f5f5-6602-43d2-89c2-bfba2a8d52f5,Business Savings,KeyBank,214.88
+person_5_account_1,http://example.org/person_5_account_1,person_5,Primary Account,b058fbbd-4748-4e60-a983-771d1000bc16,Business Checking,Fifth Third Bank,768808.74
+person_6_account_1,http://example.org/person_6_account_1,person_6,Primary Account,e8107eec-1b5b-4d76-9561-3ac546a1cc11,Business Checking,BB&T,417.74
+person_6_account_2,http://example.org/person_6_account_2,person_6,Secondary Account,e0b76f89-5fb4-4709-a4f3-301474cb19fb,Individual Retirement Account,Santander Bank,29426.72
+person_7_account_1,http://example.org/person_7_account_1,person_7,Savings Account,b5ab5527-fd6e-4e4f-9434-c9db4d7118f3,Joint Account,TD Bank,22965.35
+person_8_account_1,http://example.org/person_8_account_1,person_8,Savings Account,020ae8e7-2b5f-4af6-96d0-7e897c9dc650,Business Checking,Fifth Third Bank,1022.78
+person_9_account_1,http://example.org/person_9_account_1,person_9,Business Account,880c2c78-2043-4028-86d1-a9f7310ee731,Money Market Account,Chase Bank,3866.23
+person_9_account_2,http://example.org/person_9_account_2,person_9,Emergency Fund Account,14294343-49d0-4d44-adb2-3080099aad7a,Individual Retirement Account,Citibank,31604.8
+person_10_account_1,http://example.org/person_10_account_1,person_10,Secondary Account,cefe0704-37f5-42e1-92d7-0d517e89571c,Checking Account,HSBC Bank,539.84
+person_10_account_2,http://example.org/person_10_account_2,person_10,Savings Account,bfd06068-913f-4ddb-8b1a-604b6763d181,Savings Account,PNC Bank,58103.36

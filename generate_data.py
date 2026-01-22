@@ -33,6 +33,132 @@ from providers import (
 # Define namespaces
 SCHEMA = Namespace("http://schema.org/")
 EX = Namespace("http://example.org/")
+CUSTOM = Namespace("http://mycompany.com/vocab/")
+
+
+# ============================================================================
+# PREDICATE CONFIGURATION
+# ============================================================================
+# Customize the RDF predicates used in the generated turtle files here.
+# Change these to customize your vocabulary. CSV column names will automatically
+# match the predicate names.
+#
+# Examples:
+#   PERSON_TYPE = SCHEMA.Customer    → RDF: schema:Customer, CSV: "Customer"
+#   PERSON_NAME = CUSTOM.fullName    → RDF: custom:fullName, CSV: "fullName"
+# ============================================================================
+
+class PredicateConfig:
+    """Configuration for RDF predicates. Modify these to change the output."""
+    
+    # Person/Customer predicates
+    PERSON_TYPE = CUSTOM.Customer           # Type: Customer instead of Person
+    PERSON_NAME = CUSTOM.fullName
+    PERSON_GIVEN_NAME = CUSTOM.firstName
+    PERSON_FAMILY_NAME = CUSTOM.lastName
+    PERSON_EMAIL = CUSTOM.emailAddress
+    PERSON_TELEPHONE = CUSTOM.phoneNumber
+    PERSON_TAX_ID = CUSTOM.customerID
+    
+    # Bank Account predicates
+    ACCOUNT_TYPE = CUSTOM.BankAccount
+    ACCOUNT_NAME = CUSTOM.bankAccountName
+    ACCOUNT_IDENTIFIER = CUSTOM.bankAccountId
+    ACCOUNT_TYPE_FIELD = CUSTOM.bankAccountType
+    ACCOUNT_BANK = CUSTOM.bankName
+    ACCOUNT_BALANCE = CUSTOM.balance
+    ACCOUNT_HOLDER = CUSTOM.bankAccountOwner
+    
+    # Organization predicates
+    ORG_TYPE = CUSTOM.Company
+    ORG_NAME = CUSTOM.companyName
+    ORG_DESCRIPTION = CUSTOM.description
+    ORG_EMAIL = CUSTOM.companyEmail
+    ORG_TELEPHONE = CUSTOM.companyPhone
+    ORG_URL = CUSTOM.companyURL
+    ORG_INDUSTRY = CUSTOM.companyIndustry
+    ORG_TAX_ID = CUSTOM.companyID
+    
+    # Order predicates
+    ORDER_TYPE = CUSTOM.PurchaseOrder
+    ORDER_NUMBER = CUSTOM.orderNumber
+    ORDER_STATUS = CUSTOM.orderStatus
+    ORDER_DATE = CUSTOM.orderDate
+    ORDER_TOTAL = CUSTOM.orderTotal
+    ORDER_CUSTOMER = CUSTOM.orderCustomer
+    ORDER_PAYMENT_METHOD = CUSTOM.orderPayment
+    ORDER_MERCHANT = CUSTOM.orderCompany
+    ORDER_ITEM = CUSTOM.orderItem
+    
+    # Order Item predicates
+    ITEM_TYPE = CUSTOM.LineItem
+    ITEM_NUMBER = CUSTOM.itemNumber
+    ITEM_NAME = CUSTOM.productName
+
+
+class CSVColumns:
+    """
+    CSV column names that match the RDF predicate names.
+    Automatically extracts the local name from each predicate URI.
+    """
+    
+    @staticmethod
+    def get_local_name(predicate):
+        """Extract the local name from a predicate URI."""
+        uri_str = str(predicate)
+        return uri_str.split('/')[-1].split('#')[-1]
+    
+    # Person columns (extracted from predicates)
+    PERSON_ID = 'person_id'
+    PERSON_URI = 'person_uri'
+    PERSON_TYPE = get_local_name.__func__(PredicateConfig.PERSON_TYPE)
+    PERSON_NAME = get_local_name.__func__(PredicateConfig.PERSON_NAME)
+    PERSON_GIVEN_NAME = get_local_name.__func__(PredicateConfig.PERSON_GIVEN_NAME)
+    PERSON_FAMILY_NAME = get_local_name.__func__(PredicateConfig.PERSON_FAMILY_NAME)
+    PERSON_EMAIL = get_local_name.__func__(PredicateConfig.PERSON_EMAIL)
+    PERSON_TELEPHONE = get_local_name.__func__(PredicateConfig.PERSON_TELEPHONE)
+    PERSON_TAX_ID = get_local_name.__func__(PredicateConfig.PERSON_TAX_ID)
+    
+    # Bank Account columns
+    ACCOUNT_ID = 'account_id'
+    ACCOUNT_URI = 'account_uri'
+    ACCOUNT_PERSON_ID = 'person_id'
+    ACCOUNT_NAME = get_local_name.__func__(PredicateConfig.ACCOUNT_NAME)
+    ACCOUNT_IDENTIFIER = get_local_name.__func__(PredicateConfig.ACCOUNT_IDENTIFIER)
+    ACCOUNT_TYPE_FIELD = get_local_name.__func__(PredicateConfig.ACCOUNT_TYPE_FIELD)
+    ACCOUNT_BANK = get_local_name.__func__(PredicateConfig.ACCOUNT_BANK)
+    ACCOUNT_BALANCE = get_local_name.__func__(PredicateConfig.ACCOUNT_BALANCE)
+    
+    # Organization columns
+    ORG_ID = 'org_id'
+    ORG_URI = 'org_uri'
+    ORG_NAME = get_local_name.__func__(PredicateConfig.ORG_NAME)
+    ORG_DESCRIPTION = get_local_name.__func__(PredicateConfig.ORG_DESCRIPTION)
+    ORG_EMAIL = get_local_name.__func__(PredicateConfig.ORG_EMAIL)
+    ORG_TELEPHONE = get_local_name.__func__(PredicateConfig.ORG_TELEPHONE)
+    ORG_URL = get_local_name.__func__(PredicateConfig.ORG_URL)
+    ORG_INDUSTRY = get_local_name.__func__(PredicateConfig.ORG_INDUSTRY)
+    ORG_TAX_ID = get_local_name.__func__(PredicateConfig.ORG_TAX_ID)
+    
+    # Order columns
+    ORDER_ID = 'order_id'
+    ORDER_URI = 'order_uri'
+    ORDER_PERSON_ID = 'person_id'
+    ORDER_ACCOUNT_ID = 'account_id'
+    ORDER_MERCHANT_ID = 'merchant_id'
+    ORDER_NUMBER = get_local_name.__func__(PredicateConfig.ORDER_NUMBER)
+    ORDER_STATUS = get_local_name.__func__(PredicateConfig.ORDER_STATUS)
+    ORDER_DATE = get_local_name.__func__(PredicateConfig.ORDER_DATE)
+    ORDER_TOTAL = get_local_name.__func__(PredicateConfig.ORDER_TOTAL)
+    
+    # Order Item columns
+    ITEM_ORDER_ID = 'order_id'
+    ITEM_INDEX = 'item_index'
+    ITEM_NAME = get_local_name.__func__(PredicateConfig.ITEM_NAME)
+
+# ============================================================================
+# END PREDICATE CONFIGURATION
+# ============================================================================
 
 
 class DataCollector:
@@ -91,29 +217,29 @@ def generate_organizations(fake, num_orgs, graph, collector, seed=None):
         # Store for CSV
         if collector:
             collector.add_organization({
-                'org_id': org_id,
-                'org_uri': str(org_uri),
-                'name': org_name,
-                'description': description,
-                'email': email,
-                'telephone': telephone,
-                'url': url,
-                'industry': industry,
-                'tax_id': tax_id
+                CSVColumns.ORG_ID: org_id,
+                CSVColumns.ORG_URI: str(org_uri),
+                CSVColumns.ORG_NAME: org_name,
+                CSVColumns.ORG_DESCRIPTION: description,
+                CSVColumns.ORG_EMAIL: email,
+                CSVColumns.ORG_TELEPHONE: telephone,
+                CSVColumns.ORG_URL: url,
+                CSVColumns.ORG_INDUSTRY: industry,
+                CSVColumns.ORG_TAX_ID: tax_id
             })
         
         # Add to RDF graph
         if graph is not None:
-            graph.add((org_uri, RDF.type, SCHEMA.Organization))
-            graph.add((org_uri, SCHEMA.name, Literal(org_name, datatype=XSD.string)))
-            graph.add((org_uri, SCHEMA.description, Literal(description, datatype=XSD.string)))
-            graph.add((org_uri, SCHEMA.email, Literal(email, datatype=XSD.string)))
-            graph.add((org_uri, SCHEMA.telephone, Literal(telephone, datatype=XSD.string)))
-            graph.add((org_uri, SCHEMA.url, Literal(url, datatype=XSD.anyURI)))
-            graph.add((org_uri, SCHEMA.industry, Literal(industry, datatype=XSD.string)))
+            graph.add((org_uri, RDF.type, PredicateConfig.ORG_TYPE))
+            graph.add((org_uri, PredicateConfig.ORG_NAME, Literal(org_name, datatype=XSD.string)))
+            graph.add((org_uri, PredicateConfig.ORG_DESCRIPTION, Literal(description, datatype=XSD.string)))
+            graph.add((org_uri, PredicateConfig.ORG_EMAIL, Literal(email, datatype=XSD.string)))
+            graph.add((org_uri, PredicateConfig.ORG_TELEPHONE, Literal(telephone, datatype=XSD.string)))
+            graph.add((org_uri, PredicateConfig.ORG_URL, Literal(url, datatype=XSD.anyURI)))
+            graph.add((org_uri, PredicateConfig.ORG_INDUSTRY, Literal(industry, datatype=XSD.string)))
             
             if tax_id:
-                graph.add((org_uri, SCHEMA.taxID, Literal(tax_id, datatype=XSD.string)))
+                graph.add((org_uri, PredicateConfig.ORG_TAX_ID, Literal(tax_id, datatype=XSD.string)))
         
         org_data_list.append({'id': org_id, 'uri': org_uri})
     
@@ -150,25 +276,25 @@ def generate_person_with_accounts_and_orders(fake, person_id, max_accounts, max_
     # Store person data for CSV
     if collector:
         collector.add_person({
-            'person_id': f"person_{person_id}",
-            'person_uri': str(person_uri),
-            'full_name': full_name,
-            'given_name': first_name,
-            'family_name': last_name,
-            'email': email,
-            'telephone': telephone,
-            'tax_id': tax_id
+            CSVColumns.PERSON_ID: f"person_{person_id}",
+            CSVColumns.PERSON_URI: str(person_uri),
+            CSVColumns.PERSON_NAME: full_name,
+            CSVColumns.PERSON_GIVEN_NAME: first_name,
+            CSVColumns.PERSON_FAMILY_NAME: last_name,
+            CSVColumns.PERSON_EMAIL: email,
+            CSVColumns.PERSON_TELEPHONE: telephone,
+            CSVColumns.PERSON_TAX_ID: tax_id
         })
     
     # Add to RDF graph
     if graph is not None:
-        graph.add((person_uri, RDF.type, SCHEMA.Person))
-        graph.add((person_uri, SCHEMA.name, Literal(full_name, datatype=XSD.string)))
-        graph.add((person_uri, SCHEMA.givenName, Literal(first_name, datatype=XSD.string)))
-        graph.add((person_uri, SCHEMA.familyName, Literal(last_name, datatype=XSD.string)))
-        graph.add((person_uri, SCHEMA.email, Literal(email, datatype=XSD.string)))
-        graph.add((person_uri, SCHEMA.telephone, Literal(telephone, datatype=XSD.string)))
-        graph.add((person_uri, SCHEMA.identifier, Literal(tax_id, datatype=XSD.string)))
+        graph.add((person_uri, RDF.type, PredicateConfig.PERSON_TYPE))
+        graph.add((person_uri, PredicateConfig.PERSON_NAME, Literal(full_name, datatype=XSD.string)))
+        graph.add((person_uri, PredicateConfig.PERSON_GIVEN_NAME, Literal(first_name, datatype=XSD.string)))
+        graph.add((person_uri, PredicateConfig.PERSON_FAMILY_NAME, Literal(last_name, datatype=XSD.string)))
+        graph.add((person_uri, PredicateConfig.PERSON_EMAIL, Literal(email, datatype=XSD.string)))
+        graph.add((person_uri, PredicateConfig.PERSON_TELEPHONE, Literal(telephone, datatype=XSD.string)))
+        graph.add((person_uri, PredicateConfig.PERSON_TAX_ID, Literal(tax_id, datatype=XSD.string)))
     
     # Generate 1 to max_accounts bank accounts
     num_accounts = random.randint(1, max_accounts)
@@ -181,7 +307,6 @@ def generate_person_with_accounts_and_orders(fake, person_id, max_accounts, max_
         # Generate account data
         account_name = fake.bank_account_name()
         identifier = fake.bank_account_identifier()
-        account_number = fake.bank_account_account_number()
         account_type = fake.bank_account_account_type()
         bank_name = fake.bank_account_bank_name()
         balance = fake.bank_account_balance()
@@ -189,154 +314,187 @@ def generate_person_with_accounts_and_orders(fake, person_id, max_accounts, max_
         # Store account data for CSV
         if collector:
             collector.add_account({
-                'account_id': account_id,
-                'account_uri': str(account_uri),
-                'person_id': f"person_{person_id}",
-                'account_name': account_name,
-                'identifier': identifier,
-                'account_number': account_number,
-                'account_type': account_type,
-                'bank_name': bank_name,
-                'balance': str(balance)
+                CSVColumns.ACCOUNT_ID: account_id,
+                CSVColumns.ACCOUNT_URI: str(account_uri),
+                CSVColumns.ACCOUNT_PERSON_ID: f"person_{person_id}",
+                CSVColumns.ACCOUNT_NAME: account_name,
+                CSVColumns.ACCOUNT_IDENTIFIER: identifier,
+                CSVColumns.ACCOUNT_TYPE_FIELD: account_type,
+                CSVColumns.ACCOUNT_BANK: bank_name,
+                CSVColumns.ACCOUNT_BALANCE: str(balance)
             })
         
         # Add to RDF graph
         if graph is not None:
-            graph.add((account_uri, RDF.type, SCHEMA.BankAccount))
-            graph.add((account_uri, SCHEMA.name, Literal(account_name, datatype=XSD.string)))
-            graph.add((account_uri, SCHEMA.identifier, Literal(identifier, datatype=XSD.string)))
-            graph.add((account_uri, SCHEMA.accountId, Literal(account_number, datatype=XSD.string)))
-            graph.add((account_uri, SCHEMA.bankAccountType, Literal(account_type, datatype=XSD.string)))
-            graph.add((account_uri, SCHEMA.servicer, Literal(bank_name, datatype=XSD.string)))
-            graph.add((account_uri, SCHEMA.accountMinimumInflow, Literal(balance, datatype=XSD.decimal)))
-            graph.add((account_uri, SCHEMA.accountHolder, person_uri))
+            graph.add((account_uri, RDF.type, PredicateConfig.ACCOUNT_TYPE))
+            graph.add((account_uri, PredicateConfig.ACCOUNT_NAME, Literal(account_name, datatype=XSD.string)))
+            graph.add((account_uri, PredicateConfig.ACCOUNT_IDENTIFIER, Literal(identifier, datatype=XSD.string)))
+            graph.add((account_uri, PredicateConfig.ACCOUNT_TYPE_FIELD, Literal(account_type, datatype=XSD.string)))
+            graph.add((account_uri, PredicateConfig.ACCOUNT_BANK, Literal(bank_name, datatype=XSD.string)))
+            graph.add((account_uri, PredicateConfig.ACCOUNT_BALANCE, Literal(balance, datatype=XSD.decimal)))
+            graph.add((account_uri, PredicateConfig.ACCOUNT_HOLDER, person_uri))
         
         # Generate 1 to max_orders_per_account orders for this account
         num_orders = random.randint(1, max_orders_per_account)
         total_orders += num_orders
         
         for order_idx in range(num_orders):
-            # Select random organization as merchant
-            merchant_data = random.choice(org_data_list)
-            
-            # Generate order data
             order_id = f"person_{person_id}_account_{account_idx+1}_order_{order_idx+1}"
             order_uri = EX[order_id]
-            order_number = fake.order_order_number()
-            order_status = fake.order_order_status()
-            order_date = fake.order_order_date()
-            total_payment = fake.order_total_payment()
+            
+            # Generate order data
+            order_number = fake.order_identifier()
+            order_status = fake.order_status()
+            order_date = fake.order_date()
+            total_payment = fake.order_total()
+            
+            # Select random merchant
+            merchant = random.choice(org_data_list)
+            merchant_id = merchant['id']
+            merchant_uri = merchant['uri']
             
             # Store order data for CSV
             if collector:
                 collector.add_order({
-                    'order_id': order_id,
-                    'order_uri': str(order_uri),
-                    'person_id': f"person_{person_id}",
-                    'account_id': account_id,
-                    'merchant_id': merchant_data['id'],
-                    'order_number': order_number,
-                    'order_status': order_status,
-                    'order_date': order_date,
-                    'total_payment': str(total_payment)
+                    CSVColumns.ORDER_ID: order_id,
+                    CSVColumns.ORDER_URI: str(order_uri),
+                    CSVColumns.ORDER_PERSON_ID: f"person_{person_id}",
+                    CSVColumns.ORDER_ACCOUNT_ID: account_id,
+                    CSVColumns.ORDER_MERCHANT_ID: merchant_id,
+                    CSVColumns.ORDER_NUMBER: order_number,
+                    CSVColumns.ORDER_STATUS: order_status,
+                    CSVColumns.ORDER_DATE: str(order_date),
+                    CSVColumns.ORDER_TOTAL: str(total_payment)
                 })
             
             # Add to RDF graph
             if graph is not None:
-                graph.add((order_uri, RDF.type, SCHEMA.Order))
-                graph.add((order_uri, SCHEMA.orderNumber, Literal(order_number, datatype=XSD.string)))
-                graph.add((order_uri, SCHEMA.orderStatus, Literal(order_status, datatype=XSD.string)))
-                graph.add((order_uri, SCHEMA.orderDate, Literal(order_date, datatype=XSD.date)))
-                graph.add((order_uri, SCHEMA.totalPaymentDue, Literal(total_payment, datatype=XSD.decimal)))
-                graph.add((order_uri, SCHEMA.customer, person_uri))
-                graph.add((order_uri, SCHEMA.paymentMethod, account_uri))
-                graph.add((order_uri, SCHEMA.merchant, merchant_data['uri']))
+                graph.add((order_uri, RDF.type, PredicateConfig.ORDER_TYPE))
+                graph.add((order_uri, PredicateConfig.ORDER_NUMBER, Literal(order_number, datatype=XSD.string)))
+                graph.add((order_uri, PredicateConfig.ORDER_STATUS, Literal(order_status, datatype=XSD.string)))
+                graph.add((order_uri, PredicateConfig.ORDER_DATE, Literal(order_date, datatype=XSD.date)))               
+                graph.add((order_uri, PredicateConfig.ORDER_CUSTOMER, person_uri))
+                graph.add((order_uri, PredicateConfig.ORDER_PAYMENT_METHOD, account_uri))
+                graph.add((order_uri, PredicateConfig.ORDER_MERCHANT, merchant_uri))
+                graph.add((order_uri, PredicateConfig.ORDER_TOTAL, Literal(total_payment, datatype=XSD.decimal)))
             
-            # Generate 1-5 order items
-            num_items = random.randint(1, 5)
+            # Generate ordered items
+            num_items = random.randint(1, 3)
             for item_idx in range(num_items):
-                item_name = fake.order_item_name()
+                # Generate item name using the correct provider method
+                try:
+                    item_name = fake.order_item_name()
+                except AttributeError:
+                    # Fallback to generic product names
+                    products = ['Laptop', 'Smartphone', 'Headphones', 'Monitor', 'Keyboard', 
+                               'Mouse', 'Tablet', 'Charger', 'USB Cable', 'Webcam',
+                               'Desk Lamp', 'Office Chair', 'Notebook', 'Pen Set', 'Backpack']
+                    item_name = random.choice(products)
                 
-                # Store order item for CSV
+                # Store item data for CSV
                 if collector:
                     collector.add_order_item({
-                        'order_id': order_id,
-                        'item_index': item_idx + 1,
-                        'item_name': item_name
+                        CSVColumns.ITEM_ORDER_ID: order_id,
+                        CSVColumns.ITEM_INDEX: item_idx + 1,
+                        CSVColumns.ITEM_NAME: item_name
                     })
                 
                 # Add to RDF graph
                 if graph is not None:
                     item_uri = EX[f"{order_id}_item_{item_idx+1}"]
-                    graph.add((item_uri, RDF.type, SCHEMA.OrderItem))
-                    graph.add((item_uri, SCHEMA.orderItemNumber, Literal(item_idx + 1, datatype=XSD.integer)))
-                    graph.add((item_uri, SCHEMA.orderItemStatus, Literal(item_name, datatype=XSD.string)))
-                    graph.add((order_uri, SCHEMA.orderedItem, item_uri))
+                    graph.add((item_uri, RDF.type, PredicateConfig.ITEM_TYPE))
+                    graph.add((item_uri, PredicateConfig.ITEM_NUMBER, Literal(item_idx + 1, datatype=XSD.integer)))
+                    graph.add((item_uri, PredicateConfig.ITEM_NAME, Literal(item_name, datatype=XSD.string)))
+                    graph.add((order_uri, PredicateConfig.ORDER_ITEM, item_uri))
     
     return person_uri, num_accounts, total_orders
 
 
-def create_linked_graph(num_people, max_accounts, max_orders_per_account, num_orgs, seed=None, collect_csv_data=False):
+def create_linked_graph(num_people, max_accounts, max_orders_per_account, num_orgs, 
+                       seed=None, collect_csv_data=False):
     """
-    Create a complete linked RDF graph with all entities.
+    Create an RDF graph with linked People, BankAccounts, Orders, and Organizations.
     
     Args:
-        num_people: Number of people to generate
-        max_accounts: Maximum bank accounts per person (will generate 1-max_accounts)
-        max_orders_per_account: Maximum orders per account (will generate 1-max)
-        num_orgs: Number of organizations to generate
+        num_people: Number of people to generate (N)
+        max_accounts: Maximum bank accounts per person (Y in 1-Y)
+        max_orders_per_account: Maximum orders per account (X in 1-X)
+        num_orgs: Number of organizations to generate (Z)
         seed: Random seed for reproducibility
-        collect_csv_data: If True, also collect data for CSV export
+        collect_csv_data: Whether to collect data for CSV export
     
     Returns:
-        tuple: (graph, collector) where collector is None if collect_csv_data is False
+        tuple: (rdflib.Graph or None, DataCollector or None)
     """
-    # Initialize based on mode
-    if collect_csv_data == 'both':
-        graph = Graph()
-        collector = DataCollector()
-    elif collect_csv_data:
-        graph = None
-        collector = DataCollector()
-    else:
-        graph = Graph()
-        collector = None
+    # Initialize Faker with all providers
+    if seed is not None:
+        Faker.seed(seed)
+        random.seed(seed)
     
-    # Bind namespaces for prettier output
-    if graph is not None:
-        graph.bind("schema", SCHEMA)
-        graph.bind("ex", EX)
-    
-    # Initialize Faker with custom providers
     fake = Faker()
     fake.add_provider(SchemaOrgPersonProvider)
     fake.add_provider(SchemaOrgOrganizationProvider)
     fake.add_provider(SchemaOrgBankAccountProvider)
     fake.add_provider(SchemaOrgOrderProvider)
     
-    # Generate organizations first
-    org_data_list = generate_organizations(fake, num_orgs, graph, collector, seed)
+    # Create graph (if needed for RDF output)
+    # graph is needed when collect_csv_data is False (RDF only) or 'both'
+    need_graph = (collect_csv_data == False) or (collect_csv_data == 'both')
+    g = Graph() if need_graph else None
+    if g is not None:
+        g.bind("schema", SCHEMA)
+        g.bind("custom", CUSTOM)
+        g.bind("ex", EX)
     
-    # Generate people with accounts and orders
-    print(f"Generating {num_people} people with their accounts and orders...")
+    # Create collector (if needed for CSV output)
+    # collector is needed when collect_csv_data is True or 'both'
+    need_collector = (collect_csv_data == True) or (collect_csv_data == 'both')
+    collector = DataCollector() if need_collector else None
+    
+    print(f"\n{'='*80}")
+    print("Generating Linked Schema.org Data")
+    print(f"{'='*80}")
+    print(f"Configuration:")
+    print(f"  People: {num_people}")
+    print(f"  Bank accounts per person: 1-{max_accounts}")
+    print(f"  Orders per account: 1-{max_orders_per_account}")
+    print(f"  Organizations: {num_orgs}")
+    print(f"{'='*80}\n")
+    
+    # Step 1: Generate organizations first (they're referenced by orders)
+    org_data_list = generate_organizations(fake, num_orgs, g, collector, seed)
+    
+    # Step 2: Generate people with their accounts and orders
+    print(f"\nGenerating {num_people} people with accounts and orders...")
+    
     total_accounts = 0
     total_orders = 0
     
     for i in range(num_people):
         person_uri, num_accounts, num_orders = generate_person_with_accounts_and_orders(
-            fake, i+1, max_accounts, max_orders_per_account, 
-            org_data_list, graph, collector
+            fake, i+1, max_accounts, max_orders_per_account, org_data_list, g, collector
         )
+        
         total_accounts += num_accounts
         total_orders += num_orders
+        
+        if (i + 1) % 10 == 0:
+            print(f"  Generated {i + 1}/{num_people} people...")
     
     print(f"  ✓ Generated {num_people} people")
-    print(f"  ✓ Generated {total_accounts} bank accounts")
-    print(f"  ✓ Generated {total_orders} orders")
-    if collector:
-        print(f"  ✓ Generated {len(collector.order_items)} order items")
+    print(f"\n{'='*80}")
+    print("Generation Summary")
+    print(f"{'='*80}")
+    print(f"  People: {num_people}")
+    print(f"  Bank Accounts: {total_accounts} (avg {total_accounts/num_people:.1f} per person)")
+    print(f"  Orders: {total_orders} (avg {total_orders/total_accounts:.1f} per account)")
+    print(f"  Organizations: {num_orgs}")
+    print(f"  Total entities: {num_people + total_accounts + total_orders + num_orgs}")
+    if g is not None:
+        print(f"  Total triples: {len(g)}")
+    print(f"{'='*80}\n")
     
-    return graph, collector
+    return g, collector
 
 
 def export_to_csv(collector, output_file):
@@ -351,69 +509,69 @@ def export_to_csv(collector, output_file):
     - Order item details
     """
     # Create lookup dictionaries
-    people_lookup = {p['person_id']: p for p in collector.people}
-    accounts_lookup = {a['account_id']: a for a in collector.accounts}
-    orgs_lookup = {o['org_id']: o for o in collector.organizations}
+    people_lookup = {p[CSVColumns.PERSON_ID]: p for p in collector.people}
+    accounts_lookup = {a[CSVColumns.ACCOUNT_ID]: a for a in collector.accounts}
+    orgs_lookup = {o[CSVColumns.ORG_ID]: o for o in collector.organizations}
     
     # Build fully denormalized rows (one row per order item)
     denorm_rows = []
     
     for order in collector.orders:
-        person = people_lookup.get(order['person_id'], {})
-        account = accounts_lookup.get(order['account_id'], {})
-        merchant = orgs_lookup.get(order['merchant_id'], {})
+        person = people_lookup.get(order[CSVColumns.ORDER_PERSON_ID], {})
+        account = accounts_lookup.get(order[CSVColumns.ORDER_ACCOUNT_ID], {})
+        merchant = orgs_lookup.get(order[CSVColumns.ORDER_MERCHANT_ID], {})
         
         # Get all items for this order
-        order_items = [item for item in collector.order_items if item['order_id'] == order['order_id']]
+        order_items = [item for item in collector.order_items if item[CSVColumns.ITEM_ORDER_ID] == order[CSVColumns.ORDER_ID]]
         
         # If no items, create one row anyway
         if not order_items:
-            order_items = [{'item_index': None, 'item_name': None}]
+            order_items = [{CSVColumns.ITEM_INDEX: None, CSVColumns.ITEM_NAME: None}]
         
         for item in order_items:
             row = {
                 # Order info
-                'order_id': order['order_id'],
-                'order_uri': order['order_uri'],
-                'order_number': order['order_number'],
-                'order_status': order['order_status'],
-                'order_date': order['order_date'],
-                'total_payment': order['total_payment'],
+                CSVColumns.ORDER_ID: order[CSVColumns.ORDER_ID],
+                CSVColumns.ORDER_URI: order[CSVColumns.ORDER_URI],
+                CSVColumns.ORDER_NUMBER: order[CSVColumns.ORDER_NUMBER],
+                CSVColumns.ORDER_STATUS: order[CSVColumns.ORDER_STATUS],
+                CSVColumns.ORDER_DATE: order[CSVColumns.ORDER_DATE],
+                CSVColumns.ORDER_TOTAL: order[CSVColumns.ORDER_TOTAL],
                 
                 # Person/Customer info
-                'person_id': order['person_id'],
-                'person_uri': person.get('person_uri', ''),
-                'person_name': person.get('full_name', ''),
-                'person_given_name': person.get('given_name', ''),
-                'person_family_name': person.get('family_name', ''),
-                'person_email': person.get('email', ''),
-                'person_tax_id': person.get('tax_id', ''),
-                'person_telephone': person.get('telephone', ''),
+                CSVColumns.PERSON_ID: order[CSVColumns.ORDER_PERSON_ID],
+                CSVColumns.PERSON_URI: person.get(CSVColumns.PERSON_URI, ''),
+                CSVColumns.PERSON_NAME: person.get(CSVColumns.PERSON_NAME, ''),
+                CSVColumns.PERSON_GIVEN_NAME: person.get(CSVColumns.PERSON_GIVEN_NAME, ''),
+                CSVColumns.PERSON_FAMILY_NAME: person.get(CSVColumns.PERSON_FAMILY_NAME, ''),
+                CSVColumns.PERSON_EMAIL: person.get(CSVColumns.PERSON_EMAIL, ''),
+                CSVColumns.PERSON_TAX_ID: person.get(CSVColumns.PERSON_TAX_ID, ''),
+                CSVColumns.PERSON_TELEPHONE: person.get(CSVColumns.PERSON_TELEPHONE, ''),
                 
                 # Bank Account info
-                'account_id': order['account_id'],
-                'account_uri': account.get('account_uri', ''),
-                'account_name': account.get('account_name', ''),
-                'account_identifier': account.get('identifier', ''),
-                'account_number': account.get('account_number', ''),
-                'account_type': account.get('account_type', ''),
-                'bank_name': account.get('bank_name', ''),
-                'account_balance': account.get('balance', ''),
+                CSVColumns.ACCOUNT_ID: order[CSVColumns.ORDER_ACCOUNT_ID],
+                CSVColumns.ACCOUNT_URI: account.get(CSVColumns.ACCOUNT_URI, ''),
+                CSVColumns.ACCOUNT_NAME: account.get(CSVColumns.ACCOUNT_NAME, ''),
+                CSVColumns.ACCOUNT_IDENTIFIER: account.get(CSVColumns.ACCOUNT_IDENTIFIER, ''),
+
+                CSVColumns.ACCOUNT_TYPE_FIELD: account.get(CSVColumns.ACCOUNT_TYPE_FIELD, ''),
+                CSVColumns.ACCOUNT_BANK: account.get(CSVColumns.ACCOUNT_BANK, ''),
+                CSVColumns.ACCOUNT_BALANCE: account.get(CSVColumns.ACCOUNT_BALANCE, ''),
                 
                 # Merchant/Organization info
-                'merchant_id': order['merchant_id'],
-                'merchant_uri': merchant.get('org_uri', ''),
-                'merchant_name': merchant.get('name', ''),
-                'merchant_description': merchant.get('description', ''),
-                'merchant_email': merchant.get('email', ''),
-                'merchant_telephone': merchant.get('telephone', ''),
-                'merchant_url': merchant.get('url', ''),
-                'merchant_industry': merchant.get('industry', ''),
-                'merchant_tax_id': merchant.get('tax_id', ''),
+                CSVColumns.ORDER_MERCHANT_ID: order[CSVColumns.ORDER_MERCHANT_ID],
+                CSVColumns.ORG_URI: merchant.get(CSVColumns.ORG_URI, ''),
+                CSVColumns.ORG_NAME: merchant.get(CSVColumns.ORG_NAME, ''),
+                CSVColumns.ORG_DESCRIPTION: merchant.get(CSVColumns.ORG_DESCRIPTION, ''),
+                CSVColumns.ORG_EMAIL: merchant.get(CSVColumns.ORG_EMAIL, ''),
+                CSVColumns.ORG_TELEPHONE: merchant.get(CSVColumns.ORG_TELEPHONE, ''),
+                CSVColumns.ORG_URL: merchant.get(CSVColumns.ORG_URL, ''),
+                CSVColumns.ORG_INDUSTRY: merchant.get(CSVColumns.ORG_INDUSTRY, ''),
+                CSVColumns.ORG_TAX_ID: merchant.get(CSVColumns.ORG_TAX_ID, ''),
                 
                 # Order Item info
-                'item_index': item.get('item_index', ''),
-                'item_name': item.get('item_name', ''),
+                CSVColumns.ITEM_INDEX: item.get(CSVColumns.ITEM_INDEX, ''),
+                CSVColumns.ITEM_NAME: item.get(CSVColumns.ITEM_NAME, ''),
             }
             denorm_rows.append(row)
     
@@ -453,8 +611,8 @@ def export_to_3nf_csv(collector, output_prefix):
     people_file = f"{output_prefix}_people.csv"
     if collector.people:
         with open(people_file, 'w', newline='', encoding='utf-8') as f:
-            fieldnames = ['person_id', 'person_uri', 'full_name', 'given_name', 
-                         'family_name', 'email', 'telephone', 'tax_id']
+            # Get field names from the first person record
+            fieldnames = list(collector.people[0].keys())
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(collector.people)
@@ -464,8 +622,7 @@ def export_to_3nf_csv(collector, output_prefix):
     accounts_file = f"{output_prefix}_bank_accounts.csv"
     if collector.accounts:
         with open(accounts_file, 'w', newline='', encoding='utf-8') as f:
-            fieldnames = ['account_id', 'account_uri', 'person_id', 'account_name', 
-                         'identifier', 'account_number', 'account_type', 'bank_name', 'balance']
+            fieldnames = list(collector.accounts[0].keys())
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(collector.accounts)
@@ -475,8 +632,7 @@ def export_to_3nf_csv(collector, output_prefix):
     orgs_file = f"{output_prefix}_organizations.csv"
     if collector.organizations:
         with open(orgs_file, 'w', newline='', encoding='utf-8') as f:
-            fieldnames = ['org_id', 'org_uri', 'name', 'description', 'email', 
-                         'telephone', 'url', 'industry', 'tax_id']
+            fieldnames = list(collector.organizations[0].keys())
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(collector.organizations)
@@ -486,8 +642,7 @@ def export_to_3nf_csv(collector, output_prefix):
     orders_file = f"{output_prefix}_orders.csv"
     if collector.orders:
         with open(orders_file, 'w', newline='', encoding='utf-8') as f:
-            fieldnames = ['order_id', 'order_uri', 'person_id', 'account_id', 'merchant_id',
-                         'order_number', 'order_status', 'order_date', 'total_payment']
+            fieldnames = list(collector.orders[0].keys())
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(collector.orders)
@@ -497,7 +652,7 @@ def export_to_3nf_csv(collector, output_prefix):
     items_file = f"{output_prefix}_order_items.csv"
     if collector.order_items:
         with open(items_file, 'w', newline='', encoding='utf-8') as f:
-            fieldnames = ['order_id', 'item_index', 'item_name']
+            fieldnames = list(collector.order_items[0].keys())
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(collector.order_items)

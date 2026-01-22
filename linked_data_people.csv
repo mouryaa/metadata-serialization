@@ -1,0 +1,11 @@
+person_id,person_uri,fullName,firstName,lastName,emailAddress,phoneNumber,customerID
+person_1,http://example.org/person_1,Adam Simpson,Adam,Simpson,robertstewart@example.net,2223179001,572-68-3917
+person_2,http://example.org/person_2,Ashley Hamilton,Ashley,Hamilton,gtapia@example.org,675-218-1813,196-58-2958
+person_3,http://example.org/person_3,Robert Petersen,Robert,Petersen,kburton@example.com,2347396137,507-34-3547
+person_4,http://example.org/person_4,Brandon Taylor,Brandon,Taylor,qperez@example.com,963.899.8064,837-59-9518
+person_5,http://example.org/person_5,Lisa Stevens,Lisa,Stevens,kimberlyhall@example.com,765.430.3461x798,364-90-1928
+person_6,http://example.org/person_6,Leslie Schwartz,Leslie,Schwartz,mccarthyandrew@example.com,652-417-7923x305,944-70-3936
+person_7,http://example.org/person_7,Victoria Joseph,Victoria,Joseph,linda67@example.org,210.799.6976x007,505-77-2510
+person_8,http://example.org/person_8,Brenda Campbell,Brenda,Campbell,suzannecardenas@example.com,001-618-439-6600x807,855-48-8991
+person_9,http://example.org/person_9,Sandra Jones,Sandra,Jones,jessicazamora@example.com,(618)437-4268,327-23-2237
+person_10,http://example.org/person_10,Erica White,Erica,White,dianaproctor@example.com,001-639-766-9643x1477,817-70-7730

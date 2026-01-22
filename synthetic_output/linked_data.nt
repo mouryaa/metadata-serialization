@@ -1,0 +1,616 @@
+<http://example.org/person_8_account_1_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_8> .
+<http://example.org/person_5_account_1_order_1_item_2> <http://mycompany.com/vocab/productName> "Another Suddenly Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_3_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "636.32"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9> <http://mycompany.com/vocab/firstName> "Sandra"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1> <http://mycompany.com/vocab/bankAccountType> "Business Checking"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2_order_1_item_3> <http://mycompany.com/vocab/itemNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_3_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_7_account_1_order_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_8_account_1> <http://mycompany.com/vocab/bankAccountName> "Savings Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_1_account_1_order_1_item_1> .
+<http://example.org/person_8_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_4_account_1_order_2> <http://mycompany.com/vocab/orderTotal> "384.93"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_2_account_1_order_1_item_3> .
+<http://example.org/person_4_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_8_account_1> <http://mycompany.com/vocab/bankName> "Fifth Third Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1> <http://mycompany.com/vocab/bankAccountId> "880c2c78-2043-4028-86d1-a9f7310ee731"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_9> .
+<http://example.org/person_6_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-07-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/org_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Company> .
+<http://example.org/person_4_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_6_account_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_5_account_1_order_1_item_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-10-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_7_account_1_order_3> <http://mycompany.com/vocab/orderItem> <http://example.org/person_7_account_1_order_3_item_1> .
+<http://example.org/person_9_account_2_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_10_account_2> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_10> .
+<http://example.org/person_7_account_1> <http://mycompany.com/vocab/bankAccountType> "Joint Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderTotal> "821.27"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7_account_1_order_2_item_1> <http://mycompany.com/vocab/productName> "Class Mind Book"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_1_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_7_account_1> <http://mycompany.com/vocab/bankName> "TD Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_1_account_1> .
+<http://example.org/person_5_account_1_order_2_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "1534.79"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_2_order_3_item_1> <http://mycompany.com/vocab/productName> "Yet Blood Healt"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_8_account_1> .
+<http://example.org/person_2_account_1> <http://mycompany.com/vocab/bankAccountId> "5c9ad296-f20c-4915-9e4d-e65e15760676"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6> <http://mycompany.com/vocab/emailAddress> "mccarthyandrew@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_9> .
+<http://example.org/person_3_account_1_order_2_item_3> <http://mycompany.com/vocab/itemNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_3_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_3_account_1_order_3> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_1> .
+<http://example.org/person_7_account_1_order_3> <http://mycompany.com/vocab/orderDate> "2025-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_5> <http://mycompany.com/vocab/firstName> "Lisa"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_4_account_1> <http://mycompany.com/vocab/balance> "214.88"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7_account_1_order_3> <http://mycompany.com/vocab/orderTotal> "927.94"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_3_account_1_order_2_item_1> <http://mycompany.com/vocab/productName> "Cup Feel Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_5_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/org_4> <http://mycompany.com/vocab/companyName> "Blair, Webster and Ferrell"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_2_item_1> <http://mycompany.com/vocab/productName> "Participant Raise Clothin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1> <http://mycompany.com/vocab/firstName> "Adam"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8> <http://mycompany.com/vocab/fullName> "Brenda Campbell"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderPickupAvailable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_5> .
+<http://example.org/person_1_account_1_order_2_item_3> <http://mycompany.com/vocab/productName> "Fast Team Toy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_10_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_9_account_2> <http://mycompany.com/vocab/bankAccountType> "Individual Retirement Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2> <http://mycompany.com/vocab/lastName> "Hamilton"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderDate> "2025-05-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_8_account_1_order_2_item_2> <http://mycompany.com/vocab/productName> "Politics Instead Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_9_account_2> .
+<http://example.org/person_7_account_1_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_7_account_1> .
+<http://example.org/org_1> <http://mycompany.com/vocab/companyName> "Gonzalez Group"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_10_account_2> <http://mycompany.com/vocab/bankAccountName> "Savings Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_1> .
+<http://example.org/person_1_account_1> <http://mycompany.com/vocab/balance> "144.67"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/org_5> <http://mycompany.com/vocab/companyPhone> "(864)574-7194"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1_item_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_6_account_2> <http://mycompany.com/vocab/bankName> "Santander Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8> <http://mycompany.com/vocab/lastName> "Campbell"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Company> .
+<http://example.org/person_10_account_2_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_3> .
+<http://example.org/person_4_account_1_order_2_item_1> <http://mycompany.com/vocab/productName> "Answer Over Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://mycompany.com/vocab/companyID> "38-6858538"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_2_item_3> <http://mycompany.com/vocab/productName> "Bed Take Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_2_item_1> <http://mycompany.com/vocab/productName> "Treatment Road Book"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "INV-947447"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_3> .
+<http://example.org/person_9_account_2_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_9> .
+<http://example.org/person_3> <http://mycompany.com/vocab/firstName> "Robert"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "2316.56"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7_account_1_order_2> <http://mycompany.com/vocab/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1> <http://mycompany.com/vocab/bankAccountName> "Primary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2> <http://mycompany.com/vocab/phoneNumber> "675-218-1813"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_2> <http://mycompany.com/vocab/orderDate> "2025-11-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_8_account_1> <http://mycompany.com/vocab/balance> "1022.78"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_3_account_1_order_3> <http://mycompany.com/vocab/orderNumber> "INV-840759"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_6_account_1_order_1_item_1> .
+<http://example.org/person_7_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_9_account_2_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/org_4> <http://mycompany.com/vocab/description> "Hot current person than strategy wife either.\nPlant church clearly policy. Need behind front life admit decide. Technology explain smile standard bar first...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_9_account_2_order_3> <http://mycompany.com/vocab/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_3_item_1> <http://mycompany.com/vocab/productName> "Whether Man Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_3_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_1_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_10> <http://mycompany.com/vocab/fullName> "Erica White"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_3_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/org_5> <http://mycompany.com/vocab/companyName> "Griffith PLC"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_7_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_3> .
+<http://example.org/person_6_account_2> <http://mycompany.com/vocab/balance> "29426.72"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_2_order_2_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_6_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "Whatever Region Home & Garde"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_9_account_2_order_1> <http://mycompany.com/vocab/orderNumber> "PO-367385"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_1_account_1_order_3_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_10_account_2_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_6_account_2_order_1_item_1> <http://mycompany.com/vocab/productName> "Reason Growth Clothin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_3> .
+<http://example.org/org_5> <http://mycompany.com/vocab/companyEmail> "browneric@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10> <http://mycompany.com/vocab/emailAddress> "dianaproctor@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderPickupAvailable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_8_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_8> .
+<http://example.org/person_6_account_2> <http://mycompany.com/vocab/bankAccountName> "Secondary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_1_account_1_order_3_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_1_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "Large May Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://mycompany.com/vocab/description> "Possible dinner eye. Tv moment world less like. Send establish report can head.\nGood outside shake born. You defense college society memory deep...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_2> <http://mycompany.com/vocab/fullName> "Ashley Hamilton"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_9_account_2> .
+<http://example.org/person_5> <http://mycompany.com/vocab/emailAddress> "kimberlyhall@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1> <http://mycompany.com/vocab/bankAccountId> "b058fbbd-4748-4e60-a983-771d1000bc16"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2_item_2> <http://mycompany.com/vocab/productName> "Win Produce Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7> <http://mycompany.com/vocab/customerID> "505-77-2510"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1> <http://mycompany.com/vocab/bankAccountType> "Certificate of Deposit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_2_item_1> <http://mycompany.com/vocab/productName> "Collection Friend Automotiv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_6_account_1> <http://mycompany.com/vocab/bankAccountId> "e8107eec-1b5b-4d76-9561-3ac546a1cc11"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_1_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_5> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_10> .
+<http://example.org/person_4_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-11-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_7_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "Thus Ask Book"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4> <http://mycompany.com/vocab/lastName> "Taylor"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_1_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/org_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Company> .
+<http://example.org/person_3_account_1> <http://mycompany.com/vocab/balance> "8813.23"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_1_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_1_account_1_order_3> <http://mycompany.com/vocab/orderItem> <http://example.org/person_1_account_1_order_3_item_1> .
+<http://example.org/person_9_account_1_order_1_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_4_account_1_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_3> .
+<http://example.org/person_1_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/org_2> <http://mycompany.com/vocab/companyIndustry> "Transportation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_1_account_1> .
+<http://example.org/person_2_account_1> <http://mycompany.com/vocab/balance> "6181.14"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_2_order_2_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_7_account_1_order_3> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_7> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_6> .
+<http://example.org/person_1_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_1> .
+<http://example.org/person_10_account_2_order_1> <http://mycompany.com/vocab/orderNumber> "PO-292931"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3_item_2> <http://mycompany.com/vocab/productName> "Tell He Clothin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_10_account_1> .
+<http://example.org/person_2_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_10_account_1> <http://mycompany.com/vocab/bankAccountName> "Secondary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_4_account_1_order_1_item_1> .
+<http://example.org/person_1_account_1> <http://mycompany.com/vocab/bankAccountType> "Certificate of Deposit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9> <http://mycompany.com/vocab/customerID> "327-23-2237"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_3_account_1_order_1_item_3> .
+<http://example.org/person_10_account_2_order_1> <http://mycompany.com/vocab/orderStatus> "OrderDelivered"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_3> <http://mycompany.com/vocab/description> "Past weight anything agency decade. Only by enough bit. Good various mention spring term use peace cut...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_2> <http://mycompany.com/vocab/orderNumber> "PO-230652"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1_item_3> <http://mycompany.com/vocab/itemNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_4_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_1_account_1_order_3> <http://mycompany.com/vocab/orderTotal> "2274.14"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7> <http://mycompany.com/vocab/phoneNumber> "210.799.6976x007"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_4> .
+<http://example.org/org_5> <http://mycompany.com/vocab/description> "Raise letter central. Fire scene usually.\nRequire threat read budget all million program. Bed fear red during former agency. Recently avoid test spring...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_5> .
+<http://example.org/person_5_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_5_account_1_order_2_item_2> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_3_account_1_order_1_item_1> .
+<http://example.org/person_9_account_2_order_3> <http://mycompany.com/vocab/orderNumber> "PO-752232"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_6_account_1> <http://mycompany.com/vocab/balance> "417.74"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/org_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Company> .
+<http://example.org/person_5_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_3> .
+<http://example.org/person_7_account_1_order_2> <http://mycompany.com/vocab/orderTotal> "594.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_1_account_1_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_10_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_10_account_1_order_2_item_1> .
+<http://example.org/person_3_account_1_order_1_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_9_account_2_order_2> <http://mycompany.com/vocab/orderTotal> "1952.66"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_2_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "Already Final Toy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_3> <http://mycompany.com/vocab/orderTotal> "964.03"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_10_account_1_order_2> <http://mycompany.com/vocab/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_3> <http://mycompany.com/vocab/companyIndustry> "Construction"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4> <http://mycompany.com/vocab/phoneNumber> "963.899.8064"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_1> <http://mycompany.com/vocab/orderTotal> "2402.65"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_9_account_1> .
+<http://example.org/person_6> <http://mycompany.com/vocab/fullName> "Leslie Schwartz"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_8_account_1_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_1_account_1_order_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/org_3> <http://mycompany.com/vocab/companyURL> "http://henry-munoz.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_5_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_5_account_1_order_2_item_1> .
+<http://example.org/person_9_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_9_account_1_order_2_item_1> .
+<http://example.org/person_2_account_1> <http://mycompany.com/vocab/bankAccountName> "Primary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_1_account_1> .
+<http://example.org/org_3> <http://mycompany.com/vocab/companyName> "Campbell, Wong and Wilson"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1_item_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_3_account_1_order_3_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_2> <http://mycompany.com/vocab/emailAddress> "gtapia@example.org"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_5_account_1_order_2_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_6_account_2_order_1_item_1> .
+<http://example.org/person_1> <http://mycompany.com/vocab/fullName> "Adam Simpson"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_7_account_1> <http://mycompany.com/vocab/balance> "22965.35"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_1_order_2> <http://mycompany.com/vocab/orderTotal> "1746.43"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_6> <http://mycompany.com/vocab/customerID> "944-70-3936"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_3_account_1_order_2_item_2> .
+<http://example.org/person_6_account_2_order_1_item_3> <http://mycompany.com/vocab/productName> "Ready Behind Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7> <http://mycompany.com/vocab/lastName> "Joseph"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_6_account_2> .
+<http://example.org/person_9_account_1> <http://mycompany.com/vocab/balance> "3866.23"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_5> .
+<http://example.org/person_3_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_9_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "Hair Cause Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1_item_3> <http://mycompany.com/vocab/productName> "Produce Begin Food & Beverage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_7_account_1> .
+<http://example.org/person_3_account_1_order_1_item_3> <http://mycompany.com/vocab/itemNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_10_account_1> <http://mycompany.com/vocab/bankAccountId> "cefe0704-37f5-42e1-92d7-0d517e89571c"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_5_account_1> .
+<http://example.org/person_10_account_2> <http://mycompany.com/vocab/balance> "58103.36"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_10_account_2_order_2_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_3> <http://mycompany.com/vocab/fullName> "Robert Petersen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1_item_2> <http://mycompany.com/vocab/productName> "Color Race Home & Garde"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_3_account_1> .
+<http://example.org/person_10_account_2_order_2_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_10_account_1> <http://mycompany.com/vocab/bankName> "HSBC Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_3> <http://mycompany.com/vocab/orderTotal> "2254.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_2_order_3> <http://mycompany.com/vocab/orderDate> "2025-01-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/org_1> <http://mycompany.com/vocab/companyEmail> "joshuagonzalez@example.org"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "2266.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_10_account_2> <http://mycompany.com/vocab/bankAccountType> "Savings Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1> <http://mycompany.com/vocab/bankAccountType> "Money Market Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10> <http://mycompany.com/vocab/customerID> "817-70-7730"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3> <http://mycompany.com/vocab/customerID> "507-34-3547"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1> <http://mycompany.com/vocab/bankAccountId> "b5ab5527-fd6e-4e4f-9434-c9db4d7118f3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1> <http://mycompany.com/vocab/emailAddress> "robertstewart@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5> <http://mycompany.com/vocab/customerID> "364-90-1928"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://mycompany.com/vocab/companyIndustry> "Energy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_9_account_2_order_3> <http://mycompany.com/vocab/orderItem> <http://example.org/person_9_account_2_order_3_item_1> .
+<http://example.org/person_8_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_8_account_1> .
+<http://example.org/person_7_account_1> <http://mycompany.com/vocab/bankAccountName> "Savings Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-07-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_1> .
+<http://example.org/person_5> <http://mycompany.com/vocab/phoneNumber> "765.430.3461x798"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_3> <http://mycompany.com/vocab/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://mycompany.com/vocab/orderDate> "2025-07-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_9_account_1_order_2> <http://mycompany.com/vocab/orderNumber> "INV-240844"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_10_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "Approach Present Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_3> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_7_account_1> .
+<http://example.org/person_9_account_1_order_2> <http://mycompany.com/vocab/orderStatus> "OrderPickupAvailable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderStatus> "OrderCancelled"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://mycompany.com/vocab/orderTotal> "284.41"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderTotal> "1296.52"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_3_account_1_order_3_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_4_account_1_order_2_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_7_account_1_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_8_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_7> <http://mycompany.com/vocab/fullName> "Victoria Joseph"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_2> <http://mycompany.com/vocab/orderStatus> "OrderCancelled"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_8_account_1_order_2_item_1> .
+<http://example.org/person_4_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_4> .
+<http://example.org/person_9_account_1> <http://mycompany.com/vocab/bankAccountName> "Business Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_1> <http://mycompany.com/vocab/orderDate> "2025-09-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_9_account_2_order_1> <http://mycompany.com/vocab/orderDate> "2025-12-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_1> .
+<http://example.org/person_1_account_1_order_3_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_3_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_3> .
+<http://example.org/person_4_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "College Majority Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_4_account_1_order_2_item_1> .
+<http://example.org/person_1_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_1_account_1_order_1_item_2> .
+<http://example.org/person_9_account_2_order_3> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_9_account_2> .
+<http://example.org/person_10_account_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "1682.47"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_10_account_1_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_5> .
+<http://example.org/person_5> <http://mycompany.com/vocab/lastName> "Stevens"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderProblem"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_10> .
+<http://example.org/person_5_account_1_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_5_account_1_order_1_item_2> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_5_account_1_order_1_item_1> .
+<http://example.org/person_3_account_1> <http://mycompany.com/vocab/bankAccountType> "Certificate of Deposit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2_order_1_item_2> <http://mycompany.com/vocab/productName> "Best While Office Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1> <http://mycompany.com/vocab/bankAccountName> "Primary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_9_account_2_order_2_item_2> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderNumber> "ORD-985961"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_6_account_2_order_1_item_2> .
+<http://example.org/person_9_account_1_order_2> <http://mycompany.com/vocab/orderDate> "2025-10-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_9_account_2_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_9_account_2_order_2_item_1> .
+<http://example.org/person_10_account_1_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_4> .
+<http://example.org/person_9_account_2_order_2> <http://mycompany.com/vocab/orderNumber> "PO-713313"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_6> .
+<http://example.org/person_6_account_2_order_1_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_3_account_1_order_1_item_3> <http://mycompany.com/vocab/productName> "Woman Kind Food & Beverage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_7> <http://mycompany.com/vocab/emailAddress> "linda67@example.org"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "ORD-591165"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1> <http://mycompany.com/vocab/bankAccountId> "74a6493c-512c-4d34-9afc-ab5de733a758"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_9_account_1> .
+<http://example.org/person_10_account_1_order_2> <http://mycompany.com/vocab/orderDate> "2025-05-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/org_2> <http://mycompany.com/vocab/companyEmail> "cynthia69@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_2_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_5_account_1_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_5_account_1> .
+<http://example.org/person_8_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_9> <http://mycompany.com/vocab/fullName> "Sandra Jones"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_7> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_6_account_2_order_1_item_3> .
+<http://example.org/person_8_account_1_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_4> .
+<http://example.org/person_10_account_2_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_6_account_2_order_1_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderDate> "2025-07-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_4_account_1_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_9_account_2_order_1_item_1> <http://mycompany.com/vocab/productName> "Dream North Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_1> <http://mycompany.com/vocab/companyPhone> "960-382-7471"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_8> .
+<http://example.org/person_10_account_2> <http://mycompany.com/vocab/bankAccountId> "bfd06068-913f-4ddb-8b1a-604b6763d181"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_1> .
+<http://example.org/person_10_account_2_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_6> <http://mycompany.com/vocab/phoneNumber> "652-417-7923x305"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3> <http://mycompany.com/vocab/emailAddress> "kburton@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-12-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_1_account_1_order_2_item_1> .
+<http://example.org/person_9_account_2_order_2> <http://mycompany.com/vocab/orderDate> "2025-11-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_9_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "399.22"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_2> .
+<http://example.org/person_4_account_1> <http://mycompany.com/vocab/bankName> "KeyBank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2> <http://mycompany.com/vocab/bankAccountId> "14294343-49d0-4d44-adb2-3080099aad7a"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_2> .
+<http://example.org/person_3_account_1_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_1_account_1_order_2_item_1> <http://mycompany.com/vocab/productName> "Talk Class Beauty Product"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1> <http://mycompany.com/vocab/customerID> "572-68-3917"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2_item_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_8_account_1> <http://mycompany.com/vocab/bankAccountId> "020ae8e7-2b5f-4af6-96d0-7e897c9dc650"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_1> <http://mycompany.com/vocab/phoneNumber> "2223179001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderDelivered"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_3> <http://mycompany.com/vocab/phoneNumber> "2347396137"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9> <http://mycompany.com/vocab/emailAddress> "jessicazamora@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8> <http://mycompany.com/vocab/firstName> "Brenda"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_8_account_1_order_1_item_1> .
+<http://example.org/person_10_account_2_order_2_item_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_5_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_7_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-11-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_10_account_1> <http://mycompany.com/vocab/bankAccountType> "Checking Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderTotal> "705.78"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_1_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "214.89"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_10_account_2> <http://mycompany.com/vocab/bankName> "PNC Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_9_account_1_order_1_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_1_account_1_order_3> <http://mycompany.com/vocab/orderNumber> "INV-630126"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_4_account_1_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_10_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "PO-142148"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_2_item_2> <http://mycompany.com/vocab/productName> "Pick Less Clothin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderPickupAvailable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2> <http://mycompany.com/vocab/bankAccountId> "e0b76f89-5fb4-4709-a4f3-301474cb19fb"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_3_account_1_order_3> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_3_account_1> .
+<http://example.org/person_8_account_1_order_2_item_1> <http://mycompany.com/vocab/productName> "Box I Food & Beverage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_9> .
+<http://example.org/person_8_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "Focus Summer Beauty Product"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_2> .
+<http://example.org/person_7_account_1_order_3> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_4> .
+<http://example.org/person_1_account_1_order_2_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_8_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "2417.21"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "PO-596369"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_2> <http://mycompany.com/vocab/orderStatus> "OrderReturned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_2> <http://mycompany.com/vocab/description> "Firm several paper blood check social. Energy politics on center least.\nAgree station listen say increase place future. Beat attack we work. Too explain either claim...."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_2_item_2> <http://mycompany.com/vocab/productName> "Name Treat Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_4> .
+<http://example.org/person_4_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_4> .
+<http://example.org/person_2> <http://mycompany.com/vocab/firstName> "Ashley"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_9_account_1_order_1_item_2> .
+<http://example.org/person_2_account_1> <http://mycompany.com/vocab/bankName> "Citibank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderStatus> "OrderPickupAvailable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_10> .
+<http://example.org/person_2> <http://mycompany.com/vocab/customerID> "196-58-2958"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_3_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_1_account_1_order_2_item_2> .
+<http://example.org/person_8_account_1_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_9_account_2_order_3> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_9> .
+<http://example.org/person_4_account_1> <http://mycompany.com/vocab/bankAccountType> "Business Savings"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderDate> "2025-10-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1> <http://mycompany.com/vocab/bankAccountId> "f9c58fdd-a68a-4b81-9880-5f335136b64d"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1> <http://mycompany.com/vocab/bankAccountType> "Business Checking"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_2_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_2> .
+<http://example.org/org_3> <http://mycompany.com/vocab/companyEmail> "dashley@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "ORD-287657"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_10_account_1_order_2_item_1> <http://mycompany.com/vocab/productName> "Range Upon Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_10_account_2_order_2_item_3> .
+<http://example.org/person_7_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_9_account_2_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_2_account_1_order_1_item_3> <http://mycompany.com/vocab/itemNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_5_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_2> .
+<http://example.org/person_3_account_1_order_3> <http://mycompany.com/vocab/orderItem> <http://example.org/person_3_account_1_order_3_item_2> .
+<http://example.org/org_2> <http://mycompany.com/vocab/companyURL> "http://ortiz.org/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_4> <http://mycompany.com/vocab/emailAddress> "qperez@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4> <http://mycompany.com/vocab/fullName> "Brandon Taylor"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_5> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderTotal> "1369.44"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_1_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_9_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_8_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-12-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderNumber> "INV-291989"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_5_account_1_order_1_item_3> .
+<http://example.org/person_8_account_1> <http://mycompany.com/vocab/bankAccountType> "Business Checking"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderDate> "2025-06-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_10_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "580.05"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_4_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderDelivered"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_2> .
+<http://example.org/person_7_account_1_order_2> <http://mycompany.com/vocab/orderNumber> "INV-823869"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_10_account_2_order_2_item_1> .
+<http://example.org/org_2> <http://mycompany.com/vocab/companyPhone> "899-635-2138"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_7_account_1_order_2_item_1> .
+<http://example.org/person_3_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "These Week Food & Beverage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_2_account_1_order_1_item_2> .
+<http://example.org/person_5_account_1> <http://mycompany.com/vocab/bankName> "Fifth Third Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_3> <http://mycompany.com/vocab/companyPhone> "866.945.6254x813"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_2_account_1> .
+<http://example.org/person_8_account_1_order_1> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_1> .
+<http://example.org/person_9_account_2_order_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_4_account_1_order_2_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_5_account_1_order_1_item_3> <http://mycompany.com/vocab/productName> "Any Director Clothin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1> <http://mycompany.com/vocab/bankName> "Chase Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-09-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_5_account_1> <http://mycompany.com/vocab/bankAccountName> "Primary Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_3_account_1> .
+<http://example.org/person_3_account_1_order_2_item_2> <http://mycompany.com/vocab/productName> "Discussion Writer Toy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9> <http://mycompany.com/vocab/lastName> "Jones"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2_order_1> <http://mycompany.com/vocab/orderNumber> "INV-784874"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_9_account_1_order_1_item_1> .
+<http://example.org/person_5_account_1> <http://mycompany.com/vocab/balance> "768808.74"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7_account_1_order_3> <http://mycompany.com/vocab/orderNumber> "PO-674492"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_6_account_2_order_1_item_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_9_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_1> <http://mycompany.com/vocab/lastName> "Simpson"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_1_account_1_order_2_item_3> .
+<http://example.org/person_10_account_2_order_1_item_1> <http://mycompany.com/vocab/productName> "Since Music Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3> <http://mycompany.com/vocab/lastName> "Petersen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_9_account_2_order_1_item_1> .
+<http://example.org/person_5_account_1_order_2_item_2> <http://mycompany.com/vocab/productName> "Everyone Hotel Beauty Product"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2> <http://mycompany.com/vocab/orderNumber> "PO-289265"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_4_account_1> .
+<http://example.org/person_5_account_1_order_2> <http://mycompany.com/vocab/orderTotal> "2258.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_8_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_8_account_1_order_1_item_2> .
+<http://example.org/person_5_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "PO-797249"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/org_4> <http://mycompany.com/vocab/companyID> "99-6684603"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_5> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderDate> "2025-10-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_6> <http://mycompany.com/vocab/firstName> "Leslie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1> <http://mycompany.com/vocab/bankName> "SunTrust Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "ORD-577175"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_4_account_1> .
+<http://example.org/person_1_account_1> <http://mycompany.com/vocab/bankAccountName> "Savings Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_10_account_2_order_1_item_1> .
+<http://example.org/person_10_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_10_account_1> .
+<http://example.org/org_2> <http://mycompany.com/vocab/companyID> "58-3440107"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_4> <http://mycompany.com/vocab/companyPhone> "+1-988-833-2225x296"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7> <http://mycompany.com/vocab/firstName> "Victoria"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3> <http://mycompany.com/vocab/orderDate> "2025-06-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_3_account_1_order_3> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_3> .
+<http://example.org/person_7_account_1_order_3_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_10> <http://mycompany.com/vocab/phoneNumber> "001-639-766-9643x1477"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3> <http://mycompany.com/vocab/orderStatus> "OrderProcessing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_9> <http://mycompany.com/vocab/phoneNumber> "(618)437-4268"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_10_account_2> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderStatus> "OrderDelivered"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_3_item_1> <http://mycompany.com/vocab/productName> "Reveal Order Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_2_account_1_order_1_item_1> .
+<http://example.org/person_2_account_1_order_1_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_2_account_1_order_1_item_2> <http://mycompany.com/vocab/productName> "Name Campaign Sports Equipmen"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2_item_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_1_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_1> .
+<http://example.org/person_3_account_1> <http://mycompany.com/vocab/bankAccountName> "Emergency Fund Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/org_4> <http://mycompany.com/vocab/companyIndustry> "Agriculture"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8> <http://mycompany.com/vocab/customerID> "855-48-8991"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_3_account_1_order_3> <http://mycompany.com/vocab/orderDate> "2025-12-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "PO-923004"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_2> .
+<http://example.org/person_3_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/org_2> <http://mycompany.com/vocab/companyName> "Mccoy and Sons"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_4_account_1_order_1> <http://mycompany.com/vocab/orderTotal> "370.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_9_account_1_order_1_item_2> <http://mycompany.com/vocab/productName> "Remain Financial Electronic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6> <http://mycompany.com/vocab/lastName> "Schwartz"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5_account_1_order_1_item_1> <http://mycompany.com/vocab/productName> "Just Peace Book"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_8> <http://mycompany.com/vocab/emailAddress> "suzannecardenas@example.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_2> <http://mycompany.com/vocab/orderTotal> "1366.38"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_7_account_1_order_1_item_1> .
+<http://example.org/person_1_account_1_order_3> <http://mycompany.com/vocab/orderItem> <http://example.org/person_1_account_1_order_3_item_2> .
+<http://example.org/person_4_account_1_order_2> <http://mycompany.com/vocab/orderNumber> "ORD-335089"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_2_item_3> <http://mycompany.com/vocab/itemNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_4_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_4_account_1_order_2_item_2> .
+<http://example.org/person_9_account_2_order_1> <http://mycompany.com/vocab/orderStatus> "OrderProblem"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_2_item_1> <http://mycompany.com/vocab/productName> "Middle Even Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Company> .
+<http://example.org/person_5_account_1_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_1> .
+<http://example.org/person_9_account_2_order_3> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_1> .
+<http://example.org/person_10> <http://mycompany.com/vocab/firstName> "Erica"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_5_account_1_order_2> <http://mycompany.com/vocab/orderDate> "2025-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_6_account_1_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_6_account_1> .
+<http://example.org/person_8_account_1_order_2> <http://mycompany.com/vocab/orderStatus> "OrderProblem"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_3> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderInTransit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1> <http://mycompany.com/vocab/bankName> "SunTrust Bank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_10_account_2_order_2_item_2> .
+<http://example.org/person_8_account_1_order_2> <http://mycompany.com/vocab/orderNumber> "INV-632185"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_2_account_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/BankAccount> .
+<http://example.org/person_9_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_9> .
+<http://example.org/person_6_account_2> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_6> .
+<http://example.org/person_6_account_1> <http://mycompany.com/vocab/bankName> "BB&T"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_3_item_2> <http://mycompany.com/vocab/productName> "Not Thought Office Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_7> .
+<http://example.org/person_4_account_1> <http://mycompany.com/vocab/bankAccountId> "3499f5f5-6602-43d2-89c2-bfba2a8d52f5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_10_account_1_order_1_item_1> .
+<http://example.org/person_3_account_1_order_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_8_account_1_order_2_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_10_account_2_order_1> <http://mycompany.com/vocab/orderPayment> <http://example.org/person_10_account_2> .
+<http://example.org/person_6_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_6> .
+<http://example.org/person_4_account_1_order_2> <http://mycompany.com/vocab/orderStatus> "OrderInTransit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_9_account_2_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_9> .
+<http://example.org/person_4_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/org_5> <http://mycompany.com/vocab/companyIndustry> "Healthcare"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2_order_2_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_10_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_4_account_1_order_2_item_2> <http://mycompany.com/vocab/productName> "Relate Look Pet Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_8_account_1_order_1_item_2> <http://mycompany.com/vocab/productName> "Put Visit Office Supplie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_3_item_1> <http://mycompany.com/vocab/productName> "Use Science Jewelr"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_3_account_1_order_2_item_3> .
+<http://example.org/person_1_account_1_order_2_item_3> <http://mycompany.com/vocab/itemNumber> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_10_account_1> <http://mycompany.com/vocab/balance> "539.84"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/org_4> <http://mycompany.com/vocab/companyEmail> "dferguson@example.net"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_1_account_1_order_1_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_3_account_1_order_1_item_2> <http://mycompany.com/vocab/productName> "Past Respond Food & Beverage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_2> <http://mycompany.com/vocab/bankAccountType> "Individual Retirement Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_7_account_1_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_7> .
+<http://example.org/person_6_account_2_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_8_account_1_order_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_4> <http://mycompany.com/vocab/customerID> "837-59-9518"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_3> <http://mycompany.com/vocab/orderStatus> "OrderCancelled"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_6_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_9_account_2> <http://mycompany.com/vocab/balance> "31604.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_7_account_1_order_3_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_7_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "INV-403380"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1> <http://mycompany.com/vocab/orderStatus> "OrderProblem"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_10_account_2_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/Customer> .
+<http://example.org/person_3_account_1_order_3> <http://mycompany.com/vocab/orderItem> <http://example.org/person_3_account_1_order_3_item_1> .
+<http://example.org/person_1_account_1_order_2_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_4_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_4> .
+<http://example.org/person_7_account_1_order_2> <http://mycompany.com/vocab/orderDate> "2025-07-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/person_4> <http://mycompany.com/vocab/firstName> "Brandon"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_1_item_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_8_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_8_account_1_order_2_item_2> .
+<http://example.org/org_1> <http://mycompany.com/vocab/companyURL> "http://welch.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_9_account_2> <http://mycompany.com/vocab/bankAccountName> "Emergency Fund Account"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_7_account_1_order_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/PurchaseOrder> .
+<http://example.org/person_8_account_1_order_1_item_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mycompany.com/vocab/LineItem> .
+<http://example.org/person_10> <http://mycompany.com/vocab/lastName> "White"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderItem> <http://example.org/person_3_account_1_order_1_item_2> .
+<http://example.org/person_10_account_1_order_2> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_10> .
+<http://example.org/person_3_account_1_order_2> <http://mycompany.com/vocab/orderItem> <http://example.org/person_3_account_1_order_2_item_1> .
+<http://example.org/person_10_account_1> <http://mycompany.com/vocab/bankAccountOwner> <http://example.org/person_10> .
+<http://example.org/person_10_account_2_order_2> <http://mycompany.com/vocab/orderNumber> "ORD-694914"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_1_order_2> <http://mycompany.com/vocab/orderCompany> <http://example.org/org_5> .
+<http://example.org/person_3_account_1_order_1> <http://mycompany.com/vocab/orderCustomer> <http://example.org/person_3> .
+<http://example.org/person_8> <http://mycompany.com/vocab/phoneNumber> "001-618-439-6600x807"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_3_account_1_order_2_item_3> <http://mycompany.com/vocab/productName> "Many Surface Healt"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_9_account_2> <http://mycompany.com/vocab/bankName> "Citibank"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_5> <http://mycompany.com/vocab/fullName> "Lisa Stevens"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_5> <http://mycompany.com/vocab/companyID> "54-8370737"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/org_4> <http://mycompany.com/vocab/companyURL> "http://fischer.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_10_account_2_order_1> <http://mycompany.com/vocab/orderTotal> "563.97"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/person_6_account_2_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/org_5> <http://mycompany.com/vocab/companyURL> "http://www.pearson-johnson.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/person_6_account_1_order_1_item_1> <http://mycompany.com/vocab/itemNumber> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/person_9_account_1_order_1> <http://mycompany.com/vocab/orderNumber> "INV-289431"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/person_1_account_1_order_2_item_2> <http://mycompany.com/vocab/itemNumber> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .

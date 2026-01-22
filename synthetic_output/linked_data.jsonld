@@ -1,0 +1,3508 @@
+[
+  {
+    "@id": "http://example.org/person_8_account_1_order_2_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Politics Instead Electronic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_7",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "505-77-2510"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "linda67@example.org"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Victoria"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Victoria Joseph"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Joseph"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "210.799.6976x007"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_2_order_3",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_9"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-01-31"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_9_account_2_order_3_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-752232"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_9_account_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderReturned"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "964.03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_7_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_7"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-11-10"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_7_account_1_order_1_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-403380"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_7_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderProcessing"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "2266.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_8_account_1_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_4"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_8"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-07-12"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_8_account_1_order_2_item_1"
+      },
+      {
+        "@id": "http://example.org/person_8_account_1_order_2_item_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-632185"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_8_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderProblem"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "284.41"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_5_account_1_order_2_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Everyone Hotel Beauty Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_4_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "College Majority Pet Supplie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "572-68-3917"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "robertstewart@example.net"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Adam"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Adam Simpson"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Simpson"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "2223179001"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_2_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_9"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-12-09"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_9_account_2_order_1_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-367385"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_9_account_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderProblem"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "2402.65"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_2_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_10"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-09-20"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_10_account_2_order_1_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-292931"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_10_account_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderDelivered"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "563.97"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_2",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "58103.36"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "bfd06068-913f-4ddb-8b1a-604b6763d181"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Savings Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_10"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Savings Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PNC Bank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_2",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "31604.8"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "14294343-49d0-4d44-adb2-3080099aad7a"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Emergency Fund Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_9"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Individual Retirement Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Citibank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_5_account_1_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Treatment Road Book"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_2_account_1_order_1_item_3",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 3
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Produce Begin Food & Beverage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_5_account_1_order_1_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Another Suddenly Pet Supplie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_6_account_2_order_1_item_3",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 3
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Ready Behind Pet Supplie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_1_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Past Respond Food & Beverage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_7_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Thus Ask Book"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_8",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "855-48-8991"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "suzannecardenas@example.com"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Brenda"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Brenda Campbell"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Campbell"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "001-618-439-6600x807"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "817-70-7730"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "dianaproctor@example.com"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Erica"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Erica White"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "White"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "001-639-766-9643x1477"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_2_item_3",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 3
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Many Surface Healt"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_1_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_4"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_10"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-05-18"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_10_account_1_order_2_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-289265"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_10_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderReturned"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "1366.38"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_2_account_1_order_1_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Name Campaign Sports Equipmen"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_3_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Whether Man Electronic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_6_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "417.74"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "e8107eec-1b5b-4d76-9561-3ac546a1cc11"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Primary Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_6"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Business Checking"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "BB&T"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_5"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-07-30"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_1_account_1_order_1_item_1"
+      },
+      {
+        "@id": "http://example.org/person_1_account_1_order_1_item_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "ORD-287657"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_1_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderProblem"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "214.89"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_4",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "837-59-9518"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "qperez@example.com"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Brandon"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Brandon Taylor"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Taylor"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "963.899.8064"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_6_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Whatever Region Home & Garde"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_8_account_1_order_1_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Put Visit Office Supplie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_7_account_1_order_3",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_4"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_7"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-12-01"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_7_account_1_order_3_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-674492"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_7_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderReturned"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "927.94"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_3",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-12-11"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_3_account_1_order_3_item_1"
+      },
+      {
+        "@id": "http://example.org/person_3_account_1_order_3_item_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-840759"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_3_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderCancelled"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "2254.6"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_6_account_2_order_1_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Best While Office Supplie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_6_account_2_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Reason Growth Clothin"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_6",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "944-70-3936"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "mccarthyandrew@example.com"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Leslie"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Leslie Schwartz"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Schwartz"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "652-417-7923x305"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_2_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-10-08"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_2_account_1_order_1_item_1"
+      },
+      {
+        "@id": "http://example.org/person_2_account_1_order_1_item_2"
+      },
+      {
+        "@id": "http://example.org/person_2_account_1_order_1_item_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-596369"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_2_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderPickupAvailable"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "1682.47"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "3866.23"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "880c2c78-2043-4028-86d1-a9f7310ee731"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Business Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_9"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Money Market Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Chase Bank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_5",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "364-90-1928"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "kimberlyhall@example.com"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Lisa"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Lisa Stevens"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Stevens"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "765.430.3461x798"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/org_4",
+    "@type": [
+      "http://mycompany.com/vocab/Company"
+    ],
+    "http://mycompany.com/vocab/companyEmail": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "dferguson@example.net"
+      }
+    ],
+    "http://mycompany.com/vocab/companyID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "99-6684603"
+      }
+    ],
+    "http://mycompany.com/vocab/companyIndustry": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Agriculture"
+      }
+    ],
+    "http://mycompany.com/vocab/companyName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Blair, Webster and Ferrell"
+      }
+    ],
+    "http://mycompany.com/vocab/companyPhone": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "+1-988-833-2225x296"
+      }
+    ],
+    "http://mycompany.com/vocab/companyURL": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://fischer.com/"
+      }
+    ],
+    "http://mycompany.com/vocab/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Hot current person than strategy wife either.\nPlant church clearly policy. Need behind front life admit decide. Technology explain smile standard bar first...."
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_2_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Participant Raise Clothin"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_2_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_5"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_10"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-10-23"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_10_account_2_order_2_item_1"
+      },
+      {
+        "@id": "http://example.org/person_10_account_2_order_2_item_2"
+      },
+      {
+        "@id": "http://example.org/person_10_account_2_order_2_item_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "ORD-694914"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_10_account_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderDelivered"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "705.78"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_7_account_1_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_4"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_7"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-07-17"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_7_account_1_order_2_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-823869"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_7_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderProcessing"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "594.5"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_5_account_1_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_5"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-09-12"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_5_account_1_order_2_item_1"
+      },
+      {
+        "@id": "http://example.org/person_5_account_1_order_2_item_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-230652"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_5_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderCancelled"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "2258.8"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Hair Cause Jewelr"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_7_account_1_order_3_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Reveal Order Sports Equipmen"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_8_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "1022.78"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "020ae8e7-2b5f-4af6-96d0-7e897c9dc650"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Savings Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_8"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Business Checking"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Fifth Third Bank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_4_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "214.88"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "3499f5f5-6602-43d2-89c2-bfba2a8d52f5"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Primary Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_4"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Business Savings"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "KeyBank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_4_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_4"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_4"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-11-16"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_4_account_1_order_1_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "ORD-577175"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_4_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderDelivered"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "370.5"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "These Week Food & Beverage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_7_account_1_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Class Mind Book"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_2_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Dream North Sports Equipmen"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_2_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Since Music Electronic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_2_order_2_item_3",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 3
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Bed Take Sports Equipmen"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_1_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Color Race Home & Garde"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-07-28"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_3_account_1_order_2_item_1"
+      },
+      {
+        "@id": "http://example.org/person_3_account_1_order_2_item_2"
+      },
+      {
+        "@id": "http://example.org/person_3_account_1_order_2_item_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "ORD-985961"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_3_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderCancelled"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "1369.44"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/org_3",
+    "@type": [
+      "http://mycompany.com/vocab/Company"
+    ],
+    "http://mycompany.com/vocab/companyEmail": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "dashley@example.com"
+      }
+    ],
+    "http://mycompany.com/vocab/companyIndustry": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Construction"
+      }
+    ],
+    "http://mycompany.com/vocab/companyName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Campbell, Wong and Wilson"
+      }
+    ],
+    "http://mycompany.com/vocab/companyPhone": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "866.945.6254x813"
+      }
+    ],
+    "http://mycompany.com/vocab/companyURL": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://henry-munoz.com/"
+      }
+    ],
+    "http://mycompany.com/vocab/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Past weight anything agency decade. Only by enough bit. Good various mention spring term use peace cut...."
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_4_account_1_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_4"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-11-12"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_4_account_1_order_2_item_1"
+      },
+      {
+        "@id": "http://example.org/person_4_account_1_order_2_item_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "ORD-335089"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_4_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderInTransit"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "384.93"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_1_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_5"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_9"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-10-06"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_9_account_1_order_2_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-240844"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_9_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderPickupAvailable"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "1746.43"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_6_account_2",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "29426.72"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "e0b76f89-5fb4-4709-a4f3-301474cb19fb"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Secondary Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_6"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Individual Retirement Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Santander Bank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_8_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Focus Summer Beauty Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_2_order_3_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Yet Blood Healt"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_2_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Win Produce Electronic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_2_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_9"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-11-27"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_9_account_2_order_2_item_1"
+      },
+      {
+        "@id": "http://example.org/person_9_account_2_order_2_item_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-713313"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_9_account_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderReturned"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "1952.66"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_7_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "22965.35"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "b5ab5527-fd6e-4e4f-9434-c9db4d7118f3"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Savings Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_7"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Joint Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "TD Bank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_5"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_10"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-12-18"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_10_account_1_order_1_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-142148"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_10_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderPickupAvailable"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "580.05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_2_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "6181.14"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "5c9ad296-f20c-4915-9e4d-e65e15760676"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Primary Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_2"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Certificate of Deposit"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Citibank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_4_account_1_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Answer Over Jewelr"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_2_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Middle Even Jewelr"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_3_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Use Science Jewelr"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_1_order_1_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Remain Financial Electronic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Talk Class Beauty Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_1_item_3",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 3
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Woman Kind Food & Beverage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_8_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_8"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-12-06"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_8_account_1_order_1_item_1"
+      },
+      {
+        "@id": "http://example.org/person_8_account_1_order_1_item_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "ORD-591165"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_8_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderPickupAvailable"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "2417.21"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Large May Jewelr"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "539.84"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "cefe0704-37f5-42e1-92d7-0d517e89571c"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Secondary Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_10"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Checking Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "HSBC Bank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_3_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Not Thought Office Supplie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_5_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_5"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-10-30"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_5_account_1_order_1_item_1"
+      },
+      {
+        "@id": "http://example.org/person_5_account_1_order_1_item_2"
+      },
+      {
+        "@id": "http://example.org/person_5_account_1_order_1_item_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-797249"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_5_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderProblem"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "1534.79"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_2_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Already Final Toy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_2_order_2_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Name Treat Electronic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/org_1",
+    "@type": [
+      "http://mycompany.com/vocab/Company"
+    ],
+    "http://mycompany.com/vocab/companyEmail": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "joshuagonzalez@example.org"
+      }
+    ],
+    "http://mycompany.com/vocab/companyID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "38-6858538"
+      }
+    ],
+    "http://mycompany.com/vocab/companyIndustry": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Energy"
+      }
+    ],
+    "http://mycompany.com/vocab/companyName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Gonzalez Group"
+      }
+    ],
+    "http://mycompany.com/vocab/companyPhone": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "960-382-7471"
+      }
+    ],
+    "http://mycompany.com/vocab/companyURL": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://welch.com/"
+      }
+    ],
+    "http://mycompany.com/vocab/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Possible dinner eye. Tv moment world less like. Send establish report can head.\nGood outside shake born. You defense college society memory deep...."
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_5_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Just Peace Book"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_2_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Discussion Writer Toy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-09-01"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_3_account_1_order_1_item_1"
+      },
+      {
+        "@id": "http://example.org/person_3_account_1_order_1_item_2"
+      },
+      {
+        "@id": "http://example.org/person_3_account_1_order_1_item_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "PO-923004"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_3_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderInTransit"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "636.32"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_6_account_2_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_5"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_6"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-05-11"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_6_account_2_order_1_item_1"
+      },
+      {
+        "@id": "http://example.org/person_6_account_2_order_1_item_2"
+      },
+      {
+        "@id": "http://example.org/person_6_account_2_order_1_item_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-784874"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_6_account_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderReturned"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "1296.52"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_6_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_6"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-07-14"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_6_account_1_order_1_item_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-947447"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_6_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderProcessing"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "2316.56"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_1_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Range Upon Sports Equipmen"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_2",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-06-25"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_1_account_1_order_2_item_1"
+      },
+      {
+        "@id": "http://example.org/person_1_account_1_order_2_item_2"
+      },
+      {
+        "@id": "http://example.org/person_1_account_1_order_2_item_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-291989"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_1_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderPickupAvailable"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "821.27"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8813.23"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "74a6493c-512c-4d34-9afc-ab5de733a758"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Emergency Fund Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_3"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Certificate of Deposit"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "SunTrust Bank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_8_account_1_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Box I Food & Beverage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_5_account_1_order_1_item_3",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 3
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Any Director Clothin"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_2_item_3",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 3
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Fast Team Toy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_1_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Collection Friend Automotiv"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_4_account_1_order_2_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Relate Look Pet Supplie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_5_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "768808.74"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "b058fbbd-4748-4e60-a983-771d1000bc16"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Primary Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_5"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Business Checking"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Fifth Third Bank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_3_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Tell He Clothin"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9_account_1_order_1",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_9"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-09-03"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_9_account_1_order_1_item_1"
+      },
+      {
+        "@id": "http://example.org/person_9_account_1_order_1_item_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-289431"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_9_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderDelivered"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "399.22"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1",
+    "@type": [
+      "http://mycompany.com/vocab/BankAccount"
+    ],
+    "http://mycompany.com/vocab/balance": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "144.67"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountId": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "f9c58fdd-a68a-4b81-9880-5f335136b64d"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Savings Account"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountOwner": [
+      {
+        "@id": "http://example.org/person_1"
+      }
+    ],
+    "http://mycompany.com/vocab/bankAccountType": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Certificate of Deposit"
+      }
+    ],
+    "http://mycompany.com/vocab/bankName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "SunTrust Bank"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/org_5",
+    "@type": [
+      "http://mycompany.com/vocab/Company"
+    ],
+    "http://mycompany.com/vocab/companyEmail": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "browneric@example.net"
+      }
+    ],
+    "http://mycompany.com/vocab/companyID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "54-8370737"
+      }
+    ],
+    "http://mycompany.com/vocab/companyIndustry": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Healthcare"
+      }
+    ],
+    "http://mycompany.com/vocab/companyName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Griffith PLC"
+      }
+    ],
+    "http://mycompany.com/vocab/companyPhone": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "(864)574-7194"
+      }
+    ],
+    "http://mycompany.com/vocab/companyURL": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://www.pearson-johnson.com/"
+      }
+    ],
+    "http://mycompany.com/vocab/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Raise letter central. Fire scene usually.\nRequire threat read budget all million program. Bed fear red during former agency. Recently avoid test spring...."
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3_account_1_order_2_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Cup Feel Jewelr"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_9",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "327-23-2237"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "jessicazamora@example.com"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Sandra"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Sandra Jones"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Jones"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "(618)437-4268"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_3",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "507-34-3547"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "kburton@example.com"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Robert"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Robert Petersen"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Petersen"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "2347396137"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/org_2",
+    "@type": [
+      "http://mycompany.com/vocab/Company"
+    ],
+    "http://mycompany.com/vocab/companyEmail": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "cynthia69@example.com"
+      }
+    ],
+    "http://mycompany.com/vocab/companyID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "58-3440107"
+      }
+    ],
+    "http://mycompany.com/vocab/companyIndustry": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Transportation"
+      }
+    ],
+    "http://mycompany.com/vocab/companyName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Mccoy and Sons"
+      }
+    ],
+    "http://mycompany.com/vocab/companyPhone": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "899-635-2138"
+      }
+    ],
+    "http://mycompany.com/vocab/companyURL": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "http://ortiz.org/"
+      }
+    ],
+    "http://mycompany.com/vocab/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Firm several paper blood check social. Energy politics on center least.\nAgree station listen say increase place future. Beat attack we work. Too explain either claim...."
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_2_order_2_item_2",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Pick Less Clothin"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_2",
+    "@type": [
+      "http://mycompany.com/vocab/Customer"
+    ],
+    "http://mycompany.com/vocab/customerID": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "196-58-2958"
+      }
+    ],
+    "http://mycompany.com/vocab/emailAddress": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "gtapia@example.org"
+      }
+    ],
+    "http://mycompany.com/vocab/firstName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Ashley"
+      }
+    ],
+    "http://mycompany.com/vocab/fullName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Ashley Hamilton"
+      }
+    ],
+    "http://mycompany.com/vocab/lastName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Hamilton"
+      }
+    ],
+    "http://mycompany.com/vocab/phoneNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "675-218-1813"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_1_account_1_order_3",
+    "@type": [
+      "http://mycompany.com/vocab/PurchaseOrder"
+    ],
+    "http://mycompany.com/vocab/orderCompany": [
+      {
+        "@id": "http://example.org/org_3"
+      }
+    ],
+    "http://mycompany.com/vocab/orderCustomer": [
+      {
+        "@id": "http://example.org/person_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-06-05"
+      }
+    ],
+    "http://mycompany.com/vocab/orderItem": [
+      {
+        "@id": "http://example.org/person_1_account_1_order_3_item_1"
+      },
+      {
+        "@id": "http://example.org/person_1_account_1_order_3_item_2"
+      }
+    ],
+    "http://mycompany.com/vocab/orderNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "INV-630126"
+      }
+    ],
+    "http://mycompany.com/vocab/orderPayment": [
+      {
+        "@id": "http://example.org/person_1_account_1"
+      }
+    ],
+    "http://mycompany.com/vocab/orderStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "OrderProcessing"
+      }
+    ],
+    "http://mycompany.com/vocab/orderTotal": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "2274.14"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person_10_account_1_order_1_item_1",
+    "@type": [
+      "http://mycompany.com/vocab/LineItem"
+    ],
+    "http://mycompany.com/vocab/itemNumber": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://mycompany.com/vocab/productName": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Approach Present Pet Supplie"
+      }
+    ]
+  }
+]

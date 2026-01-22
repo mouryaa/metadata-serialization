@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:custom="http://mycompany.com/vocab/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_4"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_8"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-07-12</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_8_account_1_order_2_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_8_account_1_order_2_item_2"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-632185</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_8_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProblem</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">284.41</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1_order_1_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Another Suddenly Pet Supplie</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_3_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whether Man Electronic</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_2"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_3"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-01</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_3_account_1_order_1_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_3_account_1_order_1_item_2"/>
+    <custom:orderItem rdf:resource="http://example.org/person_3_account_1_order_1_item_3"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-923004</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_3_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderInTransit</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">636.32</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">327-23-2237</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jessicazamora@example.com</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sandra</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sandra Jones</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jones</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(618)437-4268</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">417.74</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e8107eec-1b5b-4d76-9561-3ac546a1cc11</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_6"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Checking</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BB&amp;T</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_2_order_1_item_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ready Behind Pet Supplie</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1_order_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_4"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_7"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-01</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_7_account_1_order_3_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-674492</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_7_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">927.94</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1022.78</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">020ae8e7-2b5f-4af6-96d0-7e897c9dc650</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savings Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_8"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Checking</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fifth Third Bank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_5"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_1"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-07-30</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_1_account_1_order_1_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_1_account_1_order_1_item_2"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-287657</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_1_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProblem</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">214.89</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focus Summer Beauty Product</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_1_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_3"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_4"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-12</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_4_account_1_order_2_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_4_account_1_order_2_item_2"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-335089</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_4_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderInTransit</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">384.93</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_2_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_2"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_2"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-10-08</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_2_account_1_order_1_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_2_account_1_order_1_item_2"/>
+    <custom:orderItem rdf:resource="http://example.org/person_2_account_1_order_1_item_3"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-596369</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_2_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderPickupAvailable</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1682.47</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_4"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_4"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-16</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_4_account_1_order_1_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-577175</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_4_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderDelivered</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">370.5</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3866.23</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">880c2c78-2043-4028-86d1-a9f7310ee731</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_9"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Money Market Account</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chase Bank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_1_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_5"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_9"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-10-06</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_9_account_1_order_2_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-240844</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_9_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderPickupAvailable</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1746.43</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_1"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_6"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-07-14</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_6_account_1_order_1_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-947447</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_6_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2316.56</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Company"/>
+    <custom:companyEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cynthia69@example.com</custom:companyEmail>
+    <custom:companyID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">58-3440107</custom:companyID>
+    <custom:companyIndustry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transportation</custom:companyIndustry>
+    <custom:companyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mccoy and Sons</custom:companyName>
+    <custom:companyPhone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">899-635-2138</custom:companyPhone>
+    <custom:companyURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ortiz.org/</custom:companyURL>
+    <custom:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firm several paper blood check social. Energy politics on center least.
+Agree station listen say increase place future. Beat attack we work. Too explain either claim....</custom:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29426.72</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e0b76f89-5fb4-4709-a4f3-301474cb19fb</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondary Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_6"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual Retirement Account</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santander Bank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1_order_1_item_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any Director Clothin</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_3"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_5"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-10-30</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_5_account_1_order_1_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_5_account_1_order_1_item_2"/>
+    <custom:orderItem rdf:resource="http://example.org/person_5_account_1_order_1_item_3"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-797249</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_5_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProblem</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1534.79</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_2_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_2"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_9"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-09</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_9_account_2_order_1_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-367385</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_9_account_2"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProblem</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2402.65</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58103.36</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bfd06068-913f-4ddb-8b1a-604b6763d181</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savings Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_10"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savings Account</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNC Bank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22965.35</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b5ab5527-fd6e-4e4f-9434-c9db4d7118f3</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savings Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_7"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joint Account</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TD Bank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_1"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_1"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-25</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_1_account_1_order_2_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_1_account_1_order_2_item_2"/>
+    <custom:orderItem rdf:resource="http://example.org/person_1_account_1_order_2_item_3"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-291989</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_1_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderPickupAvailable</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">821.27</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class Mind Book</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">214.88</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3499f5f5-6602-43d2-89c2-bfba2a8d52f5</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_4"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Savings</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KeyBank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1_order_2_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Everyone Hotel Beauty Product</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_2_order_3_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yet Blood Healt</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_2_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6181.14</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5c9ad296-f20c-4915-9e4d-e65e15760676</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_2"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certificate of Deposit</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citibank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">944-70-3936</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mccarthyandrew@example.com</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leslie</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leslie Schwartz</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schwartz</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">652-417-7923x305</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_2_item_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Many Surface Healt</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8813.23</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">74a6493c-512c-4d34-9afc-ab5de733a758</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emergency Fund Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_3"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certificate of Deposit</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SunTrust Bank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_1"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_3"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-11</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_3_account_1_order_3_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_3_account_1_order_3_item_2"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-840759</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_3_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderCancelled</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2254.6</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">364-90-1928</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kimberlyhall@example.com</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lisa</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lisa Stevens</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stevens</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">765.430.3461x798</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">505-77-2510</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linda67@example.org</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Victoria</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Victoria Joseph</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">210.799.6976x007</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cup Feel Jewelr</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_1_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection Friend Automotiv</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">768808.74</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b058fbbd-4748-4e60-a983-771d1000bc16</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_5"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Checking</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fifth Third Bank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_4">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Company"/>
+    <custom:companyEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dferguson@example.net</custom:companyEmail>
+    <custom:companyID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">99-6684603</custom:companyID>
+    <custom:companyIndustry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agriculture</custom:companyIndustry>
+    <custom:companyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blair, Webster and Ferrell</custom:companyName>
+    <custom:companyPhone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+1-988-833-2225x296</custom:companyPhone>
+    <custom:companyURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://fischer.com/</custom:companyURL>
+    <custom:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hot current person than strategy wife either.
+Plant church clearly policy. Need behind front life admit decide. Technology explain smile standard bar first....</custom:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_2_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participant Raise Clothin</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">572-68-3917</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">robertstewart@example.net</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adam</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adam Simpson</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simpson</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2223179001</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">855-48-8991</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suzannecardenas@example.com</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brenda</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brenda Campbell</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campbell</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001-618-439-6600x807</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_5"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_10"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-18</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_10_account_1_order_1_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-142148</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_10_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderPickupAvailable</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">580.05</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_2_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_5"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_6"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-11</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_6_account_2_order_1_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_6_account_2_order_1_item_2"/>
+    <custom:orderItem rdf:resource="http://example.org/person_6_account_2_order_1_item_3"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-784874</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_6_account_2"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1296.52</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_2_item_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fast Team Toy</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">539.84</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cefe0704-37f5-42e1-92d7-0d517e89571c</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondary Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_10"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Checking Account</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HSBC Bank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31604.8</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14294343-49d0-4d44-adb2-3080099aad7a</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emergency Fund Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_9"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual Retirement Account</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citibank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_3"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_7"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-10</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_7_account_1_order_1_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-403380</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_7_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2266.99</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">196-58-2958</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gtapia@example.org</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ashley</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ashley Hamilton</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">675-218-1813</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1_order_2_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Politics Instead Electronic</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_4"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_7"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-07-17</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_7_account_1_order_2_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-823869</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_7_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">594.5</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Company"/>
+    <custom:companyEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joshuagonzalez@example.org</custom:companyEmail>
+    <custom:companyID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">38-6858538</custom:companyID>
+    <custom:companyIndustry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy</custom:companyIndustry>
+    <custom:companyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gonzalez Group</custom:companyName>
+    <custom:companyPhone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">960-382-7471</custom:companyPhone>
+    <custom:companyURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://welch.com/</custom:companyURL>
+    <custom:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Possible dinner eye. Tv moment world less like. Send establish report can head.
+Good outside shake born. You defense college society memory deep....</custom:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_1_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Range Upon Sports Equipmen</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/BankAccount"/>
+    <custom:balance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">144.67</custom:balance>
+    <custom:bankAccountId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f9c58fdd-a68a-4b81-9880-5f335136b64d</custom:bankAccountId>
+    <custom:bankAccountName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savings Account</custom:bankAccountName>
+    <custom:bankAccountOwner rdf:resource="http://example.org/person_1"/>
+    <custom:bankAccountType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certificate of Deposit</custom:bankAccountType>
+    <custom:bankName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SunTrust Bank</custom:bankName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_5">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Company"/>
+    <custom:companyEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">browneric@example.net</custom:companyEmail>
+    <custom:companyID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">54-8370737</custom:companyID>
+    <custom:companyIndustry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Healthcare</custom:companyIndustry>
+    <custom:companyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Griffith PLC</custom:companyName>
+    <custom:companyPhone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(864)574-7194</custom:companyPhone>
+    <custom:companyURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.pearson-johnson.com/</custom:companyURL>
+    <custom:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raise letter central. Fire scene usually.
+Require threat read budget all million program. Bed fear red during former agency. Recently avoid test spring....</custom:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_1_item_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Woman Kind Food &amp; Beverage</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_2_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_3"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_10"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-20</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_10_account_2_order_1_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-292931</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_10_account_2"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderDelivered</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">563.97</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_1_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Answer Over Jewelr</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_2_order_2_item_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bed Take Sports Equipmen</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treatment Road Book</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_2_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_2"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_9"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-27</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_9_account_2_order_2_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_9_account_2_order_2_item_2"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-713313</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_9_account_2"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1952.66</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">507-34-3547</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kburton@example.com</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert Petersen</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Petersen</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2347396137</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thus Ask Book</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_2_order_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_1"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_9"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-31</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_9_account_2_order_3_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-752232</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_9_account_2"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">964.03</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">817-70-7730</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dianaproctor@example.com</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erica</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erica White</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001-639-766-9643x1477</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_2_order_2_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name Treat Electronic</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whatever Region Home &amp; Garde</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_2_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Already Final Toy</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_3_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tell He Clothin</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_2_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_5"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_10"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-10-23</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_10_account_2_order_2_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_10_account_2_order_2_item_2"/>
+    <custom:orderItem rdf:resource="http://example.org/person_10_account_2_order_2_item_3"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-694914</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_10_account_2"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderDelivered</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">705.78</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_2_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reason Growth Clothin</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_3"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_3"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-07-28</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_3_account_1_order_2_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_3_account_1_order_2_item_2"/>
+    <custom:orderItem rdf:resource="http://example.org/person_3_account_1_order_2_item_3"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-985961</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_3_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderCancelled</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1369.44</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_1"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_8"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-06</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_8_account_1_order_1_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_8_account_1_order_1_item_2"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORD-591165</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_8_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderPickupAvailable</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2417.21</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large May Jewelr</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_2_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Win Produce Electronic</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approach Present Pet Supplie</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Customer"/>
+    <custom:customerID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">837-59-9518</custom:customerID>
+    <custom:emailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">qperez@example.com</custom:emailAddress>
+    <custom:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brandon</custom:firstName>
+    <custom:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brandon Taylor</custom:fullName>
+    <custom:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taylor</custom:lastName>
+    <custom:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">963.899.8064</custom:phoneNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/org_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/Company"/>
+    <custom:companyEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dashley@example.com</custom:companyEmail>
+    <custom:companyIndustry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construction</custom:companyIndustry>
+    <custom:companyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campbell, Wong and Wilson</custom:companyName>
+    <custom:companyPhone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">866.945.6254x813</custom:companyPhone>
+    <custom:companyURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://henry-munoz.com/</custom:companyURL>
+    <custom:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Past weight anything agency decade. Only by enough bit. Good various mention spring term use peace cut....</custom:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_3"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_1"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-05</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_1_account_1_order_3_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_1_account_1_order_3_item_2"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-630126</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_1_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderProcessing</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2274.14</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_1_order_1_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remain Financial Electronic</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Just Peace Book</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_1_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_4"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_10"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-18</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_10_account_1_order_2_item_1"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-289265</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_10_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderReturned</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1366.38</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_5_account_1_order_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_1"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_5"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-12</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_5_account_1_order_2_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_5_account_1_order_2_item_2"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO-230652</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_5_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderCancelled</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2258.8</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">College Majority Pet Supplie</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Talk Class Beauty Product</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_1_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Past Respond Food &amp; Beverage</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_1_order_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/PurchaseOrder"/>
+    <custom:orderCompany rdf:resource="http://example.org/org_2"/>
+    <custom:orderCustomer rdf:resource="http://example.org/person_9"/>
+    <custom:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-03</custom:orderDate>
+    <custom:orderItem rdf:resource="http://example.org/person_9_account_1_order_1_item_1"/>
+    <custom:orderItem rdf:resource="http://example.org/person_9_account_1_order_1_item_2"/>
+    <custom:orderNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INV-289431</custom:orderNumber>
+    <custom:orderPayment rdf:resource="http://example.org/person_9_account_1"/>
+    <custom:orderStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrderDelivered</custom:orderStatus>
+    <custom:orderTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">399.22</custom:orderTotal>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Box I Food &amp; Beverage</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_2_account_1_order_1_item_3">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Produce Begin Food &amp; Beverage</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_3_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not Thought Office Supplie</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These Week Food &amp; Beverage</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_1_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hair Cause Jewelr</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_2_order_2_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pick Less Clothin</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_1_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color Race Home &amp; Garde</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_4_account_1_order_2_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relate Look Pet Supplie</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_1_account_1_order_3_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use Science Jewelr</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_6_account_2_order_1_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best While Office Supplie</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_2_order_2_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Middle Even Jewelr</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_9_account_2_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dream North Sports Equipmen</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_10_account_2_order_1_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Since Music Electronic</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_3_account_1_order_2_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion Writer Toy</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_7_account_1_order_3_item_1">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reveal Order Sports Equipmen</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_2_account_1_order_1_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name Campaign Sports Equipmen</custom:productName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person_8_account_1_order_1_item_2">
+    <rdf:type rdf:resource="http://mycompany.com/vocab/LineItem"/>
+    <custom:itemNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</custom:itemNumber>
+    <custom:productName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Put Visit Office Supplie</custom:productName>
+  </rdf:Description>
+</rdf:RDF>
