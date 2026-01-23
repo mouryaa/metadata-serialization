@@ -1,14 +1,15 @@
 import csv
 import sys
+import json
 
-def create_prompt_templates(graph_file_path, questions_csv_path, output_csv_path):
+def create_prompt_templates(graph_file_path, questions_csv_path, output_json_path):
     """
-    Creates a CSV file with prompt templates combining base prompt, graph, and questions.
+    Creates a JSON file with prompt templates combining base prompt, graph, and questions.
     
     Args:
         graph_file_path: Path to the graph file (e.g., .ttl, .rdf, etc.)
         questions_csv_path: Path to CSV file containing questions
-        output_csv_path: Path for the output CSV file
+        output_json_path: Path for the output JSON file
     """
     
     # Base prompt template
@@ -59,39 +60,38 @@ def create_prompt_templates(graph_file_path, questions_csv_path, output_csv_path
         print(f"Error reading questions CSV: {e}")
         sys.exit(1)
     
-    # Create output CSV with prompts
+    # Create output JSON with prompts
     try:
-        with open(output_csv_path, 'w', newline='', encoding='utf-8') as f:
-            csv_writer = csv.writer(f)
-            
-            # Write header
-            csv_writer.writerow(['prompt'])
-            
-            # Create a prompt for each question
-            for question in questions:
-                # Combine all parts into a single prompt with triple quotes
-                full_prompt = f"{base_prompt}\n\nHere is the data to operate on:\n\n{graph_content}\n\nOperation:\n{question}"
-                
-                # Format as JSON-style string with "Question": and triple-quoted prompt in curly braces
-                json_string = f'{{"Question": """{full_prompt}"""}}'
-                
-                csv_writer.writerow([json_string])
+        prompts = []
         
-        print(f"Successfully created {len(questions)} prompt templates in '{output_csv_path}'")
+        # Create a prompt for each question
+        for question in questions:
+            # Combine all parts into a single prompt
+            full_prompt = f"{base_prompt}\n\nHere is the data to operate on:\n\n{graph_content}\n\nOperation:\n{question}"
+            
+            # Create JSON object with "Question" key
+            prompt_obj = {"Question": full_prompt}
+            prompts.append(prompt_obj)
+        
+        # Write to JSON file
+        with open(output_json_path, 'w', encoding='utf-8') as f:
+            json.dump(prompts, f, indent=2, ensure_ascii=False)
+        
+        print(f"Successfully created {len(questions)} prompt templates in '{output_json_path}'")
         
     except Exception as e:
-        print(f"Error writing output CSV: {e}")
+        print(f"Error writing output JSON: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("Usage: python prompt_template_generator.py <graph_file> <questions_csv> <output_csv>")
+        print("Usage: python prompt_template_generator.py <graph_file> <questions_csv> <output_json>")
         print("\nExample:")
-        print("  python prompt_template_generator.py graph.ttl questions.csv output_prompts.csv")
+        print("  python prompt_template_generator.py graph.ttl questions.csv output_prompts.json")
         sys.exit(1)
     
     graph_file = sys.argv[1]
     questions_csv = sys.argv[2]
-    output_csv = sys.argv[3]
+    output_json = sys.argv[3]
     
-    create_prompt_templates(graph_file, questions_csv, output_csv)
+    create_prompt_templates(graph_file, questions_csv, output_json)
