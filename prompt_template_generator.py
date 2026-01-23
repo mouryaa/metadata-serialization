@@ -74,8 +74,8 @@ def create_prompt_templates(graph_file_path, questions_csv_path, output_csv_path
                 # Build the triple-quoted prompt string
                 prompt_content = f"{base_prompt}\n\nHere is the data to operate on:\n\n{graph_content}\n\nOperation:\n{question}"
                 
-                # Create the JSON-ready string format
-                json_string = f'"Question": """{prompt_content}"""'
+                # Create the JSON-ready string format with triple quotes
+                json_string = f'"""{prompt_content}"""'
                 
                 csv_writer.writerow([json_string])
         
