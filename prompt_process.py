@@ -1,40 +1,37 @@
-import csv
 import json
 import requests
 from datetime import datetime
 import time
 
 # Configuration
-CSV_INPUT_FILE = '/mnt/user-data/uploads/output_prompts.csv'
-RESULTS_OUTPUT_FILE = f'/mnt/user-data/outputs/api_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
-LOG_FILE = f'/mnt/user-data/outputs/processing_log_{datetime.now().strftime("%Y%m%d_%H%M%S")}.txt'
-
-# API Configuration - UPDATE THESE VALUES
 invoke_chat_url = "YOUR_API_ENDPOINT_HERE"  # Replace with your actual API endpoint
 headers = {
     "Content-Type": "application/json",
-    # Add any additional headers like API keys here
-    # "Authorization": "Bearer YOUR_API_KEY"
+    # Add any other headers you need (e.g., authentication tokens)
+    # "Authorization": "Bearer YOUR_TOKEN_HERE"
 }
 
-def log_message(message, print_to_console=True):
-    """Log messages to both file and console"""
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log_entry = f"[{timestamp}] {message}"
-    
-    if print_to_console:
-        print(log_entry)
-    
-    with open(LOG_FILE, 'a', encoding='utf-8') as f:
-        f.write(log_entry + '\n')
+# Load prompts from JSON file
+with open('output_prompts.json', 'r') as f:
+    prompts = json.load(f)
 
-def process_prompt(prompt, index):
-    """Process a single prompt through the API"""
+# Store results
+results = []
+
+# Process each prompt
+print(f"Processing {len(prompts)} prompts...")
+for idx, prompt_item in enumerate(prompts, 1):
+    print(f"\nProcessing prompt {idx}/{len(prompts)}")
+    print(f"Prompt: {prompt_item['prompt'][:50]}...")  # Show first 50 chars
+    
     try:
-        # Create the payload with the prompt
+        # Inject the prompt into the payload
         payload = {
-            "prompt": prompt
-            # Add any other required fields for your API here
+            "prompt": prompt_item['prompt'],
+            # Add any other fields your API expects
+            # "model": "your-model-name",
+            # "temperature": 0.7,
+            # etc.
         }
         
         # Make the API request
@@ -43,87 +40,44 @@ def process_prompt(prompt, index):
         # Check if request was successful
         res.raise_for_status()
         
-        # Get the JSON response
-        result = res.json()
+        # Get the response JSON
+        response_data = res.json()
         
-        return {
-            "index": index,
-            "prompt": prompt,
+        # Store the result with original prompt info
+        result = {
+            "prompt_id": idx,
+            "prompt": prompt_item['prompt'],
+            "response": response_data,
             "status": "success",
-            "response": result,
             "timestamp": datetime.now().isoformat()
         }
-    
+        
+        print(f"✓ Success")
+        
     except requests.exceptions.RequestException as e:
-        log_message(f"Error processing prompt {index}: {str(e)}")
-        return {
-            "index": index,
-            "prompt": prompt,
-            "status": "error",
+        # Handle request errors
+        result = {
+            "prompt_id": idx,
+            "prompt": prompt_item['prompt'],
             "error": str(e),
+            "status": "error",
             "timestamp": datetime.now().isoformat()
         }
-
-def main():
-    """Main function to process all prompts"""
-    log_message("Starting prompt processing...")
+        print(f"✗ Error: {e}")
     
-    results = []
+    results.append(result)
     
-    try:
-        # Read prompts from CSV
-        with open(CSV_INPUT_FILE, 'r', encoding='utf-8') as csvfile:
-            reader = csv.DictReader(csvfile)
-            prompts = list(reader)
-            
-        total_prompts = len(prompts)
-        log_message(f"Found {total_prompts} prompts to process")
-        
-        # Process each prompt
-        for index, row in enumerate(prompts, start=1):
-            prompt = row['prompt']
-            
-            log_message(f"Processing prompt {index}/{total_prompts}...")
-            
-            # Process the prompt
-            result = process_prompt(prompt, index)
-            results.append(result)
-            
-            # Optional: Add a small delay between requests to avoid rate limiting
-            # time.sleep(0.5)
-            
-            # Save intermediate results every 100 prompts
-            if index % 100 == 0:
-                with open(RESULTS_OUTPUT_FILE, 'w', encoding='utf-8') as f:
-                    json.dump(results, f, indent=2, ensure_ascii=False)
-                log_message(f"Saved intermediate results ({index} prompts processed)")
-        
-        # Save final results
-        with open(RESULTS_OUTPUT_FILE, 'w', encoding='utf-8') as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
-        
-        # Calculate statistics
-        successful = sum(1 for r in results if r['status'] == 'success')
-        failed = sum(1 for r in results if r['status'] == 'error')
-        
-        log_message(f"\n{'='*50}")
-        log_message(f"Processing complete!")
-        log_message(f"Total prompts: {total_prompts}")
-        log_message(f"Successful: {successful}")
-        log_message(f"Failed: {failed}")
-        log_message(f"Results saved to: {RESULTS_OUTPUT_FILE}")
-        log_message(f"Log saved to: {LOG_FILE}")
-        log_message(f"{'='*50}")
-        
-    except FileNotFoundError:
-        log_message(f"Error: Could not find CSV file at {CSV_INPUT_FILE}")
-    except Exception as e:
-        log_message(f"Unexpected error: {str(e)}")
-        # Save whatever results we have so far
-        if results:
-            with open(RESULTS_OUTPUT_FILE, 'w', encoding='utf-8') as f:
-                json.dump(results, f, indent=2, ensure_ascii=False)
-            log_message(f"Partial results saved to: {RESULTS_OUTPUT_FILE}")
+    # Optional: Add a small delay to avoid rate limiting
+    # time.sleep(1)
 
-if __name__ == "__main__":
-    main()
+# Save results to a JSON file
+output_filename = f"api_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+with open(output_filename, 'w') as f:
+    json.dump(results, f, indent=2)
+
+print(f"\n{'='*50}")
+print(f"Processing complete!")
+print(f"Total prompts: {len(prompts)}")
+print(f"Successful: {sum(1 for r in results if r['status'] == 'success')}")
+print(f"Failed: {sum(1 for r in results if r['status'] == 'error')}")
+print(f"Results saved to: {output_filename}")
