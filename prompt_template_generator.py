@@ -1,9 +1,11 @@
 import csv
 import sys
+import json
 
 def create_prompt_templates(graph_file_path, questions_csv_path, output_csv_path):
     """
     Creates a CSV file with prompt templates combining base prompt, graph, and questions.
+    Output format is designed for JSON payload injection.
     
     Args:
         graph_file_path: Path to the graph file (e.g., .ttl, .rdf, etc.)
@@ -12,7 +14,7 @@ def create_prompt_templates(graph_file_path, questions_csv_path, output_csv_path
     """
     
     # Base prompt template
-    base_prompt = "You will be given customer data in the form of a graph. You will be given an operation to perform on the graph and you should answer the question only using information from the graph."
+    base_prompt = "You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset."
     
     # Read the graph file
     try:
@@ -69,10 +71,13 @@ def create_prompt_templates(graph_file_path, questions_csv_path, output_csv_path
             
             # Create a prompt for each question
             for question in questions:
-                # Combine all parts into a single prompt
-                full_prompt = f"{base_prompt}\n\nHere is the graph to operate on:\n\n{graph_content}\n\nOperation:\n{question}"
+                # Build the triple-quoted prompt string
+                prompt_content = f"{base_prompt}\n\nHere is the data to operate on:\n\n{graph_content}\n\nOperation:\n{question}"
                 
-                csv_writer.writerow([full_prompt])
+                # Create the JSON-ready string format
+                json_string = f'"Question": """{prompt_content}"""'
+                
+                csv_writer.writerow([json_string])
         
         print(f"Successfully created {len(questions)} prompt templates in '{output_csv_path}'")
         
