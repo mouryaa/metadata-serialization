@@ -1,5 +1,5 @@
 prompt
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -736,7 +736,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_3_account_1_order_3, return the companyName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -1473,7 +1473,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_9_account_2_order_3, return the firstName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -2210,7 +2210,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_8_account_1_order_2, return the companyName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -2947,7 +2947,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_1_account_1_order_2, return the lastName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -3684,7 +3684,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_6_account_2_order_1, return the bankName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -4421,7 +4421,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_4_account_1, return the bankName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -5158,7 +5158,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_7_account_1_order_3_item_1, return the type"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -5895,7 +5895,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_7_account_1_order_1, return the orderCustomer"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -6632,7 +6632,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_1_account_1_order_1_item_2, return the productName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -7369,7 +7369,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_1_account_1_order_1, return the fullName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -8106,7 +8106,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_8_account_1_order_1_item_2, find the type"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -8843,7 +8843,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_9_account_2_order_2, find the companyEmail"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -9580,7 +9580,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_9, find the type"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -10317,7 +10317,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_6_account_1_order_1_item_1, find the itemNumber"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -11054,7 +11054,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_2_account_1_order_1, find the lastName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -11791,7 +11791,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_9_account_1_order_2, find the lastName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -12528,7 +12528,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For org_1, find the companyPhone"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -13265,7 +13265,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_7_account_1_order_3, find the orderItem"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -14002,7 +14002,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_4_account_1_order_1, find the bankAccountOwner"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -14739,7 +14739,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_7_account_1_order_2, find the companyID"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -15476,7 +15476,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_1_account_1_order_2_item_1, find the shortest path to type"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -16213,7 +16213,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_6_account_1_order_1, find the shortest path to bankAccountId"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -16950,7 +16950,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_9_account_1_order_2, find the shortest path to type"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
@@ -17687,7 +17687,7 @@ ex:person_9 a custom:Customer ;
 
 Operation:
 For person_3_account_1_order_3, find the shortest path to bankAccountName"""""""
-"""Question"": """"""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
+"""""""You will be given customer data. You will be given operations to perform on the data and you should answer the questions only using information from the dataset.
 
 Here is the data to operate on:
 
