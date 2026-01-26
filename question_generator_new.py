@@ -6,7 +6,7 @@ realistic business questions that demonstrate graph database advantages.
 
 Features:
 - Automatically discovers entity types and their properties
-- Adapts to any field names in your data
+- Adapts to any field names in your data (handles underscores, typos, variations)
 - Generates questions based on actual relationships in your data
 
 Usage:
@@ -76,84 +76,92 @@ class SchemaAdaptiveQuestionGenerator:
         
         # Find all properties for each entity type
         for entity_type, entities in self.entity_types.items():
-            for entity in entities:
+            for entity in entities[:1]:  # Sample first entity of each type
                 for p, o in self.graph.predicate_objects(entity):
                     prop_name = str(p).split('/')[-1]
                     self.property_map[entity_type].add(prop_name)
+        
+        print(f"Discovered properties:")
+        for entity_type, props in self.property_map.items():
+            print(f"  {entity_type}: {sorted(list(props))[:5]}...")  # Show first 5
     
     def _cache_entities(self):
         """Cache all entities by type for efficient querying."""
-        # Get entities by type
-        if 'Customer' in self.entity_types:
-            self.customers = self.entity_types['Customer']
-        
-        if 'BankAccount' in self.entity_types:
-            self.accounts = self.entity_types['BankAccount']
-        
-        if 'PurchaseOrder' in self.entity_types:
-            self.orders = self.entity_types['PurchaseOrder']
-        
-        if 'Company' in self.entity_types:
-            self.companies = self.entity_types['Company']
-        
-        if 'LineItem' in self.entity_types:
-            self.line_items = self.entity_types['LineItem']
+        # Get entities by type - handle both CamelCase and lowercase
+        for entity_type, entities in self.entity_types.items():
+            lower_type = entity_type.lower()
+            if 'customer' in lower_type:
+                self.customers = entities
+            elif 'company' in lower_type or 'compan' in lower_type:
+                self.companies = entities
+            elif 'account' in lower_type and 'bank' in lower_type:
+                self.accounts = entities
+            elif 'transaction' in lower_type or 'order' in lower_type or 'purchase' in lower_type:
+                self.orders = entities
+            elif 'item' in lower_type and 'line' in lower_type:
+                self.line_items = entities
         
         # Extract unique values for categorical properties
         for account in self.accounts:
-            bank_name = self._get_property_value(account, 'bankName')
+            bank_name = self._get_property_flexible(account, ['bank_name', 'bankName', 'bankname'])
             if bank_name:
                 self.banks.add(bank_name)
         
         for company in self.companies:
-            industry = self._get_property_value(company, 'companyIndustry')
+            industry = self._get_property_flexible(company, ['company_industry', 'companyIndustry', 'industry'])
             if industry:
                 self.industries.add(industry)
             
-            country = self._get_property_value(company, 'country')
+            country = self._get_property_flexible(company, ['company_country', 'companyCountry', 'country'])
             if country:
                 self.countries.add(country)
         
         for customer in self.customers:
-            country = self._get_property_value(customer, 'country')
+            country = self._get_property_flexible(customer, ['cust_country', 'customer_country', 'country'])
             if country:
                 self.countries.add(country)
     
-    def _get_property_value(self, subject, property_name):
-        """Get a single property value, trying multiple possible property names."""
-        # Try exact match first
-        value = self.graph.value(subject, self.custom[property_name])
-        if value:
-            return str(value)
-        
-        # Try common variations
-        variations = [
-            property_name,
-            property_name.lower(),
-            property_name.replace('_', '').replace('-', ''),
-        ]
-        
-        for var in variations:
-            value = self.graph.value(subject, self.custom[var])
+    def _get_property_flexible(self, subject, property_variations):
+        """Try multiple property name variations and return first match."""
+        for prop_name in property_variations:
+            value = self.graph.value(subject, self.custom[prop_name])
             if value:
                 return str(value)
-        
         return None
     
-    def _get_all_property_values(self, subject, property_name):
-        """Get all property values."""
-        return [str(o) for o in self.graph.objects(subject, self.custom[property_name])]
+    def _get_all_property_values(self, subject, property_variations):
+        """Get all property values, trying variations."""
+        for prop_name in property_variations:
+            values = [str(o) for o in self.graph.objects(subject, self.custom[prop_name])]
+            if values:
+                return values
+        return []
     
-    def _get_subjects_with_property(self, property_name, obj):
-        """Get all subjects with given property and object."""
-        return list(self.graph.subjects(self.custom[property_name], obj))
+    def _get_subjects_with_property(self, property_variations, obj):
+        """Get all subjects with given property and object, trying variations."""
+        for prop_name in property_variations:
+            subjects = list(self.graph.subjects(self.custom[prop_name], obj))
+            if subjects:
+                return subjects
+        return []
     
-    def _get_display_name(self, entity_uri, name_properties=['fullName', 'companyName', 'name']):
+    def _get_display_name(self, entity_uri):
         """Get a human-readable name for any entity."""
-        for prop in name_properties:
-            name = self._get_property_value(entity_uri, prop)
-            if name:
-                return name
+        # Try customer name variations
+        name = self._get_property_flexible(entity_uri, [
+            'cust_full_name', 'fullName', 'full_name', 'name',
+            'customer_full_name', 'customerFullName'
+        ])
+        if name:
+            return name
+        
+        # Try company name variations (note: there's a typo in the data "compan_name")
+        name = self._get_property_flexible(entity_uri, [
+            'compan_name', 'company_name', 'companyName', 'name'
+        ])
+        if name:
+            return name
+        
         # Fallback to URI simplification
         return str(entity_uri).split('/')[-1]
     
@@ -167,19 +175,28 @@ class SchemaAdaptiveQuestionGenerator:
             # Find customers with accounts at this bank
             customers_at_bank = set()
             for account in self.accounts:
-                account_bank = self._get_property_value(account, 'bankName')
+                account_bank = self._get_property_flexible(account, ['bank_name', 'bankName'])
                 if account_bank == bank:
-                    owner = self.graph.value(account, self.custom.bankAccountOwner)
+                    owner = self._get_property_flexible(account, [
+                        'bank_account_owner', 'bankAccountOwner', 'account_owner', 'owner'
+                    ])
                     if owner:
-                        customers_at_bank.add(owner)
+                        # Owner is a string URI, convert to URIRef
+                        customers_at_bank.add(self.ex[owner.split('/')[-1]])
             
             # Find companies these customers ordered from
             companies = set()
             for customer in customers_at_bank:
-                for order in self._get_subjects_with_property('orderCustomer', customer):
-                    company = self.graph.value(order, self.custom.orderCompany)
-                    if company:
-                        companies.add(self._get_display_name(company, ['companyName']))
+                orders = self._get_subjects_with_property(
+                    ['order_customer', 'orderCustomer', 'customer'], 
+                    customer
+                )
+                for order in orders:
+                    company_uri = self._get_property_flexible(order, [
+                        'order_company', 'orderCompany', 'company'
+                    ])
+                    if company_uri:
+                        companies.add(self._get_display_name(self.ex[company_uri.split('/')[-1]]))
             
             if companies:
                 questions.append({
@@ -198,12 +215,16 @@ class SchemaAdaptiveQuestionGenerator:
         questions = []
         
         for customer in random.sample(self.customers, min(5, len(self.customers))):
-            customer_name = self._get_display_name(customer, ['fullName'])
+            customer_name = self._get_display_name(customer)
             
             # Find this customer's banks
             customer_banks = set()
-            for account in self._get_subjects_with_property('bankAccountOwner', customer):
-                bank = self._get_property_value(account, 'bankName')
+            accounts = self._get_subjects_with_property(
+                ['bank_account_owner', 'bankAccountOwner', 'account_owner'],
+                customer
+            )
+            for account in accounts:
+                bank = self._get_property_flexible(account, ['bank_name', 'bankName'])
                 if bank:
                     customer_banks.add(bank)
             
@@ -211,10 +232,14 @@ class SchemaAdaptiveQuestionGenerator:
             shared_customers = set()
             for bank in customer_banks:
                 for account in self.accounts:
-                    if self._get_property_value(account, 'bankName') == bank:
-                        owner = self.graph.value(account, self.custom.bankAccountOwner)
-                        if owner and owner != customer:
-                            shared_customers.add(self._get_display_name(owner, ['fullName']))
+                    if self._get_property_flexible(account, ['bank_name', 'bankName']) == bank:
+                        owner_uri = self._get_property_flexible(account, [
+                            'bank_account_owner', 'bankAccountOwner'
+                        ])
+                        if owner_uri:
+                            owner = self.ex[owner_uri.split('/')[-1]]
+                            if owner != customer:
+                                shared_customers.add(self._get_display_name(owner))
             
             if shared_customers:
                 questions.append({
@@ -236,16 +261,24 @@ class SchemaAdaptiveQuestionGenerator:
             # Find customers at this bank
             customers_at_bank = set()
             for account in self.accounts:
-                if self._get_property_value(account, 'bankName') == bank:
-                    owner = self.graph.value(account, self.custom.bankAccountOwner)
-                    if owner:
-                        customers_at_bank.add(owner)
+                if self._get_property_flexible(account, ['bank_name', 'bankName']) == bank:
+                    owner_uri = self._get_property_flexible(account, [
+                        'bank_account_owner', 'bankAccountOwner'
+                    ])
+                    if owner_uri:
+                        customers_at_bank.add(self.ex[owner_uri.split('/')[-1]])
             
             # Calculate total spending
             total = 0.0
             for customer in customers_at_bank:
-                for order in self._get_subjects_with_property('orderCustomer', customer):
-                    order_total = self._get_property_value(order, 'orderTotal')
+                orders = self._get_subjects_with_property(
+                    ['order_customer', 'orderCustomer'], 
+                    customer
+                )
+                for order in orders:
+                    order_total = self._get_property_flexible(order, [
+                        'order_total', 'orderTotal', 'total'
+                    ])
                     if order_total:
                         try:
                             total += float(order_total)
@@ -271,8 +304,11 @@ class SchemaAdaptiveQuestionGenerator:
         # Find customers with multiple accounts
         customer_account_count = defaultdict(int)
         for account in self.accounts:
-            owner = self.graph.value(account, self.custom.bankAccountOwner)
-            if owner:
+            owner_uri = self._get_property_flexible(account, [
+                'bank_account_owner', 'bankAccountOwner'
+            ])
+            if owner_uri:
+                owner = self.ex[owner_uri.split('/')[-1]]
                 customer_account_count[owner] += 1
         
         multi_account_customers = [c for c, count in customer_account_count.items() if count > 1]
@@ -280,10 +316,16 @@ class SchemaAdaptiveQuestionGenerator:
         # Find companies these customers ordered from
         companies = set()
         for customer in multi_account_customers:
-            for order in self._get_subjects_with_property('orderCustomer', customer):
-                company = self.graph.value(order, self.custom.orderCompany)
-                if company:
-                    companies.add(self._get_display_name(company, ['companyName']))
+            orders = self._get_subjects_with_property(
+                ['order_customer', 'orderCustomer'], 
+                customer
+            )
+            for order in orders:
+                company_uri = self._get_property_flexible(order, [
+                    'order_company', 'orderCompany'
+                ])
+                if company_uri:
+                    companies.add(self._get_display_name(self.ex[company_uri.split('/')[-1]]))
         
         if companies:
             questions.append({
@@ -304,7 +346,9 @@ class SchemaAdaptiveQuestionGenerator:
         # Get customer countries
         customer_countries = set()
         for customer in self.customers:
-            country = self._get_property_value(customer, 'country')
+            country = self._get_property_flexible(customer, [
+                'cust_country', 'customer_country', 'country'
+            ])
             if country:
                 customer_countries.add(country)
         
@@ -312,17 +356,25 @@ class SchemaAdaptiveQuestionGenerator:
             # Find customers in this country
             customers_in_country = set()
             for customer in self.customers:
-                cust_country = self._get_property_value(customer, 'country')
+                cust_country = self._get_property_flexible(customer, [
+                    'cust_country', 'customer_country', 'country'
+                ])
                 if cust_country == country:
                     customers_in_country.add(customer)
             
             # Find companies these customers ordered from
             companies = set()
             for customer in customers_in_country:
-                for order in self._get_subjects_with_property('orderCustomer', customer):
-                    company = self.graph.value(order, self.custom.orderCompany)
-                    if company:
-                        companies.add(self._get_display_name(company, ['companyName']))
+                orders = self._get_subjects_with_property(
+                    ['order_customer', 'orderCustomer'], 
+                    customer
+                )
+                for order in orders:
+                    company_uri = self._get_property_flexible(order, [
+                        'order_company', 'orderCompany'
+                    ])
+                    if company_uri:
+                        companies.add(self._get_display_name(self.ex[company_uri.split('/')[-1]]))
             
             if companies:
                 questions.append({
@@ -343,19 +395,27 @@ class SchemaAdaptiveQuestionGenerator:
         questions = []
         
         for customer in random.sample(self.customers, min(5, len(self.customers))):
-            customer_name = self._get_display_name(customer, ['fullName'])
+            customer_name = self._get_display_name(customer)
             
             # Group orders by company
             company_accounts = defaultdict(set)
-            for order in self._get_subjects_with_property('orderCustomer', customer):
-                company = self.graph.value(order, self.custom.orderCompany)
-                payment = self.graph.value(order, self.custom.orderPayment)
-                if company and payment:
-                    company_accounts[company].add(payment)
+            orders = self._get_subjects_with_property(
+                ['order_customer', 'orderCustomer'], 
+                customer
+            )
+            for order in orders:
+                company_uri = self._get_property_flexible(order, [
+                    'order_company', 'orderCompany'
+                ])
+                payment_uri = self._get_property_flexible(order, [
+                    'order_payment_type', 'order_payment', 'orderPayment', 'payment'
+                ])
+                if company_uri and payment_uri:
+                    company_accounts[company_uri].add(payment_uri)
             
             # Find companies with multiple accounts used
             companies_with_multi_accounts = [
-                self._get_display_name(comp, ['companyName']) 
+                self._get_display_name(self.ex[comp.split('/')[-1]]) 
                 for comp, accounts in company_accounts.items() 
                 if len(accounts) > 1
             ]
@@ -377,27 +437,35 @@ class SchemaAdaptiveQuestionGenerator:
         questions = []
         
         for company in random.sample(self.companies, min(3, len(self.companies))):
-            company_name = self._get_display_name(company, ['companyName'])
+            company_name = self._get_display_name(company)
             
             # Find customers who ordered from this company
             customers_ordered = set()
-            for order in self._get_subjects_with_property('orderCompany', company):
-                customer = self.graph.value(order, self.custom.orderCustomer)
-                if customer:
-                    customers_ordered.add(customer)
+            orders = self._get_subjects_with_property(
+                ['order_company', 'orderCompany'], 
+                company
+            )
+            for order in orders:
+                customer_uri = self._get_property_flexible(order, [
+                    'order_customer', 'orderCustomer'
+                ])
+                if customer_uri:
+                    customers_ordered.add(self.ex[customer_uri.split('/')[-1]])
             
             # For each bank, find overlap
             for bank in list(self.banks)[:3]:
                 customers_at_bank = set()
                 for account in self.accounts:
-                    if self._get_property_value(account, 'bankName') == bank:
-                        owner = self.graph.value(account, self.custom.bankAccountOwner)
-                        if owner:
-                            customers_at_bank.add(owner)
+                    if self._get_property_flexible(account, ['bank_name', 'bankName']) == bank:
+                        owner_uri = self._get_property_flexible(account, [
+                            'bank_account_owner', 'bankAccountOwner'
+                        ])
+                        if owner_uri:
+                            customers_at_bank.add(self.ex[owner_uri.split('/')[-1]])
                 
                 overlap = customers_ordered & customers_at_bank
                 if overlap:
-                    customer_names = [self._get_display_name(c, ['fullName']) for c in overlap]
+                    customer_names = [self._get_display_name(c) for c in overlap]
                     questions.append({
                         'type': 'Pattern Matching',
                         'difficulty': 'Hard',
@@ -416,14 +484,20 @@ class SchemaAdaptiveQuestionGenerator:
         # Build customer -> companies mapping
         customer_companies = defaultdict(set)
         for order in self.orders:
-            customer = self.graph.value(order, self.custom.orderCustomer)
-            company = self.graph.value(order, self.custom.orderCompany)
-            if customer and company:
+            customer_uri = self._get_property_flexible(order, [
+                'order_customer', 'orderCustomer'
+            ])
+            company_uri = self._get_property_flexible(order, [
+                'order_company', 'orderCompany'
+            ])
+            if customer_uri and company_uri:
+                customer = self.ex[customer_uri.split('/')[-1]]
+                company = self.ex[company_uri.split('/')[-1]]
                 customer_companies[customer].add(company)
         
         # Find customers with overlapping companies
         for customer in random.sample(self.customers, min(3, len(self.customers))):
-            customer_name = self._get_display_name(customer, ['fullName'])
+            customer_name = self._get_display_name(customer)
             customer_cos = customer_companies.get(customer, set())
             
             if len(customer_cos) < 2:
@@ -436,7 +510,7 @@ class SchemaAdaptiveQuestionGenerator:
                 other_cos = customer_companies.get(other_customer, set())
                 overlap = customer_cos & other_cos
                 if len(overlap) >= 2:
-                    similar_customers.append(self._get_display_name(other_customer, ['fullName']))
+                    similar_customers.append(self._get_display_name(other_customer))
             
             if similar_customers:
                 questions.append({
@@ -457,16 +531,24 @@ class SchemaAdaptiveQuestionGenerator:
         # Build country -> customers mapping
         country_customers = defaultdict(set)
         for customer in self.customers:
-            country = self._get_property_value(customer, 'country')
+            country = self._get_property_flexible(customer, [
+                'cust_country', 'customer_country', 'country'
+            ])
             if country:
                 country_customers[country].add(customer)
         
         # Build customer -> companies mapping
         customer_companies = defaultdict(set)
         for order in self.orders:
-            customer = self.graph.value(order, self.custom.orderCustomer)
-            company = self.graph.value(order, self.custom.orderCompany)
-            if customer and company:
+            customer_uri = self._get_property_flexible(order, [
+                'order_customer', 'orderCustomer'
+            ])
+            company_uri = self._get_property_flexible(order, [
+                'order_company', 'orderCompany'
+            ])
+            if customer_uri and company_uri:
+                customer = self.ex[customer_uri.split('/')[-1]]
+                company = self.ex[company_uri.split('/')[-1]]
                 customer_companies[customer].add(company)
         
         for country, customers in list(country_customers.items())[:2]:
@@ -480,7 +562,7 @@ class SchemaAdaptiveQuestionGenerator:
                     company_counts[company] += 1
             
             popular_companies = [
-                self._get_display_name(comp, ['companyName'])
+                self._get_display_name(comp)
                 for comp, count in company_counts.items()
                 if count >= 2
             ]
@@ -506,12 +588,21 @@ class SchemaAdaptiveQuestionGenerator:
         bank_totals = defaultdict(float)
         
         for account in self.accounts:
-            bank = self._get_property_value(account, 'bankName')
-            owner = self.graph.value(account, self.custom.bankAccountOwner)
+            bank = self._get_property_flexible(account, ['bank_name', 'bankName'])
+            owner_uri = self._get_property_flexible(account, [
+                'bank_account_owner', 'bankAccountOwner'
+            ])
             
-            if bank and owner:
-                for order in self._get_subjects_with_property('orderCustomer', owner):
-                    total = self._get_property_value(order, 'orderTotal')
+            if bank and owner_uri:
+                owner = self.ex[owner_uri.split('/')[-1]]
+                orders = self._get_subjects_with_property(
+                    ['order_customer', 'orderCustomer'], 
+                    owner
+                )
+                for order in orders:
+                    total = self._get_property_flexible(order, [
+                        'order_total', 'orderTotal', 'total'
+                    ])
                     if total:
                         try:
                             bank_totals[bank] += float(total)
@@ -539,24 +630,35 @@ class SchemaAdaptiveQuestionGenerator:
         # Find customers with high balance accounts
         high_balance_customers = set()
         for account in self.accounts:
-            balance = self._get_property_value(account, 'balance')
+            balance = self._get_property_flexible(account, ['balance'])
             if balance:
                 try:
                     if float(balance) > threshold:
-                        owner = self.graph.value(account, self.custom.bankAccountOwner)
-                        if owner:
-                            high_balance_customers.add(owner)
+                        owner_uri = self._get_property_flexible(account, [
+                            'bank_account_owner', 'bankAccountOwner'
+                        ])
+                        if owner_uri:
+                            high_balance_customers.add(self.ex[owner_uri.split('/')[-1]])
                 except:
                     pass
         
         # Calculate totals per company
         company_totals = defaultdict(float)
         for customer in high_balance_customers:
-            for order in self._get_subjects_with_property('orderCustomer', customer):
-                company = self.graph.value(order, self.custom.orderCompany)
-                total = self._get_property_value(order, 'orderTotal')
-                if company and total:
+            orders = self._get_subjects_with_property(
+                ['order_customer', 'orderCustomer'], 
+                customer
+            )
+            for order in orders:
+                company_uri = self._get_property_flexible(order, [
+                    'order_company', 'orderCompany'
+                ])
+                total = self._get_property_flexible(order, [
+                    'order_total', 'orderTotal', 'total'
+                ])
+                if company_uri and total:
                     try:
+                        company = self.ex[company_uri.split('/')[-1]]
                         company_totals[company] += float(total)
                     except:
                         pass
@@ -569,7 +671,7 @@ class SchemaAdaptiveQuestionGenerator:
                 'hops': 3,
                 'question': f'Which company has the highest total order value from customers who have accounts with balances over ${threshold:,}?',
                 'answer': {
-                    'company': self._get_display_name(top_company, ['companyName']),
+                    'company': self._get_display_name(top_company),
                     'total': round(top_total, 2)
                 },
                 'entities': {'threshold': threshold}
@@ -585,24 +687,36 @@ class SchemaAdaptiveQuestionGenerator:
             # Find companies in this industry
             industry_companies = []
             for company in self.companies:
-                comp_industry = self._get_property_value(company, 'companyIndustry')
+                comp_industry = self._get_property_flexible(company, [
+                    'company_industry', 'companyIndustry', 'industry'
+                ])
                 if comp_industry == industry:
                     industry_companies.append(company)
             
             # Find customers who ordered from these companies
             customers = set()
             for company in industry_companies:
-                for order in self._get_subjects_with_property('orderCompany', company):
-                    customer = self.graph.value(order, self.custom.orderCustomer)
-                    if customer:
-                        customers.add(customer)
+                orders = self._get_subjects_with_property(
+                    ['order_company', 'orderCompany'], 
+                    company
+                )
+                for order in orders:
+                    customer_uri = self._get_property_flexible(order, [
+                        'order_customer', 'orderCustomer'
+                    ])
+                    if customer_uri:
+                        customers.add(self.ex[customer_uri.split('/')[-1]])
             
             # Calculate average balance
             total_balance = 0.0
             account_count = 0
             for customer in customers:
-                for account in self._get_subjects_with_property('bankAccountOwner', customer):
-                    balance = self._get_property_value(account, 'balance')
+                accounts = self._get_subjects_with_property(
+                    ['bank_account_owner', 'bankAccountOwner'], 
+                    customer
+                )
+                for account in accounts:
+                    balance = self._get_property_flexible(account, ['balance'])
                     if balance:
                         try:
                             total_balance += float(balance)
@@ -630,7 +744,9 @@ class SchemaAdaptiveQuestionGenerator:
         # Group customers by country
         country_customers = defaultdict(set)
         for customer in self.customers:
-            country = self._get_property_value(customer, 'country')
+            country = self._get_property_flexible(customer, [
+                'cust_country', 'customer_country', 'country'
+            ])
             if country:
                 country_customers[country].add(customer)
         
@@ -638,8 +754,14 @@ class SchemaAdaptiveQuestionGenerator:
         for country, customers in country_customers.items():
             total = 0.0
             for customer in customers:
-                for order in self._get_subjects_with_property('orderCustomer', customer):
-                    order_total = self._get_property_value(order, 'orderTotal')
+                orders = self._get_subjects_with_property(
+                    ['order_customer', 'orderCustomer'], 
+                    customer
+                )
+                for order in orders:
+                    order_total = self._get_property_flexible(order, [
+                        'order_total', 'orderTotal', 'total'
+                    ])
                     if order_total:
                         try:
                             total += float(order_total)
@@ -672,19 +794,27 @@ class SchemaAdaptiveQuestionGenerator:
                 break
             
             customer1, customer2 = random.sample(self.customers, 2)
-            name1 = self._get_display_name(customer1, ['fullName'])
-            name2 = self._get_display_name(customer2, ['fullName'])
+            name1 = self._get_display_name(customer1)
+            name2 = self._get_display_name(customer2)
             
             # Find shared banks
             banks1 = set()
-            for account in self._get_subjects_with_property('bankAccountOwner', customer1):
-                bank = self._get_property_value(account, 'bankName')
+            accounts1 = self._get_subjects_with_property(
+                ['bank_account_owner', 'bankAccountOwner'], 
+                customer1
+            )
+            for account in accounts1:
+                bank = self._get_property_flexible(account, ['bank_name', 'bankName'])
                 if bank:
                     banks1.add(bank)
             
             banks2 = set()
-            for account in self._get_subjects_with_property('bankAccountOwner', customer2):
-                bank = self._get_property_value(account, 'bankName')
+            accounts2 = self._get_subjects_with_property(
+                ['bank_account_owner', 'bankAccountOwner'], 
+                customer2
+            )
+            for account in accounts2:
+                bank = self._get_property_flexible(account, ['bank_name', 'bankName'])
                 if bank:
                     banks2.add(bank)
             
@@ -692,22 +822,38 @@ class SchemaAdaptiveQuestionGenerator:
             
             # Find shared companies
             companies1 = set()
-            for order in self._get_subjects_with_property('orderCustomer', customer1):
-                company = self.graph.value(order, self.custom.orderCompany)
-                if company:
-                    companies1.add(self._get_display_name(company, ['companyName']))
+            orders1 = self._get_subjects_with_property(
+                ['order_customer', 'orderCustomer'], 
+                customer1
+            )
+            for order in orders1:
+                company_uri = self._get_property_flexible(order, [
+                    'order_company', 'orderCompany'
+                ])
+                if company_uri:
+                    companies1.add(self._get_display_name(self.ex[company_uri.split('/')[-1]]))
             
             companies2 = set()
-            for order in self._get_subjects_with_property('orderCustomer', customer2):
-                company = self.graph.value(order, self.custom.orderCompany)
-                if company:
-                    companies2.add(self._get_display_name(company, ['companyName']))
+            orders2 = self._get_subjects_with_property(
+                ['order_customer', 'orderCustomer'], 
+                customer2
+            )
+            for order in orders2:
+                company_uri = self._get_property_flexible(order, [
+                    'order_company', 'orderCompany'
+                ])
+                if company_uri:
+                    companies2.add(self._get_display_name(self.ex[company_uri.split('/')[-1]]))
             
             shared_companies = companies1 & companies2
             
             # Check if same country
-            country1 = self._get_property_value(customer1, 'country')
-            country2 = self._get_property_value(customer2, 'country')
+            country1 = self._get_property_flexible(customer1, [
+                'cust_country', 'customer_country', 'country'
+            ])
+            country2 = self._get_property_flexible(customer2, [
+                'cust_country', 'customer_country', 'country'
+            ])
             
             connections = []
             if shared_banks:
@@ -737,10 +883,16 @@ class SchemaAdaptiveQuestionGenerator:
         
         # Customer's orders
         for customer in random.sample(self.customers, min(5, len(self.customers))):
-            customer_name = self._get_display_name(customer, ['fullName'])
+            customer_name = self._get_display_name(customer)
             order_numbers = []
-            for order in self._get_subjects_with_property('orderCustomer', customer):
-                order_num = self._get_property_value(order, 'orderNumber')
+            orders = self._get_subjects_with_property(
+                ['order_customer', 'orderCustomer'], 
+                customer
+            )
+            for order in orders:
+                order_num = self._get_property_flexible(order, [
+                    'order_number', 'orderNumber'
+                ])
                 if order_num:
                     order_numbers.append(order_num)
             
@@ -756,8 +908,12 @@ class SchemaAdaptiveQuestionGenerator:
         
         # Company orders
         for company in random.sample(self.companies, min(3, len(self.companies))):
-            company_name = self._get_display_name(company, ['companyName'])
-            order_count = len(list(self._get_subjects_with_property('orderCompany', company)))
+            company_name = self._get_display_name(company)
+            orders = self._get_subjects_with_property(
+                ['order_company', 'orderCompany'], 
+                company
+            )
+            order_count = len(orders)
             
             questions.append({
                 'type': 'Simple Property Lookup',
@@ -770,10 +926,14 @@ class SchemaAdaptiveQuestionGenerator:
         
         # Customer's bank accounts
         for customer in random.sample(self.customers, min(5, len(self.customers))):
-            customer_name = self._get_display_name(customer, ['fullName'])
+            customer_name = self._get_display_name(customer)
             banks = set()
-            for account in self._get_subjects_with_property('bankAccountOwner', customer):
-                bank = self._get_property_value(account, 'bankName')
+            accounts = self._get_subjects_with_property(
+                ['bank_account_owner', 'bankAccountOwner'], 
+                customer
+            )
+            for account in accounts:
+                bank = self._get_property_flexible(account, ['bank_name', 'bankName'])
                 if bank:
                     banks.add(bank)
             
@@ -789,8 +949,10 @@ class SchemaAdaptiveQuestionGenerator:
         
         # Customer country
         for customer in random.sample(self.customers, min(3, len(self.customers))):
-            customer_name = self._get_display_name(customer, ['fullName'])
-            country = self._get_property_value(customer, 'country')
+            customer_name = self._get_display_name(customer)
+            country = self._get_property_flexible(customer, [
+                'cust_country', 'customer_country', 'country'
+            ])
             
             if country:
                 questions.append({
@@ -804,8 +966,10 @@ class SchemaAdaptiveQuestionGenerator:
         
         # Company industry
         for company in random.sample(self.companies, min(3, len(self.companies))):
-            company_name = self._get_display_name(company, ['companyName'])
-            industry = self._get_property_value(company, 'companyIndustry')
+            company_name = self._get_display_name(company)
+            industry = self._get_property_flexible(company, [
+                'company_industry', 'companyIndustry', 'industry'
+            ])
             
             if industry:
                 questions.append({
