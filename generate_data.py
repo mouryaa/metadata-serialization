@@ -59,6 +59,8 @@ class PredicateConfig:
     PERSON_EMAIL = CUSTOM.emailAddress
     PERSON_TELEPHONE = CUSTOM.phoneNumber
     PERSON_TAX_ID = CUSTOM.customerID
+    PERSON_STREET_ADDRESS = CUSTOM.streetAddress
+    PERSON_COUNTRY = CUSTOM.country
     
     # Bank Account predicates
     ACCOUNT_TYPE = CUSTOM.BankAccount
@@ -78,6 +80,8 @@ class PredicateConfig:
     ORG_URL = CUSTOM.companyURL
     ORG_INDUSTRY = CUSTOM.companyIndustry
     ORG_TAX_ID = CUSTOM.companyID
+    ORG_STREET_ADDRESS = CUSTOM.streetAddress
+    ORG_COUNTRY = CUSTOM.country
     
     # Order predicates
     ORDER_TYPE = CUSTOM.PurchaseOrder
@@ -118,6 +122,8 @@ class CSVColumns:
     PERSON_EMAIL = get_local_name.__func__(PredicateConfig.PERSON_EMAIL)
     PERSON_TELEPHONE = get_local_name.__func__(PredicateConfig.PERSON_TELEPHONE)
     PERSON_TAX_ID = get_local_name.__func__(PredicateConfig.PERSON_TAX_ID)
+    PERSON_STREET_ADDRESS = get_local_name.__func__(PredicateConfig.PERSON_STREET_ADDRESS)
+    PERSON_COUNTRY = get_local_name.__func__(PredicateConfig.PERSON_COUNTRY)
     
     # Bank Account columns
     ACCOUNT_ID = 'account_id'
@@ -139,6 +145,8 @@ class CSVColumns:
     ORG_URL = get_local_name.__func__(PredicateConfig.ORG_URL)
     ORG_INDUSTRY = get_local_name.__func__(PredicateConfig.ORG_INDUSTRY)
     ORG_TAX_ID = get_local_name.__func__(PredicateConfig.ORG_TAX_ID)
+    ORG_STREET_ADDRESS = get_local_name.__func__(PredicateConfig.ORG_STREET_ADDRESS)
+    ORG_COUNTRY = get_local_name.__func__(PredicateConfig.ORG_COUNTRY)
     
     # Order columns
     ORDER_ID = 'order_id'
@@ -213,6 +221,8 @@ def generate_organizations(fake, num_orgs, graph, collector, seed=None):
         url = fake.organization_url()
         industry = fake.organization_industry()
         tax_id = fake.organization_tax_id() if random.random() < 0.7 else None
+        street_address = fake.street_address()
+        country = fake.country()
         
         # Store for CSV
         if collector:
@@ -225,7 +235,9 @@ def generate_organizations(fake, num_orgs, graph, collector, seed=None):
                 CSVColumns.ORG_TELEPHONE: telephone,
                 CSVColumns.ORG_URL: url,
                 CSVColumns.ORG_INDUSTRY: industry,
-                CSVColumns.ORG_TAX_ID: tax_id
+                CSVColumns.ORG_TAX_ID: tax_id,
+                CSVColumns.ORG_STREET_ADDRESS: street_address,
+                CSVColumns.ORG_COUNTRY: country
             })
         
         # Add to RDF graph
@@ -237,6 +249,8 @@ def generate_organizations(fake, num_orgs, graph, collector, seed=None):
             graph.add((org_uri, PredicateConfig.ORG_TELEPHONE, Literal(telephone, datatype=XSD.string)))
             graph.add((org_uri, PredicateConfig.ORG_URL, Literal(url, datatype=XSD.anyURI)))
             graph.add((org_uri, PredicateConfig.ORG_INDUSTRY, Literal(industry, datatype=XSD.string)))
+            graph.add((org_uri, PredicateConfig.ORG_STREET_ADDRESS, Literal(street_address, datatype=XSD.string)))
+            graph.add((org_uri, PredicateConfig.ORG_COUNTRY, Literal(country, datatype=XSD.string)))
             
             if tax_id:
                 graph.add((org_uri, PredicateConfig.ORG_TAX_ID, Literal(tax_id, datatype=XSD.string)))
@@ -272,6 +286,8 @@ def generate_person_with_accounts_and_orders(fake, person_id, max_accounts, max_
     email = fake.person_email()
     telephone = fake.person_telephone()
     tax_id = fake.person_tax_id()
+    street_address = fake.street_address()
+    country = fake.country()
     
     # Store person data for CSV
     if collector:
@@ -283,7 +299,9 @@ def generate_person_with_accounts_and_orders(fake, person_id, max_accounts, max_
             CSVColumns.PERSON_FAMILY_NAME: last_name,
             CSVColumns.PERSON_EMAIL: email,
             CSVColumns.PERSON_TELEPHONE: telephone,
-            CSVColumns.PERSON_TAX_ID: tax_id
+            CSVColumns.PERSON_TAX_ID: tax_id,
+            CSVColumns.PERSON_STREET_ADDRESS: street_address,
+            CSVColumns.PERSON_COUNTRY: country
         })
     
     # Add to RDF graph
@@ -295,6 +313,8 @@ def generate_person_with_accounts_and_orders(fake, person_id, max_accounts, max_
         graph.add((person_uri, PredicateConfig.PERSON_EMAIL, Literal(email, datatype=XSD.string)))
         graph.add((person_uri, PredicateConfig.PERSON_TELEPHONE, Literal(telephone, datatype=XSD.string)))
         graph.add((person_uri, PredicateConfig.PERSON_TAX_ID, Literal(tax_id, datatype=XSD.string)))
+        graph.add((person_uri, PredicateConfig.PERSON_STREET_ADDRESS, Literal(street_address, datatype=XSD.string)))
+        graph.add((person_uri, PredicateConfig.PERSON_COUNTRY, Literal(country, datatype=XSD.string)))
     
     # Generate 1 to max_accounts bank accounts
     num_accounts = random.randint(1, max_accounts)
