@@ -168,59 +168,120 @@ class CSVColumns:
     @staticmethod
     def create_columns(predicate_config):
         """Create column names from a predicate configuration."""
-        return {
-            # Person columns
-            'PERSON_ID': 'person_id',
-            'PERSON_URI': 'person_uri',
-            'PERSON_TYPE': CSVColumns.get_local_name(predicate_config.PERSON_TYPE),
-            'PERSON_NAME': CSVColumns.get_local_name(predicate_config.PERSON_NAME),
-            'PERSON_GIVEN_NAME': CSVColumns.get_local_name(predicate_config.PERSON_GIVEN_NAME),
-            'PERSON_FAMILY_NAME': CSVColumns.get_local_name(predicate_config.PERSON_FAMILY_NAME),
-            'PERSON_EMAIL': CSVColumns.get_local_name(predicate_config.PERSON_EMAIL),
-            'PERSON_TELEPHONE': CSVColumns.get_local_name(predicate_config.PERSON_TELEPHONE),
-            'PERSON_TAX_ID': CSVColumns.get_local_name(predicate_config.PERSON_TAX_ID),
-            'PERSON_STREET_ADDRESS': CSVColumns.get_local_name(predicate_config.PERSON_STREET_ADDRESS),
-            'PERSON_COUNTRY': CSVColumns.get_local_name(predicate_config.PERSON_COUNTRY),
-            
-            # Bank Account columns
-            'ACCOUNT_ID': 'account_id',
-            'ACCOUNT_URI': 'account_uri',
-            'ACCOUNT_PERSON_ID': 'person_id',
-            'ACCOUNT_NAME': CSVColumns.get_local_name(predicate_config.ACCOUNT_NAME),
-            'ACCOUNT_IDENTIFIER': CSVColumns.get_local_name(predicate_config.ACCOUNT_IDENTIFIER),
-            'ACCOUNT_TYPE_FIELD': CSVColumns.get_local_name(predicate_config.ACCOUNT_TYPE_FIELD),
-            'ACCOUNT_BANK': CSVColumns.get_local_name(predicate_config.ACCOUNT_BANK),
-            'ACCOUNT_BALANCE': CSVColumns.get_local_name(predicate_config.ACCOUNT_BALANCE),
-            
-            # Organization columns
-            'ORG_ID': 'org_id',
-            'ORG_URI': 'org_uri',
-            'ORG_NAME': CSVColumns.get_local_name(predicate_config.ORG_NAME),
-            'ORG_DESCRIPTION': CSVColumns.get_local_name(predicate_config.ORG_DESCRIPTION),
-            'ORG_EMAIL': CSVColumns.get_local_name(predicate_config.ORG_EMAIL),
-            'ORG_TELEPHONE': CSVColumns.get_local_name(predicate_config.ORG_TELEPHONE),
-            'ORG_URL': CSVColumns.get_local_name(predicate_config.ORG_URL),
-            'ORG_INDUSTRY': CSVColumns.get_local_name(predicate_config.ORG_INDUSTRY),
-            'ORG_TAX_ID': CSVColumns.get_local_name(predicate_config.ORG_TAX_ID),
-            'ORG_STREET_ADDRESS': CSVColumns.get_local_name(predicate_config.ORG_STREET_ADDRESS),
-            'ORG_COUNTRY': CSVColumns.get_local_name(predicate_config.ORG_COUNTRY),
-            
-            # Order columns
-            'ORDER_ID': 'order_id',
-            'ORDER_URI': 'order_uri',
-            'ORDER_PERSON_ID': 'person_id',
-            'ORDER_ACCOUNT_ID': 'account_id',
-            'ORDER_MERCHANT_ID': 'merchant_id',
-            'ORDER_NUMBER': CSVColumns.get_local_name(predicate_config.ORDER_NUMBER),
-            'ORDER_STATUS': CSVColumns.get_local_name(predicate_config.ORDER_STATUS),
-            'ORDER_DATE': CSVColumns.get_local_name(predicate_config.ORDER_DATE),
-            'ORDER_TOTAL': CSVColumns.get_local_name(predicate_config.ORDER_TOTAL),
-            
-            # Order Item columns
-            'ITEM_ORDER_ID': 'order_id',
-            'ITEM_INDEX': 'item_index',
-            'ITEM_NAME': CSVColumns.get_local_name(predicate_config.ITEM_NAME),
-        }
+        # Check if this is schema.org (which has duplicate predicates) or custom
+        is_schema_org = str(predicate_config.PERSON_NAME).startswith('http://schema.org/')
+        
+        if is_schema_org:
+            # For schema.org, add entity prefixes to avoid collisions
+            # since schema:name, schema:email, etc. are used for multiple entities
+            return {
+                # Person columns
+                'PERSON_ID': 'person_id',
+                'PERSON_URI': 'person_uri',
+                'PERSON_TYPE': CSVColumns.get_local_name(predicate_config.PERSON_TYPE),
+                'PERSON_NAME': 'person_' + CSVColumns.get_local_name(predicate_config.PERSON_NAME),
+                'PERSON_GIVEN_NAME': CSVColumns.get_local_name(predicate_config.PERSON_GIVEN_NAME),
+                'PERSON_FAMILY_NAME': CSVColumns.get_local_name(predicate_config.PERSON_FAMILY_NAME),
+                'PERSON_EMAIL': 'person_' + CSVColumns.get_local_name(predicate_config.PERSON_EMAIL),
+                'PERSON_TELEPHONE': 'person_' + CSVColumns.get_local_name(predicate_config.PERSON_TELEPHONE),
+                'PERSON_TAX_ID': 'person_' + CSVColumns.get_local_name(predicate_config.PERSON_TAX_ID),
+                'PERSON_STREET_ADDRESS': 'person_' + CSVColumns.get_local_name(predicate_config.PERSON_STREET_ADDRESS),
+                'PERSON_COUNTRY': 'person_' + CSVColumns.get_local_name(predicate_config.PERSON_COUNTRY),
+                
+                # Bank Account columns
+                'ACCOUNT_ID': 'account_id',
+                'ACCOUNT_URI': 'account_uri',
+                'ACCOUNT_PERSON_ID': 'person_id',
+                'ACCOUNT_NAME': 'account_' + CSVColumns.get_local_name(predicate_config.ACCOUNT_NAME),
+                'ACCOUNT_IDENTIFIER': CSVColumns.get_local_name(predicate_config.ACCOUNT_IDENTIFIER),
+                'ACCOUNT_TYPE_FIELD': 'account_' + CSVColumns.get_local_name(predicate_config.ACCOUNT_TYPE_FIELD),
+                'ACCOUNT_BANK': CSVColumns.get_local_name(predicate_config.ACCOUNT_BANK),
+                'ACCOUNT_BALANCE': 'account_' + CSVColumns.get_local_name(predicate_config.ACCOUNT_BALANCE),
+                
+                # Organization columns
+                'ORG_ID': 'org_id',
+                'ORG_URI': 'org_uri',
+                'ORG_NAME': 'org_' + CSVColumns.get_local_name(predicate_config.ORG_NAME),
+                'ORG_DESCRIPTION': CSVColumns.get_local_name(predicate_config.ORG_DESCRIPTION),
+                'ORG_EMAIL': 'org_' + CSVColumns.get_local_name(predicate_config.ORG_EMAIL),
+                'ORG_TELEPHONE': 'org_' + CSVColumns.get_local_name(predicate_config.ORG_TELEPHONE),
+                'ORG_URL': CSVColumns.get_local_name(predicate_config.ORG_URL),
+                'ORG_INDUSTRY': CSVColumns.get_local_name(predicate_config.ORG_INDUSTRY),
+                'ORG_TAX_ID': 'org_' + CSVColumns.get_local_name(predicate_config.ORG_TAX_ID),
+                'ORG_STREET_ADDRESS': 'org_' + CSVColumns.get_local_name(predicate_config.ORG_STREET_ADDRESS),
+                'ORG_COUNTRY': 'org_' + CSVColumns.get_local_name(predicate_config.ORG_COUNTRY),
+                
+                # Order columns
+                'ORDER_ID': 'order_id',
+                'ORDER_URI': 'order_uri',
+                'ORDER_PERSON_ID': 'person_id',
+                'ORDER_ACCOUNT_ID': 'account_id',
+                'ORDER_MERCHANT_ID': 'merchant_id',
+                'ORDER_NUMBER': CSVColumns.get_local_name(predicate_config.ORDER_NUMBER),
+                'ORDER_STATUS': CSVColumns.get_local_name(predicate_config.ORDER_STATUS),
+                'ORDER_DATE': CSVColumns.get_local_name(predicate_config.ORDER_DATE),
+                'ORDER_TOTAL': CSVColumns.get_local_name(predicate_config.ORDER_TOTAL),
+                
+                # Order Item columns
+                'ITEM_ORDER_ID': 'order_id',
+                'ITEM_INDEX': 'item_index',
+                'ITEM_NAME': 'item_' + CSVColumns.get_local_name(predicate_config.ITEM_NAME),
+            }
+        else:
+            # For custom vocabulary, predicates are already unique, so use them as-is
+            return {
+                # Person columns
+                'PERSON_ID': 'person_id',
+                'PERSON_URI': 'person_uri',
+                'PERSON_TYPE': CSVColumns.get_local_name(predicate_config.PERSON_TYPE),
+                'PERSON_NAME': CSVColumns.get_local_name(predicate_config.PERSON_NAME),
+                'PERSON_GIVEN_NAME': CSVColumns.get_local_name(predicate_config.PERSON_GIVEN_NAME),
+                'PERSON_FAMILY_NAME': CSVColumns.get_local_name(predicate_config.PERSON_FAMILY_NAME),
+                'PERSON_EMAIL': CSVColumns.get_local_name(predicate_config.PERSON_EMAIL),
+                'PERSON_TELEPHONE': CSVColumns.get_local_name(predicate_config.PERSON_TELEPHONE),
+                'PERSON_TAX_ID': CSVColumns.get_local_name(predicate_config.PERSON_TAX_ID),
+                'PERSON_STREET_ADDRESS': CSVColumns.get_local_name(predicate_config.PERSON_STREET_ADDRESS),
+                'PERSON_COUNTRY': CSVColumns.get_local_name(predicate_config.PERSON_COUNTRY),
+                
+                # Bank Account columns
+                'ACCOUNT_ID': 'account_id',
+                'ACCOUNT_URI': 'account_uri',
+                'ACCOUNT_PERSON_ID': 'person_id',
+                'ACCOUNT_NAME': CSVColumns.get_local_name(predicate_config.ACCOUNT_NAME),
+                'ACCOUNT_IDENTIFIER': CSVColumns.get_local_name(predicate_config.ACCOUNT_IDENTIFIER),
+                'ACCOUNT_TYPE_FIELD': CSVColumns.get_local_name(predicate_config.ACCOUNT_TYPE_FIELD),
+                'ACCOUNT_BANK': CSVColumns.get_local_name(predicate_config.ACCOUNT_BANK),
+                'ACCOUNT_BALANCE': CSVColumns.get_local_name(predicate_config.ACCOUNT_BALANCE),
+                
+                # Organization columns
+                'ORG_ID': 'org_id',
+                'ORG_URI': 'org_uri',
+                'ORG_NAME': CSVColumns.get_local_name(predicate_config.ORG_NAME),
+                'ORG_DESCRIPTION': CSVColumns.get_local_name(predicate_config.ORG_DESCRIPTION),
+                'ORG_EMAIL': CSVColumns.get_local_name(predicate_config.ORG_EMAIL),
+                'ORG_TELEPHONE': CSVColumns.get_local_name(predicate_config.ORG_TELEPHONE),
+                'ORG_URL': CSVColumns.get_local_name(predicate_config.ORG_URL),
+                'ORG_INDUSTRY': CSVColumns.get_local_name(predicate_config.ORG_INDUSTRY),
+                'ORG_TAX_ID': CSVColumns.get_local_name(predicate_config.ORG_TAX_ID),
+                'ORG_STREET_ADDRESS': CSVColumns.get_local_name(predicate_config.ORG_STREET_ADDRESS),
+                'ORG_COUNTRY': CSVColumns.get_local_name(predicate_config.ORG_COUNTRY),
+                
+                # Order columns
+                'ORDER_ID': 'order_id',
+                'ORDER_URI': 'order_uri',
+                'ORDER_PERSON_ID': 'person_id',
+                'ORDER_ACCOUNT_ID': 'account_id',
+                'ORDER_MERCHANT_ID': 'merchant_id',
+                'ORDER_NUMBER': CSVColumns.get_local_name(predicate_config.ORDER_NUMBER),
+                'ORDER_STATUS': CSVColumns.get_local_name(predicate_config.ORDER_STATUS),
+                'ORDER_DATE': CSVColumns.get_local_name(predicate_config.ORDER_DATE),
+                'ORDER_TOTAL': CSVColumns.get_local_name(predicate_config.ORDER_TOTAL),
+                
+                # Order Item columns
+                'ITEM_ORDER_ID': 'order_id',
+                'ITEM_INDEX': 'item_index',
+                'ITEM_NAME': CSVColumns.get_local_name(predicate_config.ITEM_NAME),
+            }
 
 # ============================================================================
 # END PREDICATE CONFIGURATION
@@ -294,8 +355,8 @@ def generate_raw_data(fake, num_people, max_accounts, max_orders_per_account, nu
             'url': fake.organization_url(),
             'industry': fake.organization_industry(),
             'tax_id': fake.organization_tax_id(),
-            'street_address': fake.street_address(),
-            'country': fake.country(),
+            'street_address': fake.organization_street_address(),
+            'country': fake.organization_country(),
         }
         store.organizations.append(org_data)
     
@@ -305,17 +366,23 @@ def generate_raw_data(fake, num_people, max_accounts, max_orders_per_account, nu
         person_id = f"person_{i+1}"
         person_uri = EX[person_id]
         
+        # Generate given name and family name first
+        given_name = fake.person_given_name()
+        family_name = fake.person_family_name()
+        # Combine them to create the full name
+        full_name = f"{given_name} {family_name}"
+        
         person_data = {
             'id': person_id,
             'uri': person_uri,
-            'name': fake.person_name(),
-            'given_name': fake.person_given_name(),
-            'family_name': fake.person_family_name(),
+            'name': full_name,
+            'given_name': given_name,
+            'family_name': family_name,
             'email': fake.person_email(),
             'telephone': fake.person_telephone(),
             'tax_id': fake.person_tax_id(),
-            'street_address': fake.street_address(),
-            'country': fake.country(),
+            'street_address': fake.person_street_address(),
+            'country': fake.person_country(),
         }
         store.people.append(person_data)
     
@@ -335,9 +402,9 @@ def generate_raw_data(fake, num_people, max_accounts, max_orders_per_account, nu
                 'person_uri': person_data['uri'],
                 'name': fake.bank_account_name(),
                 'identifier': fake.bank_account_identifier(),
-                'type': fake.bank_account_account_type(),
-                'bank': fake.bank_account_bank_name(),
-                'balance': fake.bank_account_balance(),
+                'type': fake.bank_account_type(),
+                'bank': fake.bank_name(),
+                'balance': fake.bank_balance(),
             }
             store.accounts.append(account_data)
     
@@ -362,7 +429,7 @@ def generate_raw_data(fake, num_people, max_accounts, max_orders_per_account, nu
                 'account_uri': account_data['uri'],
                 'merchant_id': merchant_data['id'],
                 'merchant_uri': merchant_data['uri'],
-                'number': fake.order_identifier(),
+                'number': fake.order_number(),
                 'status': fake.order_status(),
                 'date': fake.order_date(),
                 'total': fake.order_total(),
