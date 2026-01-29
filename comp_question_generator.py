@@ -37,33 +37,67 @@ class SchemaDiscovery:
         
     def discover(self):
         """Discover all entity types, properties, and values."""
+        print("  Discovering entity types...")
         # Find all entity types
         for subject, _, obj in self.graph.triples((None, RDF.type, None)):
             entity_type = self._simplify_uri(obj)
             self.entities_by_type[entity_type].append(subject)
         
+        print(f"  Found {len(self.entities_by_type)} entity types")
+        
         # Find properties for each type
+        print("  Discovering properties...")
         for entity_type, entities in self.entities_by_type.items():
             if entities:
-                sample = entities[0]
-                for pred, obj in self.graph.predicate_objects(sample):
-                    prop_name = self._simplify_uri(pred)
-                    self.properties_by_type[entity_type].add(prop_name)
+                # Check multiple entities to get complete property list
+                sample_size = min(5, len(entities))
+                for sample in entities[:sample_size]:
+                    for pred, obj in self.graph.predicate_objects(sample):
+                        # Get the full predicate URI
+                        pred_str = str(pred)
+                        # Extract property name from various namespace formats
+                        if pred_str.startswith('http://schema.org/'):
+                            prop_name = pred_str.replace('http://schema.org/', '')
+                        elif '#' in pred_str:
+                            prop_name = pred_str.split('#')[-1]
+                        elif '/' in pred_str:
+                            prop_name = pred_str.split('/')[-1]
+                        else:
+                            prop_name = pred_str
+                        
+                        if prop_name and prop_name != 'type':
+                            self.properties_by_type[entity_type].add(prop_name)
+                
+                print(f"    {entity_type}: {len(self.properties_by_type[entity_type])} properties")
         
         # Collect categorical values
+        print("  Collecting categorical values...")
         for entity_type, entities in self.entities_by_type.items():
-            for entity in entities:
+            for entity in entities[:10]:  # Sample first 10 entities
                 for prop in self.properties_by_type[entity_type]:
                     value = self._get_property(entity, prop)
                     if value and self._is_categorical(value):
                         self.categorical_values[f"{entity_type}.{prop}"].add(value)
         
+        print(f"  Found {len(self.categorical_values)} categorical properties")
+        
         return self
     
     def _get_property(self, subject, predicate):
         """Get a single property value."""
+        # Try with the schema namespace
         value = self.graph.value(subject, self.schema[predicate])
-        return str(value) if value else None
+        if value:
+            return str(value)
+        
+        # Try as-is if predicate is already a full URI
+        from rdflib import URIRef
+        if isinstance(predicate, str) and predicate.startswith('http'):
+            value = self.graph.value(subject, URIRef(predicate))
+            if value:
+                return str(value)
+        
+        return None
     
     def _simplify_uri(self, uri):
         """Simplify URIs for readable output."""
@@ -138,7 +172,8 @@ class AbstractQuestionGenerator:
         self.graph = Graph()
         self.graph.parse(turtle_file, format='turtle')
         
-        # Namespaces
+        # Namespaces - try both with and without trailing slash
+        # The data file uses http://schema.org/ (with slash)
         self.schema = Namespace("http://schema.org/")
         self.ex = Namespace("http://example.org/")
         
@@ -541,7 +576,7 @@ class AbstractQuestionGenerator:
     
     def _generate_from_template(self, template: QuestionTemplate, max_attempts: int = 50):
         """Generate a question from a specific template."""
-        for _ in range(max_attempts):
+        for attempt in range(max_attempts):
             try:
                 # Select appropriate entity type and entity
                 entity_types = list(self.schema_discovery.entities_by_type.keys())
@@ -766,6 +801,9 @@ class AbstractQuestionGenerator:
                     return question
                     
             except Exception as e:
+                # Only log on first and last attempt to avoid spam
+                if attempt == 0 or attempt == max_attempts - 1:
+                    pass  # Silently continue, this is expected for many templates
                 continue
         
         return None
@@ -774,11 +812,21 @@ class AbstractQuestionGenerator:
         """Generate questions using templates."""
         print(f"\nGenerating {int(target_count * generation_multiplier)} questions (target: {target_count})...")
         
+        if not self.templates:
+            print("ERROR: No templates registered!")
+            return []
+        
+        if not self.schema_discovery.entities_by_type:
+            print("ERROR: No entities discovered in the RDF data!")
+            return []
+        
         all_questions = []
-        attempts_per_template = int((target_count * generation_multiplier) / len(self.templates)) + 1
+        attempts_per_template = max(1, int((target_count * generation_multiplier) / len(self.templates)) + 1)
+        
+        print(f"Will attempt {attempts_per_template} questions per template ({len(self.templates)} templates)")
         
         for template in self.templates:
-            print(f"  Generating from template: {template.category} - {template.subcategory}...", end='')
+            print(f"  {template.category} - {template.subcategory} ({template.difficulty})...", end='', flush=True)
             template_questions = []
             
             for _ in range(attempts_per_template):
@@ -790,6 +838,13 @@ class AbstractQuestionGenerator:
             print(f" {len(template_questions)} generated")
         
         print(f"\nGenerated {len(all_questions)} total questions")
+        
+        if len(all_questions) == 0:
+            print("ERROR: No questions generated! Check that:")
+            print("  1. RDF file has valid triples")
+            print("  2. Entities have the expected properties")
+            print("  3. Namespaces match the data")
+            return []
         
         # Apply difficulty filter
         print(f"Filtering to {target_count} questions with difficulty distribution...")
